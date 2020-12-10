@@ -22,10 +22,10 @@
 }
 
 .meme-text {
-  bottom: 0;
+  bottom: 10px;
   color: white;
   font-size: 30px;
-  left: 0;
+  left: 30px;
   position: absolute;
   text-shadow: 5px 5px 5px black;
   word-break: break-all;
