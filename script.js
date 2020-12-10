@@ -15,6 +15,8 @@ function generateInputSection() {
   // input para fazer o upload da imagem
   const imageInput = document.createElement('input')
   imageInput.type = 'file';
+  imageInput.id = 'meme-insert'
+  imageInput.accept='image/png, image/jpeg'
   document.querySelector('.inputContainer').appendChild(imageInput);
 }
 

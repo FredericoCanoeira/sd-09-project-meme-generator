@@ -9,8 +9,8 @@ header {
 .memeContainer {
   background-color: white;
   border: 1px solid black;
-  height: 350px;
-  width: 350px;
+  height: 400px;
+  width: 400px;
   margin: 30px auto;
   position:relative;
 }
@@ -23,6 +23,10 @@ header {
 }
 
 .memeContainer p {
+  color: white;
+  font-size: 30px;
+  text-shadow: 5px 5px 5px black;
   position:absolute;
   z-index:1;
+  margin:300px 0 auto;
 }
