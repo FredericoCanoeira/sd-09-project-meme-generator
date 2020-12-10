@@ -1,0 +1,19 @@
+#meme-image-container{
+  border: 1px solid black;
+  height: 350px;
+  margin: auto;
+  width: 350px;
+}
+
+.inputContainer {
+  font-size: 1.2em;
+  margin: auto;
+  padding: 30px;
+  text-align: center;
+}
+
+input {
+  border-radius: 5px;
+  text-align: center;
+  width: 350px;
+}
