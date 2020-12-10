@@ -42,10 +42,21 @@ function earthBorder() {
   });
 }
 
+function meme() {
+  const memes = document.getElementsByClassName('mini-meme');
+  const memeImg = document.getElementById('meme-image');
+  for (let index = 0; index < memes.length; index += 1) {
+    memes[index].addEventListener('click', function(event) {
+      memeImg.src = event.target.src;
+    });
+  }
+}
+
 window.onload = function () {
   generateMemeText();
   addImg();
   fireBorder();
   waterBorder();
   earthBorder();
+  meme();
 };

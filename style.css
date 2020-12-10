@@ -1,15 +1,10 @@
-.blue {
-  background-color: blue;
-  border: 5px double blue;
-}
-
 .container {
   background-color: white;
   border: 1px solid black;
-  height: 250px;
+  height: 300px;
   margin-bottom: 10px;
   position: relative;
-  width: 300px;
+  width: 400px;
 }
 
 .green {
@@ -18,8 +13,8 @@
 }
 
 .image {
-  height: 250px;
-  width: 300px;
+  height: 300px;
+  width: 400px;
 }
 
 .input {
@@ -36,14 +31,25 @@
   word-break: break-all;
 }
 
+.mini-meme {
+  height: 100px;
+  width: 140px;
+}
+
 .red {
   background-color: red;
   border: 3px dashed red;
+}
+
+.blue {
+  background-color: blue;
+  border: 5px double blue;
 }
 
 .button {
   border: none;
   border-radius: 20px;
   font-weight: 600;
+  margin-bottom: 20px;
   padding: 15px;
 }
