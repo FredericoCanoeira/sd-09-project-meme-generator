@@ -15,15 +15,15 @@
             <label for= 'button'>Insira o texto: </label><input id= 'text-input' type= 'text' maxlength="60">
         </section>
         <section class= 'input'>
-            <label for= 'img'>Selecione a imagem: </label><input type='file' id='img' name='img' accept='image/*' width='300px' height="250px">
+            <label for= 'img'>Selecione a imagem: </label><input type='file' id='img' name='img' accept='image/*'>
             <input id='meme-insert' type= 'submit'>
         </section>
 
         <section>
-            <container id= 'meme-image-container' class='container'>
-                <img id= 'meme-image'>
+            <div id= 'meme-image-container' class='container'>
+                <img id= 'meme-image' class='image'>
                 <span id= 'meme-text' class='meme-text'></span>
-            </container>
+            </div>
         </section>
         <section>
             <button id='fire' class='button red'>Fire Border</button>

@@ -4,16 +4,18 @@ function generateMemeText() {
   input.addEventListener('keyup', function () {
     span.innerText = input.value;
     span.style.zIndex = 10;
-  })
+  });
 }
 
 function addImg() {
-  const imgInput = document.getElementById('meme-insert');
-  const memeImg = document.getElementById('meme-image')
+  const imgInput = document.getElementById('img');
+  const inputBtn = document.getElementById('meme-insert');
+  const memeImg = document.getElementById('meme-image');
 
-  imgInput.addEventListener('click', function () {
-    memeImg = URL.createObjectURL(input.files[0])
-  })
+
+  inputBtn.addEventListener('click', function () {
+    memeImg.src = URL.createObjectURL(imgInput.files[0]);
+  });
 }
 
 function fireBorder() {
@@ -21,7 +23,7 @@ function fireBorder() {
   const memeCont = document.getElementById('meme-image-container');
   fireBtn.addEventListener('click', function () {
     memeCont.className = 'container red';
-  })
+  });
 }
 
 function waterBorder() {
@@ -29,7 +31,7 @@ function waterBorder() {
   const memeCont = document.getElementById('meme-image-container');
   waterBtn.addEventListener('click', function () {
     memeCont.className = 'container blue';
-  })
+  });
 }
 
 function earthBorder() {
@@ -37,7 +39,7 @@ function earthBorder() {
   const memeCont = document.getElementById('meme-image-container');
   earthBtn.addEventListener('click', function () {
     memeCont.className = 'container green';
-  })
+  });
 }
 
 window.onload = function () {
@@ -46,4 +48,4 @@ window.onload = function () {
   fireBorder();
   waterBorder();
   earthBorder();
-}
+};
