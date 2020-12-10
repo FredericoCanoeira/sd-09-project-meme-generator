@@ -5,6 +5,7 @@ function generateTextInputBox() {
   textBox.id = 'text-input';
   textBox.className = 'text-input';
   textBox.placeholder = 'Type your meme text here';
+  textBox.maxLength = '60';
 
   container.appendChild(textBox);
   textBox.addEventListener('input', function () {
