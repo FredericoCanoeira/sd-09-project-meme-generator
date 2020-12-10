@@ -4,6 +4,7 @@
     <meta charset='UTF-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
@@ -11,10 +12,10 @@
     </header>
     <main>
         <section class='input'>
-            <label for= 'button'>Insira o texto:</label><input id= 'text-input' type= 'text' maxlength="60">;
+            <label for= 'button'>Insira o texto: </label><input id= 'text-input' type= 'text' maxlength="60">
         </section>
         <section class= 'input'>
-            <label for= 'img'>Selecione a imagem:</label><input type='file' id='img' name='img' accept='image/*' width='300px' height="250px">
+            <label for= 'img'>Selecione a imagem: </label><input type='file' id='img' name='img' accept='image/*' width='300px' height="250px">
             <input id='meme-insert' type= 'submit'>
         </section>
 
@@ -23,6 +24,11 @@
                 <img id= 'meme-image'>
                 <span id= 'meme-text' class='meme-text'></span>
             </container>
+        </section>
+        <section>
+            <button id='fire' class='button red'>Fire Border</button>
+            <button id='water' class='button blue'>Water Border</button>
+            <button id='earth' class='button green'>Earth Border</button>
         </section>
     </main>
     <script src='script.js'></script>

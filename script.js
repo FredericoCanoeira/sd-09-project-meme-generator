@@ -15,6 +15,35 @@ function addImg() {
     memeImg = URL.createObjectURL(input.files[0])
   })
 }
+
+function fireBorder() {
+  const fireBtn = document.getElementById('fire');
+  const memeCont = document.getElementById('meme-image-container');
+  fireBtn.addEventListener('click', function () {
+    memeCont.className = 'container red';
+  })
+}
+
+function waterBorder() {
+  const waterBtn = document.getElementById('water');
+  const memeCont = document.getElementById('meme-image-container');
+  waterBtn.addEventListener('click', function () {
+    memeCont.className = 'container blue';
+  })
+}
+
+function earthBorder() {
+  const earthBtn = document.getElementById('earth');
+  const memeCont = document.getElementById('meme-image-container');
+  earthBtn.addEventListener('click', function () {
+    memeCont.className = 'container green';
+  })
+}
+
 window.onload = function () {
   generateMemeText();
+  addImg();
+  fireBorder();
+  waterBorder();
+  earthBorder();
 }

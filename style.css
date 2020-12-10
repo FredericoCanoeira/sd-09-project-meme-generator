@@ -1,3 +1,26 @@
+.button {
+  border-radius: 20px;
+  padding:10px;
+  font-weight: 600;
+}
+
+.button.blue {
+  border: 0;
+}
+
+.button.green {
+  border: 0;
+}
+
+.button.red {
+  border: 0;
+}
+
+.blue {
+  background-color: blue;
+  border: 5px double blue;
+}
+
 .container {
   background-color: white;
   border: 1px solid black;
@@ -5,8 +28,22 @@
   width: 300px;
 }
 
+.green {
+  background-color: green;
+  border: 6px groove green;
+}
+
+.input {
+  height: 50px;
+}
+
 .meme-text {
   font-size: 30px;
   color: white;
   text-shadow: 5px 5px 5px black;
+}
+
+.red {
+  background-color: red;
+  border: 3px dashed red;
 }
