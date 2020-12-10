@@ -1,5 +1,5 @@
 body {
-  background-color: #a2d2ff;
+  background-color: rgb(162 , 210 , 255);
 }
 
 header {
@@ -10,23 +10,23 @@ header {
   background-color: white;
   border: 1px solid black;
   height: 400px;
-  width: 400px;
   margin: 30px auto;
-  position:relative;
+  position: relative;
+  width: 400px;
 }
 
 .memeContainer img {
-  position:absolute;
-  z-index:0;
-  height:100%;
-  width:100%;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 0;
 }
 
 .memeContainer p {
   color: white;
   font-size: 30px;
+  margin: 300px 0 auto;
+  position: absolute;
   text-shadow: 5px 5px 5px black;
-  position:absolute;
-  z-index:1;
-  margin:300px 0 auto;
+  z-index: 1;
 }

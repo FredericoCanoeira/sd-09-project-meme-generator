@@ -1,26 +1,26 @@
 function generateInputSection() {
   // Label do input
-  const myLabel = document.createElement('label')
+  const myLabel = document.createElement('label');
   myLabel.innerText = 'Insira o seu texto aqui > ';
   document.querySelector('.inputContainer').appendChild(myLabel);
-  
+
   // aqui temos o input de texto
-  const textInput = document.createElement('input')
+  const textInput = document.createElement('input');
   textInput.id = 'text-input';
   textInput.maxLength='60';
   textInput.type = 'text';
-  textInput.placeholder = 'Alguma ideia boa?'
+  textInput.placeholder = 'Alguma ideia boa?';
   document.querySelector('.inputContainer').appendChild(textInput);
 
   // input para fazer o upload da imagem
-  const imageInput = document.createElement('input')
+  const imageInput = document.createElement('input');
   imageInput.type = 'file';
-  imageInput.id = 'meme-insert'
-  imageInput.accept='image/png, image/jpeg'
+  imageInput.id = 'meme-insert';
+  imageInput.accept = 'image/png, image/jpeg';
   document.querySelector('.inputContainer').appendChild(imageInput);
 }
 
-generateInputSection()
+generateInputSection();
 
 function generateMemeSection() {
   // um simples p para receber o texto do 'text-input'
@@ -35,6 +35,6 @@ function generateMemeSection() {
 
 generateMemeSection();
 
-document.querySelector('#text-input').addEventListener('input',function(self){
+document.querySelector('#text-input').addEventListener('input',function (self) {
   document.querySelector('#meme-text').innerText = self.target.value;
-})
+});
