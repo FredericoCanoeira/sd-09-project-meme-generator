@@ -7,6 +7,10 @@ function generateTextInputBox() {
   textBox.placeholder = 'Type your meme text here';
 
   container.appendChild(textBox);
+  textBox.addEventListener('input', function () {
+    const memeText = document.getElementById('meme-text');
+    memeText.innerText = textBox.value;
+  });
 }
 
 function generateMemeText() {
@@ -14,7 +18,6 @@ function generateMemeText() {
   const memeText = document.createElement('p');
   memeText.id = 'meme-text';
   memeText.className = 'meme-text';
-  memeText.innerText = 'Test text';
 
   container.appendChild(memeText);
 }
