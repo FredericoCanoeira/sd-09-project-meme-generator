@@ -11,7 +11,7 @@
     </header>
     <main>
         <section class='input'>
-            <label for= 'button'>Insira o texto:</label><input id= 'text-input' type= 'text'>;
+            <label for= 'button'>Insira o texto:</label><input id= 'text-input' type= 'text' maxlength="60">;
         </section>
         <section class= 'input'>
             <label for= 'img'>Selecione a imagem:</label><input type='file' id='img' name='img' accept='image/*' width='300px' height="250px">
@@ -21,7 +21,7 @@
         <section>
             <container id= 'meme-image-container' class='container'>
                 <img id= 'meme-image'>
-                <span id= 'meme-text'></span>
+                <span id= 'meme-text' class='meme-text'></span>
             </container>
         </section>
     </main>
