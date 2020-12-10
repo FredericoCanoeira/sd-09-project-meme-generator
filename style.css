@@ -11,7 +11,12 @@ body {
 }
 
 .meme-text {
+  color: white;
+  font-size: 30px;
   position: absolute;
+  text-shadow: 5px 5px 5px black;
+  width: 100%;
+  word-wrap: break-word;
   z-index: 1;
 }
 
