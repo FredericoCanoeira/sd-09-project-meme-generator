@@ -13,6 +13,21 @@ function generateTextInputBox() {
   });
 }
 
+function generateImageUploadButton() {
+  const container = document.getElementById('inputs');
+  const uploadImageButton = document.createElement('input');
+  uploadImageButton.type = 'file';
+  uploadImageButton.id = 'meme-insert';
+  uploadImageButton.class = 'button-style';
+  uploadImageButton.innerText = 'Upload image';
+
+  container.appendChild(uploadImageButton);
+  uploadImageButton.addEventListener('input', function (selectedImage) {
+    const memeImage = document.getElementById('meme-image');
+    memeImage.src = URL.createObjectURL(selectedImage.target.files[0]);
+  });
+}
+
 function generateMemeText() {
   const container = document.getElementById('meme-image-container');
   const memeText = document.createElement('p');
@@ -22,7 +37,18 @@ function generateMemeText() {
   container.appendChild(memeText);
 }
 
+function generateMemeImage() {
+  const container = document.getElementById('meme-image-container');
+  const memeImage = document.createElement('img');
+  memeImage.id = 'meme-image';
+  memeImage.className = 'meme-image';
+
+  container.appendChild(memeImage);
+}
+
 window.onload = function () {
   generateTextInputBox();
+  generateImageUploadButton();
   generateMemeText();
+  generateMemeImage();
 };

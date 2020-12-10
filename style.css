@@ -4,6 +4,19 @@ body {
 
 .meme-container {
   border: 3px solid black;
-  height: 250px;
+  height: 500px;
   margin: 30px 50px;
+  position: relative;
+}
+
+.meme-text {
+  position: absolute;
+  z-index: 1;
+}
+
+.meme-image {
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  z-index: 0;
 }
