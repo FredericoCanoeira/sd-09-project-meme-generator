@@ -29,39 +29,48 @@ function generateImageUploadButton() {
   });
 }
 
-function generateBordersButtons() {
-  const container = document.querySelector('.button-container');
-  const borderOneButton = document.createElement('button');
-  borderOneButton.id = 'fire';
-  borderOneButton.className = 'button-fire';
-  borderOneButton.innerText = 'Fire Border';
+function generateFireButton(container, memeContainer) {
+  const fireButton = document.createElement('button');
+  fireButton.id = 'fire';
+  fireButton.className = 'button-fire';
+  fireButton.innerText = 'Fire Border';
 
+  container.appendChild(fireButton);
+  fireButton.addEventListener('click', function () {
+    memeContainer.style.border = '3px dashed red';
+  });
+}
+
+function generateWaterButton(container, memeContainer) {
   const borderTwoButton = document.createElement('button');
   borderTwoButton.id = 'water';
   borderTwoButton.className = 'button-water';
   borderTwoButton.innerText = 'Water Border';
 
+  container.appendChild(borderTwoButton);
+  borderTwoButton.addEventListener('click', function () {
+    memeContainer.style.border = '5px double blue';
+  });
+}
+
+function generateEarthButton(container, memeContainer) {
   const borderThreeButton = document.createElement('button');
   borderThreeButton.id = 'earth';
   borderThreeButton.className = 'button-earth';
   borderThreeButton.innerText = 'Earth Border';
 
-  const memeContainer = document.getElementById('meme-image-container');
-
-  container.appendChild(borderOneButton);
-  borderOneButton.addEventListener('click', function () {
-    memeContainer.style.border = '3px dashed red';
-  });
-
-  container.appendChild(borderTwoButton);
-  borderTwoButton.addEventListener('click', function () {
-    memeContainer.style.border = '5px double blue';
-  });
-  
   container.appendChild(borderThreeButton);
   borderThreeButton.addEventListener('click', function () {
     memeContainer.style.border = '6px groove green';
   });
+}
+
+function generateBordersButtons() {
+  const container = document.querySelector('.button-container');
+  const memeContainer = document.getElementById('meme-image-container');
+  generateFireButton(container, memeContainer);
+  generateWaterButton(container, memeContainer);
+  generateEarthButton(container, memeContainer);
 }
 
 function generateMemeText() {
