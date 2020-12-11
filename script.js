@@ -53,13 +53,13 @@ myMeme.addEventListener('change', function () {
   reader.onload = function () {
     document.querySelector('#meme-image').removeAttribute('style');
     document.getElementById('meme-image').src = this.result;
-    };
+  };
   reader.readAsDataURL(file);
-      }, false);
+}, false);
 
 function generateBorderButtons() {
   const buttonName = ['fire', 'water', 'earth'];
-  const buttonColor = ['red', 'blue', 'green']
+  const buttonColor = ['red', 'blue', 'green'];
   for (let index = 0; index < 3; index += 1) {
     const newButton = document.createElement('button');
     newButton.id = buttonName[index];
