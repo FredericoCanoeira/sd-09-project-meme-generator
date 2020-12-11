@@ -91,10 +91,69 @@ function generateMemeImage() {
   container.appendChild(memeImage);
 }
 
+function generateMemeTemplateOne(container, memeImage) {
+  const templateOne = document.createElement('img');
+  templateOne.id = 'meme-1';
+  templateOne.src = 'imgs/meme1.png';
+  templateOne.className = 'meme-template';
+
+  container.appendChild(templateOne);
+  templateOne.addEventListener('click', function () {
+    memeImage.src = templateOne.src;
+  });
+}
+
+function generateMemeTemplateTwo(container, memeImage) {
+  const templateTwo = document.createElement('img');
+  templateTwo.id = 'meme-2';
+  templateTwo.src = 'imgs/meme2.png';
+  templateTwo.className = 'meme-template';
+
+  container.appendChild(templateTwo);
+  templateTwo.addEventListener('click', function () {
+    memeImage.src = templateTwo.src;
+  });
+}
+
+function generateMemeTemplateThree(container, memeImage) {
+  const templateThree = document.createElement('img');
+  templateThree.id = 'meme-3';
+  templateThree.src = 'imgs/meme3.png';
+  templateThree.className = 'meme-template';
+
+  container.appendChild(templateThree);
+  templateThree.addEventListener('click', function () {
+    memeImage.src = templateThree.src;
+  });
+}
+
+
+function generateMemeTemplateFour(container, memeImage) {
+  const templateFour = document.createElement('img');
+  templateFour.id = 'meme-4';
+  templateFour.src = 'imgs/meme4.png';
+  templateFour.className = 'meme-template';
+
+  container.appendChild(templateFour);
+  templateFour.addEventListener('click', function () {
+    memeImage.src = templateFour.src;
+  });
+}
+
+function generateMemeTemplates() {
+  const container = document.getElementById('meme-template');
+  const memeImage = document.getElementById('meme-image');
+  generateMemeTemplateOne(container, memeImage);
+  generateMemeTemplateTwo(container, memeImage);
+  generateMemeTemplateThree(container, memeImage);
+  generateMemeTemplateFour(container, memeImage);
+}
+
 window.onload = function () {
   generateTextInputBox();
   generateImageUploadButton();
   generateMemeText();
   generateMemeImage();
   generateBordersButtons();
+  generateMemeTemplates();
 };
