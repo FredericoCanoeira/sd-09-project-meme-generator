@@ -29,6 +29,41 @@ function generateImageUploadButton() {
   });
 }
 
+function generateBordersButtons() {
+  const container = document.querySelector('.button-container');
+  const borderOneButton = document.createElement('button');
+  borderOneButton.id = 'fire';
+  borderOneButton.className = 'button-fire';
+  borderOneButton.innerText = 'Fire Border';
+
+  const borderTwoButton = document.createElement('button');
+  borderTwoButton.id = 'water';
+  borderTwoButton.className = 'button-water';
+  borderTwoButton.innerText = 'Water Border';
+
+  const borderThreeButton = document.createElement('button');
+  borderThreeButton.id = 'earth';
+  borderThreeButton.className = 'button-earth';
+  borderThreeButton.innerText = 'Earth Border';
+
+  const memeContainer = document.getElementById('meme-image-container');
+
+  container.appendChild(borderOneButton);
+  borderOneButton.addEventListener('click', function () {
+    memeContainer.style.border = '3px dashed red';
+  });
+
+  container.appendChild(borderTwoButton);
+  borderTwoButton.addEventListener('click', function () {
+    memeContainer.style.border = '5px double blue';
+  });
+  
+  container.appendChild(borderThreeButton);
+  borderThreeButton.addEventListener('click', function () {
+    memeContainer.style.border = '6px groove green';
+  });
+}
+
 function generateMemeText() {
   const container = document.getElementById('meme-image-container');
   const memeText = document.createElement('p');
@@ -52,4 +87,5 @@ window.onload = function () {
   generateImageUploadButton();
   generateMemeText();
   generateMemeImage();
+  generateBordersButtons();
 };
