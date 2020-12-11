@@ -91,16 +91,16 @@ generateExamples();
 // botões fire water e earth
 
 document.querySelector('.fire').addEventListener('click', function () {
-  const memeImage = document.querySelector('#meme-image');
+  const memeImage = document.querySelector('#meme-image-container');
   memeImage.style.border = '3px dashed red';
 });
 
 document.querySelector('.water').addEventListener('click', function () {
-  const memeImage = document.querySelector('#meme-image');
+  const memeImage = document.querySelector('#meme-image-container');
   memeImage.style.border = '5px double blue';
 });
 
 document.querySelector('.earth').addEventListener('click', function () {
-  const memeImage = document.querySelector('#meme-image');
+  const memeImage = document.querySelector('#meme-image-container');
   memeImage.style.border = '6px groove green';
 });
