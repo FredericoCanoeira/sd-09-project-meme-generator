@@ -7,7 +7,7 @@ function generateInputSection() {
   // aqui temos o input de texto
   const textInput = document.createElement('input');
   textInput.id = 'text-input';
-  textInput.maxLength= '60';
+  textInput.maxLength = '60';
   textInput.type = 'text';
   textInput.placeholder = 'Alguma ideia boa?';
   document.querySelector('.inputContainer').appendChild(textInput);
@@ -46,23 +46,25 @@ document.querySelector('#text-input').addEventListener('input', function (self) 
 // importado do stackoverflow
 // https://stackoverflow.com/questions/31236172/change-an-image-from-a-file-input-without-sending-the-form
 
-let inp = document.querySelector('#meme-insert');
-inp.addEventListener('change', function (){
-  let file = this.files[0];
-  let reader = new FileReader();
+const myMeme = document.querySelector('#meme-insert');
+myMeme.addEventListener('change', function () {
+  const file = this.files[0];
+  const reader = new FileReader();
   reader.onload = function () {
-      document.querySelector('#meme-image').removeAttribute('style');
-      document.getElementById('meme-image').src = this.result;
-      };
+    document.querySelector('#meme-image').removeAttribute('style');
+    document.getElementById('meme-image').src = this.result;
+    };
   reader.readAsDataURL(file);
-  },false);
+      }, false);
 
 function generateBorderButtons() {
   const buttonName = ['fire', 'water', 'earth'];
+  const buttonColor = ['red', 'blue', 'green']
   for (let index = 0; index < 3; index += 1) {
     const newButton = document.createElement('button');
     newButton.id = buttonName[index];
     newButton.className = buttonName[index];
+    newButton.style.backgroundColor = buttonColor[index];
     newButton.style.backgroundImage = `url(./imgs/${buttonName[index]}.jpg)`;
     document.querySelector('.other-buttons-container').appendChild(newButton);
   }
@@ -75,12 +77,11 @@ function mandaMemetoContainer(self) {
 }
 
 function generateExamples() {
-
   for (let index = 0; index < 4; index += 1) {
     const miniMeme = document.createElement('img');
     miniMeme.id = `meme-${index + 1}`;
-    miniMeme.src = `./imgs/meme${index+1}.png`
-    miniMeme.addEventListener('click',mandaMemetoContainer);
+    miniMeme.src = `./imgs/meme${index + 1}.png`;
+    miniMeme.addEventListener('click', mandaMemetoContainer);
     document.querySelector('.exampleContainer').appendChild(miniMeme);
   }
 }
@@ -89,17 +90,17 @@ generateExamples();
 
 // botões fire water e earth
 
-document.querySelector('.fire').addEventListener('click', function(){
+document.querySelector('.fire').addEventListener('click', function () {
   const memeImage = document.querySelector('#meme-image');
   memeImage.style.border = '3px dashed red';
 });
 
-document.querySelector('.water').addEventListener('click', function(){
+document.querySelector('.water').addEventListener('click', function () {
   const memeImage = document.querySelector('#meme-image');
   memeImage.style.border = '5px double blue';
 });
 
-document.querySelector('.earth').addEventListener('click', function(){
+document.querySelector('.earth').addEventListener('click', function () {
   const memeImage = document.querySelector('#meme-image');
   memeImage.style.border = '6px groove green';
 });
