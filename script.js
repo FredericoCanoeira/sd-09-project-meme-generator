@@ -7,7 +7,7 @@ function generateInputSection() {
   // aqui temos o input de texto
   const textInput = document.createElement('input');
   textInput.id = 'text-input';
-  textInput.maxLength='60';
+  textInput.maxLength= '60';
   textInput.type = 'text';
   textInput.placeholder = 'Alguma ideia boa?';
   document.querySelector('.inputContainer').appendChild(textInput);
@@ -18,9 +18,9 @@ function generateInputSection() {
   imageInput.id = 'meme-insert';
   imageInput.className = 'img-btn';
   imageInput.accept = 'image/png, image/jpeg';
-  imageInput.addEventListener('change', function(self){
+  imageInput.addEventListener('change', function (self) {
     document.querySelector('#meme-image').src = self.target.value;
-  })
+  });
   document.querySelector('.inputContainer').appendChild(imageInput);
 }
 
@@ -39,27 +39,27 @@ function generateMemeSection() {
 
 generateMemeSection();
 
-document.querySelector('#text-input').addEventListener('input',function (self) {
+document.querySelector('#text-input').addEventListener('input', function (self) {
   document.querySelector('#meme-text').innerText = self.target.value;
 });
 
 // importado do stackoverflow
 // https://stackoverflow.com/questions/31236172/change-an-image-from-a-file-input-without-sending-the-form
 
-var inp = document.querySelector('#meme-insert');
-inp.addEventListener('change', function(e){
-    var file = this.files[0];
-    var reader = new FileReader();
-    reader.onload = function(){
-        document.querySelector('#meme-image').removeAttribute('style');
-        document.getElementById('meme-image').src = this.result;
-        };
-    reader.readAsDataURL(file);
-    },false);
+let inp = document.querySelector('#meme-insert');
+inp.addEventListener('change', function (){
+  let file = this.files[0];
+  let reader = new FileReader();
+  reader.onload = function () {
+      document.querySelector('#meme-image').removeAttribute('style');
+      document.getElementById('meme-image').src = this.result;
+      };
+  reader.readAsDataURL(file);
+  },false);
 
 function generateBorderButtons() {
   const buttonName = ['fire', 'water', 'earth'];
-  for (let index = 0; index < 3; index += 1){
+  for (let index = 0; index < 3; index += 1) {
     const newButton = document.createElement('button');
     newButton.id = buttonName[index];
     newButton.className = buttonName[index];
@@ -70,23 +70,36 @@ function generateBorderButtons() {
 
 generateBorderButtons();
 
-
-function mandaMemetoContainer(self){
-  document.querySelector('#meme-image').removeAttribute('src');
-  document.querySelector('#meme-image').style.backgroundImage = self.target.style.backgroundImage;
+function mandaMemetoContainer(self) {
+  document.querySelector('#meme-image').src = self.target.src;
 }
 
-
-
 function generateExamples() {
-  
-  for (let index = 0; index < 4; index += 1){
-    const miniMeme  = document.createElement ('div');
-    miniMeme.id = `meme-${index+1}`;
-    miniMeme.style.backgroundImage = `url(./imgs/meme${index+1}.png)`;
+
+  for (let index = 0; index < 4; index += 1) {
+    const miniMeme = document.createElement('img');
+    miniMeme.id = `meme-${index + 1}`;
+    miniMeme.src = `./imgs/meme${index+1}.png`
     miniMeme.addEventListener('click',mandaMemetoContainer);
     document.querySelector('.exampleContainer').appendChild(miniMeme);
   }
 }
 
 generateExamples();
+
+// botões fire water e earth
+
+document.querySelector('.fire').addEventListener('click', function(){
+  const memeImage = document.querySelector('#meme-image');
+  memeImage.style.border = '3px dashed red';
+});
+
+document.querySelector('.water').addEventListener('click', function(){
+  const memeImage = document.querySelector('#meme-image');
+  memeImage.style.border = '5px double blue';
+});
+
+document.querySelector('.earth').addEventListener('click', function(){
+  const memeImage = document.querySelector('#meme-image');
+  memeImage.style.border = '6px groove green';
+});
