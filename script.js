@@ -19,8 +19,7 @@ function generateImageUploadButton() {
   const uploadImageButton = document.createElement('input');
   uploadImageButton.type = 'file';
   uploadImageButton.id = 'meme-insert';
-  uploadImageButton.class = 'button-style';
-  uploadImageButton.innerText = 'Upload image';
+  uploadImageButton.className = 'button-style';
 
   container.appendChild(uploadImageButton);
   uploadImageButton.addEventListener('input', function (selectedImage) {
