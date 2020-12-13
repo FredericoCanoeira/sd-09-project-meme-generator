@@ -2,6 +2,10 @@ const textInput = document.querySelector('#text-input');
 const memeText = document.querySelector('#meme-text');
 const memeInsert = document.querySelector('#meme-insert');
 const memeImage = document.querySelector('#meme-image');
+const btFire = document.querySelector('#fire');
+const btWater = document.querySelector('#water');
+const btEarth = document.querySelector('#earth');
+const memeContainer = document.querySelector('#meme-image-container');
 
 function addMemeText() {
   textInput.addEventListener('keyup', function () {
@@ -19,3 +23,22 @@ function addMemeImage() {
   });
 }
 addMemeImage();
+
+function changeBorder() {
+  btFire.addEventListener('click', function () {
+    memeContainer.classList.add('fire');
+    memeContainer.classList.remove('water');
+    memeContainer.classList.remove('earth');
+  });
+  btWater.addEventListener('click', function() {
+    memeContainer.classList.add('water');
+    memeContainer.classList.remove('earth');
+    memeContainer.classList.remove('fire');
+  });
+  btEarth.addEventListener('click', function () {
+    memeContainer.classList.add('earth');
+    memeContainer.classList.remove('fire');
+    memeContainer.classList.remove('water');
+  });
+}
+changeBorder();

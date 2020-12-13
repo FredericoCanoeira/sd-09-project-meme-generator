@@ -2,6 +2,7 @@
   background-color: white;
   border: 1px solid black;
   height: 500px;
+  margin: 10px 0;
   position: relative;
   width: 500px;
 }
@@ -18,4 +19,37 @@
   position: absolute;
   text-shadow: 5px 5px 5px black;
   top: 450px;
+}
+
+.fire {
+  border: 3px dashed red;
+}
+
+.water {
+  border: 5px double blue;
+}
+
+.earth {
+  border: 6px groove green;
+}
+
+.bt-fire {
+  background-color: red;
+  border-radius: 8px;
+  color: white;
+  text-shadow: 1px 1px black;
+}
+
+.bt-water {
+  background-color: blue;
+  border-radius: 8px;
+  color: white;
+  text-shadow: 1px 1px black;
+}
+
+.bt-earth {
+  background: green;
+  border-radius: 8px;
+  color: white;
+  text-shadow: 1px 1px black;
 }
