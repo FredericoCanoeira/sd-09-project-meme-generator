@@ -53,3 +53,9 @@
   color: white;
   text-shadow: 1px 1px black;
 }
+
+.meme-img {
+  height: 75px;
+  margin: 10px;
+  width: 75px;
+}

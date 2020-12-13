@@ -6,6 +6,7 @@ const btFire = document.querySelector('#fire');
 const btWater = document.querySelector('#water');
 const btEarth = document.querySelector('#earth');
 const memeContainer = document.querySelector('#meme-image-container');
+const previewMemes = document.querySelector('#preview-memes');
 
 function addMemeText() {
   textInput.addEventListener('keyup', function () {
@@ -30,7 +31,7 @@ function changeBorder() {
     memeContainer.classList.remove('water');
     memeContainer.classList.remove('earth');
   });
-  btWater.addEventListener('click', function() {
+  btWater.addEventListener('click', function () {
     memeContainer.classList.add('water');
     memeContainer.classList.remove('earth');
     memeContainer.classList.remove('fire');
@@ -42,3 +43,10 @@ function changeBorder() {
   });
 }
 changeBorder();
+
+function previewMeme() {
+  previewMemes.addEventListener('click', function (event) {
+    memeImage.src = event.target.src;
+  })
+}
+previewMeme();
