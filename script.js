@@ -13,9 +13,9 @@ addMemeText();
 function addMemeImage() {
   memeInsert.addEventListener('change', function (event) {
     memeImage.src = URL.createObjectURL(event.target.files[0]);
-    memeImage.onload = function() {
-      URL.revokeObjectURL(output.src)
-    }
+    memeImage.onload = function () {
+      URL.revokeObjectURL(memeImage.src);
+    };
   });
 }
 addMemeImage();
