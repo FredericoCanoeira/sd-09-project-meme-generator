@@ -40,6 +40,9 @@ function addStyles() {
   memeText.style.textShadow = '5px 5px 5px black';
   memeText.style.fontSize = '30px';
   memeText.style.color = 'white';
+
+  const textInput = document.querySelector('#text-input');
+  textInput.maxLength = '60';
 }
 
 function localTestFunction() {
