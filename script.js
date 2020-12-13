@@ -47,6 +47,6 @@ changeBorder();
 function previewMeme() {
   previewMemes.addEventListener('click', function (event) {
     memeImage.src = event.target.src;
-  })
+  });
 }
 previewMeme();
