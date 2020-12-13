@@ -21,6 +21,7 @@ function addStyles() {
   memeImgContainer.style.height = '300px';
   memeImgContainer.style.border = '1px black solid';
   memeImgContainer.style.backgroundColor = 'white';
+  memeImgContainer.style.marginTop = '15px';
 
   const memeImgDiv = document.querySelector('#meme-image');
   memeImgDiv.style.width = '100%';
@@ -32,17 +33,19 @@ function addStyles() {
   memeText.style.top = '70%';
   memeText.style.position = 'relative';
   memeText.style.width = '90%';
-  memeText.style.height = '3em';
+  memeText.style.height = '2.5em';
   memeText.style.wordBreak = 'break-all';
   memeText.style.overflow = 'hidden';
   memeText.style.margin = 0;
+  memeText.style.textShadow = '5px 5px 5px';
+  memeText.style.fontSize = '30px';
+  memeText.style.color = 'white';
 }
 
 function localTestFunction() {
   const memeImgDiv = document.querySelector('#meme-image');
   const imgPath = 'url(https://image.shutterstock.com/image-vector/trendy-gradient-liquid-background-lines-260nw-1375011146.jpg)';
   memeImgDiv.style.backgroundImage = imgPath;
-
 }
 
 window.onload = function () {
