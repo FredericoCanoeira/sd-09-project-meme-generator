@@ -37,7 +37,7 @@ function addStyles() {
   memeText.style.wordBreak = 'break-all';
   memeText.style.overflow = 'hidden';
   memeText.style.margin = 0;
-  memeText.style.textShadow = '5px 5px 5px';
+  memeText.style.textShadow = '5px 5px 5px black';
   memeText.style.fontSize = '30px';
   memeText.style.color = 'white';
 }
