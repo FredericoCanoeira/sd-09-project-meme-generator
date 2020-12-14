@@ -1,0 +1,10 @@
+.meme-image-container {
+  border: 1px solid black;
+  min-height: 200px;
+  max-width: 600px;
+}
+
+.meme-text {
+  vertical-align: bottom;
+  text-align: center;
+}
