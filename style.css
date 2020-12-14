@@ -8,10 +8,12 @@
 }
 
 .meme-text {
-  font-size: 25px;
+  color: white;
+  font-size: 30px;
   left: 10px;
   position: absolute;
   text-align: center;
+  text-shadow: 5px 5px 5px black;
   top: 280px;
   width: 480px;
   word-wrap: break-word;
