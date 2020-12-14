@@ -6,7 +6,8 @@ function changeMemeText(event) {
 function changeMemeImg(event) {
   const memeImgDiv = document.querySelector('#meme-image');
   if (event.type === 'click') {
-    memeImgDiv.style.backgroundImage = event.target.style.backgroundImage;
+    // memeImgDiv.style.backgroundImage = `url(${event.target.src})`;
+    memeImgDiv.src = event.target.src;
   }
   if (event.type === 'input') {
     memeImgDiv.style.backgroundImage = `url(${event.target.value})`;
