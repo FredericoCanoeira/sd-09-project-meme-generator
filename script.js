@@ -7,3 +7,13 @@ function insertTextEvent() {
 }
 
 insertTextEvent();
+
+function insertImageEvent () {
+  const inputImage = document.querySelector('#meme-insert');
+  inputImage.addEventListener('change', function () {
+    const memeimage = document.querySelector('#meme-image');
+    memeimage.src = URL.createObjectURL(inputImage.files[0]);
+  });
+}
+
+insertImageEvent();

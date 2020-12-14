@@ -1,4 +1,21 @@
 /* Class styles */
 .main-img-container {
   border: 5px solid black;
+  height: 500px;
+  position: relative;
+  width: 500px;
+}
+
+.meme-image-style {
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+
+.text-style {
+  color: white;
+  font-size: 30px;
+  position: absolute;
+  text-shadow: 5px 5px 5px black;
+  z-index: 2;
 }
