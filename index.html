@@ -4,6 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Meme Generator</title>
+  <!-- Icons links -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+  <!-- CSS link -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -13,9 +16,14 @@
   <main>
     <input type="text" id="text-input" placeholder="Digite a pérola aqui" maxlength="60">
     <input type="file" id="meme-insert" accept="image/*">
-    <section id="meme-image-container" class="main-img-container">
+    <section id="meme-image-container" class="main-img-container black-border">
       <!-- Imagem e texto inseridos via script -->
     </section>
+    <div class="btns-container">
+      <button id="fire" class="fire-btn-style"><em class="fas fa-fire"></em>Fire</button>
+      <button id="water" class="water-btn-style"><em class="fas fa-water"></em>Water</button>
+      <button id="earth" class="earth-btn-style"><em class="fas fa-globe-americas"></em>Earth</button>
+    </div>
   </main>
   <script src="script.js"></script>
 </body>

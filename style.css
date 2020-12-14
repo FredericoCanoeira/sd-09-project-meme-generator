@@ -1,10 +1,13 @@
 /* Class styles */
 .main-img-container {
   background-color: white;
-  border: 1px solid black;
   height: 500px;
   position: relative;
   width: 500px;
+}
+
+.black-border {
+  border: 1px solid black;
 }
 
 .meme-image-style {
@@ -21,4 +24,28 @@
   text-align: center;
   text-shadow: 5px 5px 5px black;
   z-index: 2;
+}
+
+.fire-border {
+  border: 3px dashed red;
+}
+
+.fire-btn-style {
+  background-color: red;
+}
+
+.water-border {
+  border: 5px double blue;
+}
+
+.water-btn-style {
+  background-color: blue
+}
+
+.earth-border {
+  border: 6px groove green;
+}
+
+.earth-btn-style {
+  background-color: green;
 }
