@@ -38,7 +38,7 @@ function borderEarth() {
 }
 
 function addImageContainer() {
-  const secMeme = document.getElementById('memes-picture')
+  const secMeme = document.getElementById('memes-picture');
   secMeme.addEventListener('click', function (event) {
     image.src = event.target.src;
   });
