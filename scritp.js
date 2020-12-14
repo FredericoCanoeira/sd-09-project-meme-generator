@@ -1,7 +1,6 @@
 const textInput = document.getElementById('text-input');
 const textMeme = document.getElementById('meme-text');
 const image = document.getElementById('meme-image');
-const memeInsert = document.getElementById('meme-insert');
 const imageContainer = document.getElementById('meme-image-container');
 
 function memetext() {

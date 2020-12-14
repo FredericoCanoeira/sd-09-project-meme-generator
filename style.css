@@ -3,9 +3,9 @@
   border: 1px solid black;
   height: 400px;
   margin-bottom: 10px;
+  object-fit: contain;
   position: relative;
   width: 500px;
-  object-fit: contain;
 }
 
 .meme-text {
@@ -34,9 +34,9 @@
 button {
   border-radius: 7px;
   font-size: 15px;
+  margin-left: 60px;
   padding: 5px;
   width: 75px;
-  margin-left: 60px;
 }
 
 .border-button {
