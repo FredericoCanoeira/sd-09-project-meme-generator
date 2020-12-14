@@ -31,8 +31,4 @@ function addImageContainer() {
 
 // chamadas
 memetext();
-loadFile();
-borderFire();
-borderWater();
-borderEarth();
-addImageContainer();
+
