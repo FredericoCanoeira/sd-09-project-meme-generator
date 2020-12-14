@@ -57,14 +57,12 @@ function addStyles() {
   memeImgContainer.style.backgroundColor = 'white';
   memeImgContainer.style.marginTop = '15px';
   memeImgContainer.style.position = 'relative';
-
   const memeImgDiv = document.querySelector('#meme-image');
   memeImgDiv.style.width = '100%';
   memeImgDiv.style.height = '100%';
   memeImgDiv.style.backgroundRepeat = 'no-repeat';
   memeImgDiv.style.backgroundSize = '100% 100%';
   memeImgDiv.style.overflow = 'hidden';
-
   const memeText = document.querySelector('#meme-text');
   memeText.style.bottom = '0';
   memeText.style.position = 'absolute';
@@ -74,7 +72,6 @@ function addStyles() {
   memeText.style.fontSize = '30px';
   memeText.style.color = 'white';
   memeText.style.wordBreak = 'break-all';
-
   const textInput = document.querySelector('#text-input');
   textInput.maxLength = '60';
 }
@@ -85,7 +82,6 @@ function addBorderStyles() {
   borderButtons.style.textAlign = 'center';
   borderButtons.style.marginTop = '5px';
   borderButtons.style.fontSize = '25px';
-
   const fireButton = document.querySelector('#fire');
   fireButton.innerText = 'Fire';
   fireButton.style.backgroundColor = 'red';
@@ -106,31 +102,17 @@ function addMemeSugestionsStyles() {
   memeSugestions.style.marginLeft = '40px';
 
   const meme1 = document.querySelector('#meme-1');
-  // meme1.style.backgroundImage = 'url(imgs/meme1.png';
   meme1.style.backgroundRepeat = 'no-repeat';
   meme1.style.backgroundSize = '100% 100%';
-  // meme1.style.display = 'inline-block';
   const meme2 = document.querySelector('#meme-2');
-  // meme2.style.backgroundImage = 'url(imgs/meme2.jpeg';
   meme2.style.backgroundRepeat = 'no-repeat';
   meme2.style.backgroundSize = '100% 100%';
-  // meme2.style.display = 'inline-block';
   const meme3 = document.querySelector('#meme-3');
-  // meme3.style.backgroundImage = 'url(imgs/meme3.jpg)';
   meme3.style.backgroundRepeat = 'no-repeat';
   meme3.style.backgroundSize = '100% 100%';
-  // meme3.style.display = 'inline-block';
   const meme4 = document.querySelector('#meme-4');
-  // meme4.style.backgroundImage = 'url(imgs/meme4.png)';
   meme4.style.backgroundRepeat = 'no-repeat';
   meme4.style.backgroundSize = '100% 100%';
-  // meme4.style.display = 'inline-block';
-}
-
-function localTestFunction() {
-  const memeImgDiv = document.querySelector('#meme-image');
-  const imgPath = 'url(https://image.shutterstock.com/image-vector/trendy-gradient-liquid-background-lines-260nw-1375011146.jpg)';
-  memeImgDiv.style.backgroundImage = imgPath;
 }
 
 window.onload = function () {
@@ -138,5 +120,4 @@ window.onload = function () {
   addStyles();
   addBorderStyles();
   addMemeSugestionsStyles();
-  // localTestFunction();
 };
