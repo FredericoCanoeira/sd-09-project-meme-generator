@@ -11,7 +11,7 @@ function memetext() {
 
 function loadFile(event) {
   image.src = URL.createObjectURL(event.target.files[0]);
-};
+}
 
 function borderFire() {
   imageContainer.style.border = '3px dashed red';
@@ -26,8 +26,13 @@ function borderEarth() {
 }
 
 function addImageContainer() {
-  image.src = event.target.src
+  image.src = event.target.src;
 }
 
 // chamadas
 memetext();
+loadFile();
+borderFire();
+borderWater();
+borderEarth();
+addImageContainer();
