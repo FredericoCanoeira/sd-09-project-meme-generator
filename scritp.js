@@ -15,15 +15,19 @@ function loadFile(event) {
 };
 
 function borderFire() {
-  imageContainer.style.border = '3px dashed red'
+  imageContainer.style.border = '3px dashed red';
 }
 
 function borderWater() {
-  imageContainer.style.border = '5px double blue'
+  imageContainer.style.border = '5px double blue';
 }
 
 function borderEarth() {
-  imageContainer.style.border = '6px groove green'
+  imageContainer.style.border = '6px groove green';
+}
+
+function addImageContainer() {
+  image.src = event.target.src
 }
 
 // chamadas

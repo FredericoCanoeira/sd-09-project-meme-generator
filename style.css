@@ -39,6 +39,10 @@ button {
   margin-left: 60px;
 }
 
+.border-button {
+  margin-bottom: 20px;
+}
+
 .fire {
   background-color: red;
   color: white;
@@ -52,4 +56,10 @@ button {
 .earth {
   background-color: green;
   color: white;
+}
+
+.memes {
+  height: 75px;
+  margin: 5px;
+  width: 110px;
 }
