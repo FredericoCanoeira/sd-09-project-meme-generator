@@ -15,7 +15,7 @@ function fireBorder() {
 
 function waterBorder() {
   const memeImgContainer = document.querySelector('#meme-image-container');
-  memeImgContainer.style.border = '5px double';
+  memeImgContainer.style.border = '5px double blue';
 }
 
 function earthBorder() {
@@ -62,7 +62,9 @@ function addStyles() {
 
   const textInput = document.querySelector('#text-input');
   textInput.maxLength = '60';
+}
 
+function addBorderStyles() {
   const borderButtons = document.querySelector('#border-buttons');
   borderButtons.style.width = '300px';
   borderButtons.style.textAlign = 'center';
@@ -91,5 +93,6 @@ function localTestFunction() {
 window.onload = function () {
   addListerners();
   addStyles();
+  addBorderStyles();
   localTestFunction();
 };
