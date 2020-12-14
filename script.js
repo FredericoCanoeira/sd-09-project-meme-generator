@@ -100,7 +100,7 @@ function addMemeSugestionsStyles() {
   memeSugestions.style.display = 'inline-block';
   memeSugestions.style.textAlign = 'center';
   memeSugestions.style.marginLeft = '40px';
-  const memes = []
+  const memes = [];
   memes[0] = document.querySelector('#meme-1');
   memes[1] = document.querySelector('#meme-2');
   memes[2] = document.querySelector('#meme-3');
