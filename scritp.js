@@ -1,7 +1,8 @@
 const textInput = document.getElementById('text-input');
 const textMeme = document.getElementById('meme-text');
-const imageContainer = document.getElementById('meme-image');
+const image = document.getElementById('meme-image');
 const memeInsert = document.getElementById('meme-insert');
+const imageContainer = document.getElementById('meme-image-container');
 
 function memetext() {
   textInput.addEventListener('keyup', function () {
@@ -9,9 +10,21 @@ function memetext() {
   });
 }
 
-const loadFile = function (event) {
-  imageContainer.src = URL.createObjectURL(event.target.files[0]);
+function loadFile(event) {
+  image.src = URL.createObjectURL(event.target.files[0]);
 };
+
+function borderFire() {
+  imageContainer.style.border = '3px dashed red'
+}
+
+function borderWater() {
+  imageContainer.style.border = '5px double blue'
+}
+
+function borderEarth() {
+  imageContainer.style.border = '6px groove green'
+}
 
 // chamadas
 memetext();
