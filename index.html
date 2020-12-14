@@ -7,21 +7,25 @@
   <title>Meme generator</title>
 </head>
 <body>
-  <label>Texto: </label><input type="text" id="text-input" class='text-input' placeholder="Digite seu texto aqui" maxlength="60"><br>
-  <input type="file" id="meme-insert" class="meme-insert" accept='/*' onchange="loadFile(event)">
-  <div id="meme-image-container" class="meme-image-container" accept='/*'>
-    <img id="meme-image" class="meme-image">
-    <div id="meme-text" class="meme-text"></div>
-  </div>
-  <section class='border-button'>
-    <button id=fire class='fire' onclick="borderFire()">Fire</button>
-    <button id=water class="water" onclick="borderWater()">Water</button>
-    <button id=earth class="earth" onclick="borderEarth()">Earth</button>
-  </section>
-    <img src="/imgs/meme1.png" id="meme-1" class='memes' onclick="addImageContainer()">
-    <img src="/imgs/meme2.png" id="meme-2" class='memes' onclick="addImageContainer()">
-    <img src="/imgs/meme3.png" id="meme-3" class='memes' onclick="addImageContainer()">
-    <img src="/imgs/meme4.png" id="meme-4" class='memes' onclick="addImageContainer()">
+  <div class="main-content">
+    <label>Texto: </label><input type="text" id="text-input" class='text-input' placeholder="Digite seu texto aqui" maxlength="60"><br>
+    <input type="file" id="meme-insert" class="meme-insert" accept='/*' onchange="loadFile(event)">
+    <div id="meme-image-container" class="meme-image-container" accept='/*'>
+      <img id="meme-image" class="meme-image">
+      <div id="meme-text" class="meme-text"></div>
+    </div>
+    <section class='border-button'>
+      <button id=fire class='fire' onclick="borderFire()">Fire</button>
+      <button id=water class="water" onclick="borderWater()">Water</button>
+      <button id=earth class="earth" onclick="borderEarth()">Earth</button>
+    </section>
+    <section class="memes-picture">
+      <img src="/imgs/meme1.png" id="meme-1" class='memes' onclick="addImageContainer()">
+      <img src="/imgs/meme2.png" id="meme-2" class='memes' onclick="addImageContainer()">
+      <img src="/imgs/meme3.png" id="meme-3" class='memes' onclick="addImageContainer()">
+      <img src="/imgs/meme4.png" id="meme-4" class='memes' onclick="addImageContainer()">
+    </section>  
+  </div>  
   <script src="scritp.js"></script>
 </body>
 </html>
