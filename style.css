@@ -1,6 +1,7 @@
 /* Class styles */
 .main-img-container {
-  border: 5px solid black;
+  background-color: white;
+  border: 1px solid black;
   height: 500px;
   position: relative;
   width: 500px;
@@ -13,9 +14,11 @@
 }
 
 .text-style {
+  bottom: 5%;
   color: white;
   font-size: 30px;
   position: absolute;
+  text-align: center;
   text-shadow: 5px 5px 5px black;
   z-index: 2;
 }
