@@ -106,25 +106,25 @@ function addMemeSugestionsStyles() {
   memeSugestions.style.marginLeft = '40px';
 
   const meme1 = document.querySelector('#meme-1');
-  meme1.style.backgroundImage = 'url(imgs/meme1.png';
+  // meme1.style.backgroundImage = 'url(imgs/meme1.png';
   meme1.style.backgroundRepeat = 'no-repeat';
   meme1.style.backgroundSize = '100% 100%';
-  meme1.style.display = 'inline-block';
+  // meme1.style.display = 'inline-block';
   const meme2 = document.querySelector('#meme-2');
-  meme2.style.backgroundImage = 'url(imgs/meme2.jpeg';
+  // meme2.style.backgroundImage = 'url(imgs/meme2.jpeg';
   meme2.style.backgroundRepeat = 'no-repeat';
   meme2.style.backgroundSize = '100% 100%';
-  meme2.style.display = 'inline-block';
+  // meme2.style.display = 'inline-block';
   const meme3 = document.querySelector('#meme-3');
-  meme3.style.backgroundImage = 'url(imgs/meme3.jpg)';
+  // meme3.style.backgroundImage = 'url(imgs/meme3.jpg)';
   meme3.style.backgroundRepeat = 'no-repeat';
   meme3.style.backgroundSize = '100% 100%';
-  meme3.style.display = 'inline-block';
+  // meme3.style.display = 'inline-block';
   const meme4 = document.querySelector('#meme-4');
-  meme4.style.backgroundImage = 'url(imgs/meme4.png)';
+  // meme4.style.backgroundImage = 'url(imgs/meme4.png)';
   meme4.style.backgroundRepeat = 'no-repeat';
   meme4.style.backgroundSize = '100% 100%';
-  meme4.style.display = 'inline-block';
+  // meme4.style.display = 'inline-block';
 }
 
 function localTestFunction() {
