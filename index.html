@@ -7,8 +7,10 @@
   <title>Meme generator</title>
 </head>
 <body>
-  <label>Texto: </label><input type="text" id="text-input" class='text-input' placeholder="Digite seu texto aqui">
-  <div id="meme-image-container" class="meme-image-container">
+  <label>Texto: </label><input type="text" id="text-input" class='text-input' placeholder="Digite seu texto aqui" ><br>
+  <input type="file" id="meme-insert" class="meme-insert" accept='/*' onchange="loadFile(event)">
+  <div id="meme-image-container" class="meme-image-container" accept='/*'>
+    <img id="meme-image" class="meme-image">
     <div id="meme-text" class="meme-text"></div>
   </div>
   <script src="scritp.js"></script>
