@@ -6,7 +6,6 @@ function changeMemeText(event) {
 function changeMemeImg(event) {
   const memeImgDiv = document.querySelector('#meme-image');
   if (event.type === 'click') {
-    // memeImgDiv.style.backgroundImage = `url(${event.target.src})`;
     memeImgDiv.src = event.target.src;
   }
   if (event.type === 'input') {
@@ -105,15 +104,27 @@ function addMemeSugestionsStyles() {
   const meme1 = document.querySelector('#meme-1');
   meme1.style.backgroundRepeat = 'no-repeat';
   meme1.style.backgroundSize = '100% 100%';
+  meme1.style.height = '40px';
+  meme1.style.margin = '5px';
+  meme1.style.width = '40px';
   const meme2 = document.querySelector('#meme-2');
   meme2.style.backgroundRepeat = 'no-repeat';
   meme2.style.backgroundSize = '100% 100%';
+  meme2.style.height = '40px';
+  meme2.style.margin = '5px';
+  meme2.style.width = '40px';
   const meme3 = document.querySelector('#meme-3');
   meme3.style.backgroundRepeat = 'no-repeat';
   meme3.style.backgroundSize = '100% 100%';
+  meme3.style.height = '40px';
+  meme3.style.margin = '5px';
+  meme3.style.width = '40px';
   const meme4 = document.querySelector('#meme-4');
   meme4.style.backgroundRepeat = 'no-repeat';
   meme4.style.backgroundSize = '100% 100%';
+  meme4.style.height = '40px';
+  meme4.style.margin = '5px';
+  meme4.style.width = '40px';
 }
 
 window.onload = function () {
