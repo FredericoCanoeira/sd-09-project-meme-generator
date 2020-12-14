@@ -4,6 +4,7 @@
   height: 400px;
   position: relative;
   width: 500px;
+  object-fit: contain;
 }
 
 .meme-text {
@@ -15,14 +16,16 @@
   width: 480px;
   word-wrap: break-word;
 }
- .meme-insert {
+
+.meme-insert {
   margin: 10px;
 }
 
 .meme-image {
   background-color: white;
-  border: 1px solid black;
   background-size: contain;
+  border: 1px solid black;
   height: 100%;
+  object-fit: cover;
   width: 100%;
 }
