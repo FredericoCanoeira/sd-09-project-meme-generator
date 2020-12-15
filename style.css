@@ -20,6 +20,7 @@
   position: absolute;
   text-align: center;
   text-shadow: 5px 5px 5px black;
+  width: 100%;
   z-index: 2;
 }
 
@@ -57,4 +58,12 @@
 
 .earth-btn-style {
   background-color: green;
+}
+
+.memes-container {
+  border: 2px solid black;
+}
+
+.img-wrap {
+  height: 200px;
 }
