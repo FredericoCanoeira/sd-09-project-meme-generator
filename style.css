@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  text-align: center;
+}
+
+#meme-image-container {
+  border: solid 1px rgb(0,0,0);
+  height: 500px;
+  margin: 8px auto;
+  width: 500px;
+}
