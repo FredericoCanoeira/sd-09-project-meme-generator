@@ -1,3 +1,12 @@
+/* Tag styles */
+body {
+  background-attachment: fixed;
+  background-image: url('imgs/bg-img.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 /* Class styles */
 .black-border {
   background-color: white;

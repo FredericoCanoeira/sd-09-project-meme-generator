@@ -87,7 +87,6 @@ function chooseBase() {
   const memeBases = document.querySelectorAll('.img-wrap');
   for (let index = 0; index < memeBases.length; index += 1) {
     memeBases[index].addEventListener('click', function (event) {
-      console.log('click')
       const chosenBase = event.target;
       const mainContainer = document.querySelector('#meme-image-container');
       if (document.querySelector('#meme-image')) {
