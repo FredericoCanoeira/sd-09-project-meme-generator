@@ -4,43 +4,48 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Meme Generator</title>
+  <!-- Font links -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Rowdies:wght@300;400;700&display=swap" rel="stylesheet">
   <!-- Icons links -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
   <!-- CSS link -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1 class="main-title">MEME GENERATOR</h1>
-  </header>
-  <main>
-    <input type="text" id="text-input" placeholder="Digite a pérola aqui" maxlength="60">
-    <input type="file" id="meme-insert" accept="image/*">
-    <section id="meme-image-container" class="black-border">
-      <!-- Imagem e texto inseridos via script -->
-    </section>
-    <div class="btns-menu">
-      <header>
-        <h2 class="title">Bordas customizadas: </h2>
-      </header>
-      <nav class="btns-container" aria-label="Bordas customizadas">
-        <button id="fire" class="fire-btn-style"><em class="fas fa-fire"></em>Fire</button>
-        <button id="water" class="water-btn-style"><em class="fas fa-water"></em>Water</button>
-        <button id="earth" class="earth-btn-style"><em class="fas fa-globe-americas"></em>Earth</button>
-      </nav>
-    </div>
-    <div class="imgs-bank">
-      <header>
-        <h2 class="title">Bases sugeridas: </h2>
-      </header>
-      <nav class="memes-container" aria-label="Bases sugeridas">
-        <img src="imgs/doge.png" alt="Doge" id="meme-1" class="img-wrap">
-        <img src="imgs/harold.png" alt="Hide the pain Harold" id="meme-2" class="img-wrap">
-        <img src="imgs/stonks-meme.png" alt="Stonks" id="meme-3" class="img-wrap">
-        <img src="imgs/tom.png" alt="Tom" id="meme-4" class="img-wrap">
-      </nav>
-    </div>
-  </main>
+  <div class="body-container">
+    <header>
+      <h1 class="main-title">MEME GENERATOR</h1>
+    </header>
+    <main>
+      <input type="text" id="text-input" placeholder="Digite a pérola aqui" maxlength="60">
+      <input type="file" id="meme-insert" accept="image/*">
+      <section id="meme-image-container" class="black-border">
+        <!-- Imagem e texto inseridos via script -->
+      </section>
+      <div class="btns-menu">
+        <header>
+          <h2 class="title">Bordas customizadas: </h2>
+        </header>
+        <nav class="btns-container" aria-label="Bordas customizadas">
+          <button id="fire" class="fire-btn-style"><em class="fas fa-fire"></em>Fire</button>
+          <button id="water" class="water-btn-style"><em class="fas fa-water"></em>Water</button>
+          <button id="earth" class="earth-btn-style"><em class="fas fa-globe-americas"></em>Earth</button>
+        </nav>
+      </div>
+      <div class="imgs-bank">
+        <header>
+          <h2 class="title">Bases sugeridas: </h2>
+        </header>
+        <nav class="memes-container" aria-label="Bases sugeridas">
+          <img src="imgs/doge.png" alt="Doge" id="meme-1" class="img-wrap">
+          <img src="imgs/harold.png" alt="Hide the pain Harold" id="meme-2" class="img-wrap">
+          <img src="imgs/stonks-meme.png" alt="Stonks" id="meme-3" class="img-wrap">
+          <img src="imgs/tom.png" alt="Tom" id="meme-4" class="img-wrap">
+        </nav>
+      </div>
+    </main>
+  </div>
   <script src="script.js"></script>
 </body>
 </html>

@@ -1,3 +1,7 @@
+* {
+  margin: 0;
+}
+
 /* Tag styles */
 body {
   background-attachment: fixed;
@@ -5,9 +9,28 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  font-family: Rowdies, cursive;
 }
 
 /* Class styles */
+.body-container {
+  align-items: center;
+  background-color: rgba(255 , 255 , 255 , 0.5);
+  box-shadow: 0 0 10px 10px black;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75vw;
+}
+
+.main-title {
+  color: yellow;
+  font-size: 10vh;
+  text-shadow: 5px 5px 5px black;
+}
+
 .black-border {
   background-color: white;
   border: 1px solid black;
@@ -25,6 +48,7 @@ body {
 .text-style {
   bottom: 5%;
   color: white;
+  font-family: Anton, sans-serif;
   font-size: 30px;
   position: absolute;
   text-align: center;
