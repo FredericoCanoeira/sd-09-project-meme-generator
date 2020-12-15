@@ -1,20 +1,19 @@
 #meme-image-container {
-  background-color: aqua;
-  position: relative;
   height: 400px;
+  position: relative;
   width: 400px;
 }
 
 #meme-image {
   height: 100%;
-  width: 100%;
   object-fit: cover;
-  z-index: 1;
   position: absolute;
+  width: 100%;
+  z-index: 1;
 }
 
 #meme-text {
+  margin-top: 350px;
   position: absolute;
   z-index: 2;
-  margin-top: 350px;
 }
