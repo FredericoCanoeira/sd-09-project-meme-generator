@@ -1,0 +1,20 @@
+#meme-image-container {
+  background-color: aqua;
+  position: relative;
+  height: 400px;
+  width: 400px;
+}
+
+#meme-image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  z-index: 1;
+  position: absolute;
+}
+
+#meme-text {
+  position: absolute;
+  z-index: 2;
+  margin-top: 350px;
+}
