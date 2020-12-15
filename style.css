@@ -1,13 +1,10 @@
 /* Class styles */
-.main-img-container {
+.black-border {
   background-color: white;
+  border: 1px solid black;
   height: 500px;
   position: relative;
   width: 500px;
-}
-
-.black-border {
-  border: 1px solid black;
 }
 
 .meme-image-style {
@@ -27,7 +24,11 @@
 }
 
 .fire-border {
+  background-color: white;
   border: 3px dashed red;
+  height: 500px;
+  position: relative;
+  width: 500px;
 }
 
 .fire-btn-style {
@@ -35,15 +36,23 @@
 }
 
 .water-border {
+  background-color: white;
   border: 5px double blue;
+  height: 500px;
+  position: relative;
+  width: 500px;
 }
 
 .water-btn-style {
-  background-color: blue
+  background-color: blue;
 }
 
 .earth-border {
+  background-color: white;
   border: 6px groove green;
+  height: 500px;
+  position: relative;
+  width: 500px;
 }
 
 .earth-btn-style {

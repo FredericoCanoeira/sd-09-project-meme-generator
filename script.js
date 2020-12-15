@@ -42,9 +42,9 @@ const fireBtn = document.querySelector('#fire');
 fireBtn.addEventListener('click', function () {
   const container = document.querySelector('#meme-image-container');
   if (container.className.includes('fire-border')) {
-    container.className = container.className.replace('fire-border', 'black-border');
+    container.className = 'black-border';
   } else {
-    container.className = container.className.replace('black-border', 'fire-border');
+    container.className = 'fire-border';
   }
 });
 
@@ -53,9 +53,9 @@ const waterBtn = document.querySelector('#water');
 waterBtn.addEventListener('click', function () {
   const container = document.querySelector('#meme-image-container');
   if (container.className.includes('water-border')) {
-    container.className = container.className.replace('water-border', 'black-border');
+    container.className = 'black-border';
   } else {
-    container.className = container.className.replace('black-border', 'water-border');
+    container.className = 'water-border';
   }
 });
 
@@ -64,8 +64,8 @@ const earthBtn = document.querySelector('#earth');
 earthBtn.addEventListener('click', function () {
   const container = document.querySelector('#meme-image-container');
   if (container.className.includes('earth-border')) {
-    container.className = container.className.replace('earth-border', 'black-border');
+    container.className = 'black-border';
   } else {
-    container.className = container.className.replace('black-border', 'earth-border');
+    container.className = 'earth-border';
   }
 });
