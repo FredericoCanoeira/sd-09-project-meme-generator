@@ -7,4 +7,4 @@ function showText() {
 window.onload = function () {
   const text = document.querySelector('#text-input');
   text.addEventListener('keyup', showText);
-}
+};
