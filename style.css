@@ -1,5 +1,5 @@
 p {
-  color: white;
+  /*color: white;*/
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-size: 2.5em;
   position: absolute;
@@ -8,16 +8,13 @@ p {
   margin: 15px 0;
   padding: 0 5px;
   text-transform: uppercase;
-
 }
 
-/* .meme {
-    margin: auto;
-    width: 450px;
-    height: 450px;
-    background-image: url('http://vignette1.wikia.nocookie.net/meme/images/7/71/BusinessCat2.jpg');
-    background-size: 100%; 
-    text-align: center;
-    position: relative;
-  }
- */
+.meme-image-container {
+  background-size: 100%;
+  height: 450px;
+  margin: auto;
+  position: relative;
+  text-align: center;
+  width: 450px;
+}
