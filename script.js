@@ -33,7 +33,6 @@ function borderStyleWater() {
 function readyMemeImage(event) {
   const imageContainer = document.querySelector('#meme-image');
   imageContainer.src = event.target.src;
-  console.log(imageContainer.src);
   // const fristPart = "url('";
   // const thirdPart = "')";
   // imageContainer.style.backgroundImage = fristPart + event.target.src + thirdPart;
