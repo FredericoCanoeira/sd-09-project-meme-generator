@@ -10,9 +10,9 @@ body {
 #meme-image-container {
   background-color: white;
   border: solid 1px black;
-  height: 500px;
+  height: 300px;
   margin: 8px auto;
-  width: 500px;
+  width: 300px;
 }
 
 #meme-image {
@@ -20,4 +20,10 @@ body {
   background-repeat: no-repeat;
   height: 100%;
   width: 100%;
+}
+
+#meme-text{
+  color: white;
+  font-size: 30px;
+  text-shadow: black 5px 5px 5px;
 }
