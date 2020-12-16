@@ -34,3 +34,9 @@ button {
   margin: 4px;
   width: 50px;
 }
+
+.meme-ready {
+  height: 100px;
+  margin: 8px;
+  width: 100px;
+}
