@@ -8,6 +8,7 @@ body {
 }
 
 #meme-image-container {
+  background-color: white;
   border: solid 1px black;
   height: 500px;
   margin: 8px auto;
@@ -17,6 +18,6 @@ body {
 #meme-image {
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  height: 500px;
-  width: 500px;
+  height: 100%;
+  width: 100%;
 }
