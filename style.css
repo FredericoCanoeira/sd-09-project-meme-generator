@@ -14,27 +14,39 @@ body {
 
 /* Class styles */
 .body-container {
-  align-items: center;
   background-color: rgba(255 , 255 , 255 , 0.5);
   box-shadow: 0 0 10px 10px black;
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
   margin-left: auto;
   margin-right: auto;
   width: 75vw;
 }
 
 .main-title {
-  color: yellow;
+  color: rgb(243 , 220 , 12);
   font-size: 10vh;
+  text-align: center;
   text-shadow: 5px 5px 5px black;
+}
+
+.all-meme-container {
+  align-items: center;
+  display: flex;
+  flex-flow: column wrap;
+  margin-top: 20px;
+}
+
+.input-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 500px;
 }
 
 .black-border {
   background-color: white;
   border: 1px solid black;
   height: 500px;
+  margin: 25px 0;
   position: relative;
   width: 500px;
 }
