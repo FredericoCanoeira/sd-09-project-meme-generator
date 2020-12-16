@@ -10,10 +10,12 @@ body {
     align-items: center;
     display: flex;
     flex-direction: column;
+    font-family: 'Roboto', sans-serif;
 }
 
 input[type='text'] {
     border: 0.1px solid black;
+    border-radius: 3px;
     height: 40px;
     font-size: 21px;
     margin: 20px 20px 0 20px;
@@ -24,6 +26,7 @@ input[type='text'] {
 
 .image-container {
     border: solid 1px black;
+    border-radius: 3px;
     height: 500px;
     margin: 20px;
     position: relative;
@@ -31,9 +34,79 @@ input[type='text'] {
 }
 
 .meme-content {
+    color: white;
     bottom: 0;
+    font-weight: bolder;
+    font-size: 30px;
+    text-shadow: 5px 5px 5px rgb(0, 0, 0);
     padding: 40px;
     position: absolute;
     text-align: center;
     width: 84%;
+    z-index: 3;
+}
+
+.meme-image {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.meme-insert {
+    display: inline-block;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 50px;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.input-container {
+    border-radius: 3px;
+    position: relative;
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    background-color: #10ac84;
+    cursor: pointer;
+
+}
+
+.input-container::after {
+    content: 'Select file';
+    color: white;
+    font-size: 17px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.3s ease;
+
+}
+
+.input-container::before{
+    content: '\f0aa';
+    color: white;
+    font-family: FontAwesome;
+    font-size: 35px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -0%);
+    transition: 0.3s ease;
+    opacity: 0;
+}
+
+
+.input-container:hover::after {
+    transform: translate(-50%, -100%);
+    opacity: 0;
+}
+
+.input-container:hover::before {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
 }
