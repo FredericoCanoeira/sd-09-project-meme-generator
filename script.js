@@ -6,3 +6,12 @@ function showText(){
 }
 
 showText();
+
+function previewImage() {
+    let oFReader = new FileReader();
+    oFReader.readAsDataURL(document.getElementById('uploadImage').files[0]);
+
+    oFReader.onload = function (oFREvent) {
+        document.getElementById('meme-image').src = oFREvent.target.result;
+    };
+}

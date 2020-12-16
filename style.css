@@ -5,6 +5,15 @@
     background-size: contain;
 }
 
+#meme-image {
+    width: 500px;
+    height: 400px;
+}
+
 #meme-text {
-    float: left;
+    font-size: 30px;
+    color: white;
+    position: relative;
+    bottom: 150px;
+    left: 40px;
 }

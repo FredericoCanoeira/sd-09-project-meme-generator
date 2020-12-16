@@ -9,13 +9,13 @@
         <header>
             <h1>Meme Generator Project</h1>
         </header>
-        <label for="">Text</label>
-        <input type="text" id="text-input">
+        <label for="text">Text</label>
+        <input type="text" id="text-input" name="text">
         <br>
-        <label for="">Image</label>
-        <button id="meme-insert">Choose file</button>
+        <label for="image">Image</label>
+        <input id="uploadImage" type="file" accept="image/*" onchange="previewImage();">
         <div id="meme-image-container">
-            <img src="" alt="" id="meme-image">
+            <img id="meme-image">
             <p id="meme-text"></p>
         </div>
     </body>
