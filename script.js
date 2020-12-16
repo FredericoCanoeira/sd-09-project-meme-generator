@@ -32,8 +32,9 @@ function borderStyleWater() {
 // Cria meme com imagens pre-selecionadas
 function readyMemeImage(event) {
   const imageContainer = document.querySelector('#meme-image');
-  imageContainer.src = event.target.src;
-  // imageContainer.style.backgroundImage = "url('https://img.r7.com/images/meme-sorriso-forcado-hide-the-pain-harold-maurice-andras-arato-08112019141225682')";
+  const fristPart = "url('";
+  const thirdPart = "')";
+  imageContainer.style.backgroundImage = fristPart + event.target.src + thirdPart;
 }
 
 function listeners() {
