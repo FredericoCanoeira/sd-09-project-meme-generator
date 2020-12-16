@@ -7,7 +7,7 @@ body {
   text-align: center;
 }
 
-#meme-image-container {
+.meme-image-container {
   background-color: white;
   border: solid 1px black;
   height: 400px;
@@ -15,14 +15,14 @@ body {
   width: 400px;
 }
 
-#meme-image {
+.meme-image {
   background-size: 100% 100%;
   background-repeat: no-repeat;
   height: 100%;
   width: 100%;
 }
 
-#meme-text{
+.meme-text {
   color: white;
   font-size: 30px;
   text-shadow: black 5px 5px 5px;
@@ -36,6 +36,7 @@ button {
 }
 
 .meme-ready {
+  border: solid 1px black;
   height: 100px;
   margin: 8px;
   width: 100px;

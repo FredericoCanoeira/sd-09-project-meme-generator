@@ -2,7 +2,7 @@
 function getMemeText(event) {
   const memeText = document.querySelector('#meme-text');
   memeText.innerHTML = event.target.value;
-};
+}
 
 // Upload da imagem
 function getMemeImage(event) {
@@ -32,9 +32,11 @@ function borderStyleWater() {
 // Cria meme com imagens pre-selecionadas
 function readyMemeImage(event) {
   const imageContainer = document.querySelector('#meme-image');
-  const fristPart = "url('";
-  const thirdPart = "')";
-  imageContainer.style.backgroundImage = fristPart + event.target.src + thirdPart;
+  imageContainer.src = event.target.src;
+  console.log(imageContainer.src);
+  // const fristPart = "url('";
+  // const thirdPart = "')";
+  // imageContainer.style.backgroundImage = fristPart + event.target.src + thirdPart;
 }
 
 function listeners() {
@@ -49,7 +51,7 @@ function listeners() {
   const waterButton = document.querySelector('#water');
   waterButton.addEventListener('click', borderStyleWater);
   const memeReadyContainer = document.querySelector('#meme-ready-container');
-  memeReadyContainer.addEventListener('click',readyMemeImage);
+  memeReadyContainer.addEventListener('click', readyMemeImage);
 }
 
 function buttonsStyle() {
@@ -60,8 +62,8 @@ function buttonsStyle() {
   const waterButton = document.querySelector('#water');
   waterButton.style.backgroundColor = 'blue';
 }
-   
+
 window.onload = function () {
   buttonsStyle();
   listeners();
-}
+};
