@@ -1,7 +1,7 @@
 // Inserindo texto no container
 function insertTextEvent() {
   const inputBox = document.querySelector('#text-input');
-  inputBox.addEventListener('change', function () {
+  inputBox.addEventListener('input', function () {
     const container = document.querySelector('#meme-image-container');
     if (document.querySelector('#meme-text')) {
       const oldText = document.querySelector('#meme-text');
