@@ -31,7 +31,6 @@ body {
 }
 
 .main-content {
-
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
@@ -42,7 +41,7 @@ body {
   display: flex;
   flex-flow: column wrap;
   justify-content: space-around;
-  padding: 0 15px 15px 15px;
+  padding: 0 15px 15px;
   width: 35vw;
 }
 
@@ -54,8 +53,8 @@ body {
 
 .input-fields {
   font-size: 16px;
-  width: 450px;
   margin: 15px;
+  width: 450px;
 }
 
 .black-border {
@@ -93,16 +92,17 @@ body {
 .title {
   text-align: center;
 }
- .btns-menu {
-   display: flex;
-   flex-direction: column;
-   justify-content: space-around;
-   padding: 15px;
- }
+
+.btns-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 15px;
+}
 
 .btns-container {
-  border: 2px solid black;
   align-items: center;
+  border: 2px solid black;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -150,14 +150,14 @@ body {
   border: 2px solid black;
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-evenly;
+  justify-content: space-around;
   padding: 15px;
   width: 35vw;
 }
 
 .img-wrap {
-  width: 15vw;
   margin: 10px;
+  width: 15vw;
 }
 
 .footer-content {
