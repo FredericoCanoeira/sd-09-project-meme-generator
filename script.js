@@ -7,8 +7,8 @@ function getMemeText(event) {
 // Upload da imagem
 function getMemeImage(event) {
   const imageContainer = document.querySelector('#meme-image');
-  // imageContainer.src = event.target.value;
-  imageContainer.style.backgroundImage = "url('https://img.r7.com/images/meme-sorriso-forcado-hide-the-pain-harold-maurice-andras-arato-08112019141225682')";
+  imageContainer.src = event.target.value;
+  // imageContainer.style.backgroundImage = "url('https://img.r7.com/images/meme-sorriso-forcado-hide-the-pain-harold-maurice-andras-arato-08112019141225682')";
 }
 
 // Borda fire
@@ -20,13 +20,20 @@ function borderStyleFire() {
 // Borda earth
 function borderStyleEarth() {
   const memeImageContainer = document.querySelector('#meme-image-container');
-  memeImageContainer.style.border = 'groove 3px green';
+  memeImageContainer.style.border = 'groove 6px green';
 }
 
 // Borda water
 function borderStyleWater() {
   const memeImageContainer = document.querySelector('#meme-image-container');
   memeImageContainer.style.border = 'double 5px blue';
+}
+
+// Cria meme com imagens pre-selecionadas
+function readyMemeImage(event) {
+  const imageContainer = document.querySelector('#meme-image');
+  imageContainer.src = event.target.src;
+  // imageContainer.style.backgroundImage = "url('https://img.r7.com/images/meme-sorriso-forcado-hide-the-pain-harold-maurice-andras-arato-08112019141225682')";
 }
 
 function listeners() {
@@ -40,6 +47,8 @@ function listeners() {
   earthButton.addEventListener('click', borderStyleEarth);
   const waterButton = document.querySelector('#water');
   waterButton.addEventListener('click', borderStyleWater);
+  const memeReadyContainer = document.querySelector('#meme-ready-container');
+  memeReadyContainer.addEventListener('click',readyMemeImage);
 }
 
 function buttonsStyle() {
