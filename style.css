@@ -27,3 +27,10 @@ body {
   font-size: 30px;
   text-shadow: black 5px 5px 5px;
 }
+
+button {
+  box-shadow: black 2px 2px 2px;
+  height: 30px;
+  margin: 4px;
+  width: 50px;
+}
