@@ -33,6 +33,18 @@ function loadText(event) {
   createParagraph(textInput.value, textContainer);
 }
 
+// Change border style of img container
+function changeBorder(event) {
+  const imgContainer = document.querySelector('.img-container')
+  if (event.target.id === 'fire') {
+    imgContainer.style.border = '3px dashed red';
+  } else if (event.target.id === 'water') {
+    imgContainer.style.border = '5px double blue';
+  } else if (event.target.id === 'earth') {
+    imgContainer.style.border = '6px groove green';
+  }
+}
+
 // Prevent submit of a input in form
 function preventSubmit(event) {
   event.preventDefault();
@@ -43,7 +55,13 @@ window.onload = function () {
   const textForm = document.querySelector('#text-form');
   const memeInsert = document.querySelector('#meme-insert');
   const textInput = document.querySelector('#text-input');
+  const fireButton = document.querySelector('#fire');
+  const waterButton = document.querySelector('#water');
+  const earthButton = document.querySelector('#earth');
   textForm.addEventListener('submit', preventSubmit);
   textInput.addEventListener('keyup', loadText);
   memeInsert.addEventListener('input', createImg);
+  fireButton.addEventListener('click', changeBorder);
+  waterButton.addEventListener('click', changeBorder);
+  earthButton.addEventListener('click', changeBorder);
 };
