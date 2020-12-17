@@ -15,7 +15,7 @@ body {
   width: 50rem;
 }
 
-#meme-image {
+.memeImage {
   background-color: aqua;
   height: 100%;
   width: 100%;
