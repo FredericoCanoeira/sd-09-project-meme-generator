@@ -1,12 +1,12 @@
 // Create element img in HTML
 function createImg(event) {
   const imgContainer = document.querySelector('#meme-image-container');
-  const imgElement = document.createElement('img');
-  imgElement.id = 'meme-image';
-  imgElement.src = URL.createObjectURL(event.target.files[0]);
-  imgContainer.appendChild(imgElement);
-  if (imgElement.onload) {
-    URL.revokeObjectURL(imgElement.src); // Free memory
+  const img = document.createElement('img');
+  img.id = 'meme-image';
+  img.src = URL.createObjectURL(event.target.files[0]);
+  imgContainer.appendChild(img);
+  if (img.onload) {
+    URL.revokeObjectURL(img.src); // Free memory
   }
 }
 
@@ -38,11 +38,11 @@ function preventSubmit(event) {
   event.preventDefault();
 }
 
-// Load functions and event listeners at the window load  
+// Load functions and event listeners at the window load
 window.onload = function () {
   const textForm = document.querySelector('#text-form');
   const memeInsert = document.querySelector('#meme-insert');
-  const textInput = document.querySelector('#text-input')
+  const textInput = document.querySelector('#text-input');
   textForm.addEventListener('submit', preventSubmit);
   textInput.addEventListener('keyup', loadText);
   memeInsert.addEventListener('input', createImg);

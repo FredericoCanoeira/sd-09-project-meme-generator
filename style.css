@@ -1,14 +1,37 @@
+body {
+  background-color: rgb(3 , 107 , 82);
+  font-family: sans-serif;
+  text-align: center;
+}
+
 img {
   height: 400px;
   width: 400px;
 }
 
 .img-container {
+  background-color: white;
+  border: 1px solid black;
   height: 400px;
+  margin: 5% 23%;
   position: relative;
   width: 400px;
 }
 
+.main-page {
+  background-color: rgb(213 , 225 , 223);
+  border: 5px solid rgb(47 , 193 , 140);
+  border-radius: 15px;
+  color: rgb(3 , 107 , 82);
+  margin: 2% 20%;
+  text-align: center;
+}
+
 .text-container {
+  color: white;
+  text-shadow: 2px 2px black;
+  font-weight: 600;
+  margin-left: 10%;
+  margin-top: 80%;
   position: absolute;
 }
