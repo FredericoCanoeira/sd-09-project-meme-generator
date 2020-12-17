@@ -13,3 +13,19 @@ function addTextToImg() {
 }
 
 addTextToImg();
+
+/* Requisito 2 - dentro do container deve ter um elemento para receber uma imagem com id = meme-image;
+- o input de imagem deve ter um id = meme-insert (fora do container);
+- a imagem deve ocupar todo o espaço do container;
+- o texto inserido deve ficar sobre a imagem;
+*/
+
+function addImageToContainer() {
+  const myInputImg = document.querySelector('#meme-insert');
+  myInputImg.addEventListener('input', (event) => {
+    const myImage = document.querySelector('#meme-image');
+    myImage.src = URL.createObjectURL(event.target.files[0]);
+  });
+}
+
+addImageToContainer();

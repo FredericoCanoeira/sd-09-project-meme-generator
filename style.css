@@ -9,12 +9,9 @@ input {
   width: 50%;
 }
 
-section {
-  background-color: papayawhip;
-  height: 70%;
-  margin: 35px auto;
-  max-width: 50%;
-  position: relative;
+img {
+  height: 100%;
+  width: 100%;
 }
 
 p {
@@ -23,4 +20,11 @@ p {
   position: absolute;
   text-align: center;
   width: 100%;
+}
+
+section {
+  height: 70%;
+  margin: 35px auto;
+  position: relative;
+  width: 50%;
 }
