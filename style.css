@@ -9,6 +9,8 @@ body {
 }
 
 .img-container {
+  background-color: white;
+  border: 1px solid black;
   height: 50rem;
   margin: 3rem auto;
   position: relative;
@@ -16,7 +18,6 @@ body {
 }
 
 .memeImage {
-  background-color: aqua;
   height: 100%;
   width: 100%;
 }
@@ -25,7 +26,7 @@ body {
   align-self: flex-end;
   bottom: 0;
   font-size: 3rem;
-  font-weight: bold;
+  font-weight: 700;
   left: 3rem;
   position: absolute;
 }
