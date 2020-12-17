@@ -14,7 +14,8 @@ function addTextToImg() {
 
 addTextToImg();
 
-/* Requisito 2 - dentro do container deve ter um elemento para receber uma imagem com id = meme-image;
+/* Requisito 2 
+- dentro do container deve ter um elemento para receber a imagem com id = meme-image;
 - o input de imagem deve ter um id = meme-insert (fora do container);
 - a imagem deve ocupar todo o espaço do container;
 - o texto inserido deve ficar sobre a imagem;
