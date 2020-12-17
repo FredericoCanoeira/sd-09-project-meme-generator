@@ -9,13 +9,20 @@
     <title>Meme Generator</title>
 </head>
 <body>
-    <input type="text" id="text-input" class="text-input">
+    <input type="text" id="text-input" class="text-input" maxlength="60">
     <div id="meme-image-container" class="image-container">
         <img id='meme-image' class="meme-image"></img>
         <span id="meme-text" class="meme-content"></span>
     </div>
     <div class="input-container">
      <input type="file" name="" id="meme-insert" class="meme-insert" onchange="loadFile(event)">
+    </div>
+    <br>
+    <div class="memes-container">
+        <img src="./imgs/meme1.png" id='meme-1' class="memes" alt="">
+        <img src="./imgs/meme2.png" id='meme-2' class="memes" alt="">
+        <img src="./imgs/meme3.png" id='meme-3' class="memes" alt="">
+        <img src="./imgs/meme4.png" id='meme-4' class="memes" alt="">
     </div>
 </body>
 <script src="./script.js"></script>
