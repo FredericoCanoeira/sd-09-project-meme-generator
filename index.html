@@ -8,8 +8,21 @@
 </head>
 <body>
   <main>
-    <section id="inputs-container"></section>
-    <section id="meme-image-container"></section>
+    <section class="inputs-container">
+      <div class="input-text">
+        <span>Texto: </span>
+        <input type="text" id="text-input">
+      </div>
+      <div class="input-img">
+        <span>Foto: </span>
+        <input type="file" id="meme-insert">
+      </div>
+    </section>
+    <section id="meme-image-container" class="img-text-container">
+      <img id="meme-image">
+        <p id="meme-text"></p>
+      </img>
+    </section>
     <section></section>
   </main>
   <script src="script.js"></script>
