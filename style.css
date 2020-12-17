@@ -15,6 +15,7 @@ body {
   margin: 3rem auto;
   position: relative;
   width: 50rem;
+  word-break: break-word;
 }
 
 .memeImage {
@@ -30,5 +31,6 @@ body {
   font-weight: 700;
   left: 3rem;
   position: absolute;
+  right: 3rem;
   text-shadow: 5px 5px 5px black;
 }
