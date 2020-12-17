@@ -1,18 +1,5 @@
 window.onload = function () {};
 
-/*const getMainTag = document.getElementById('inputs-container');
-const createTextInput = document.createElement('input');
-createTextInput.setAttribute('type', 'text');
-createTextInput.id = 'text-input';
-createTextInput.className = 'input-text';
-getMainTag.appendChild(createTextInput);
-
-const createImgInput = document.createElement('input');
-createImgInput.setAttribute('type', 'file');
-createImgInput.id = 'meme-insert';
-createImgInput.className = 'input-img';
-getMainTag.appendChild(createImgInput);
-
 const getMemeImgContainer = document.getElementById('meme-image-container');
 getMemeImgContainer.style.width = '450px';
 getMemeImgContainer.style.height = '450px';
@@ -29,5 +16,8 @@ const getMemeImg = document.querySelector('#meme-image');
 const memeText = document.createElement('p');
 memeText.id = 'meme-text';
 getMemeImgContainer.appendChild(memeText);
-memeText.style.borderBottom = '10px';
-*/
+memeText.style.position = 'absolute';
+memeText.style.textAlign = 'center';
+memeText.style.top = '90%';
+
+getMemeImgContainer.style.position = 'relative';
