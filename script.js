@@ -8,8 +8,6 @@ const btnFire = document.querySelector('#fire');
 const btnWater = document.querySelector('#water');
 const btnEarth = document.querySelector('#earth');
 
-const containerReady = document.querySelector('.ready');
-
 // Functions | Funções
 
 function insertTextImage() {
@@ -41,18 +39,14 @@ function earthBorder() {
 }
 
 function imageSelect() {
-  const imgContainer = document.querySelector('#meme-image-container');
   const img = document.querySelector('#meme-image');
   const imgs = document.querySelectorAll('.img-ready');
   for (let index = 0; index < imgs.length; index += 1) {
     imgs[index].addEventListener('click', function (event) {
-      if (img.src) {
-        img.removeAttribute('src');
-        img.src = event.target.src;
-      } else {
-        img.src = event.target.src;
-      }
-    })
+      document.querySelector('#meme-insert').value = '';
+      img.removeAttribute('src');
+      img.src = event.target.src;
+    });
   }
 }
 imageSelect();
