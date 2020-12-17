@@ -42,7 +42,6 @@ function imageSelect() {
     imgs[index].addEventListener('click', function (event) {
       document.querySelector('#meme-insert').value = '';
       img.src = event.target.src;
-      console.log(img.src);
     });
   }
 }
