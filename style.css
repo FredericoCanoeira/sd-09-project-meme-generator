@@ -10,6 +10,7 @@ input {
 }
 
 img {
+  background-color: white;
   height: 100%;
   width: 100%;
 }
@@ -23,6 +24,8 @@ p {
 }
 
 section {
+  background-color: white;
+  border: 1px solid black;
   height: 70%;
   margin: 35px auto;
   position: relative;

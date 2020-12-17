@@ -21,6 +21,12 @@ addTextToImg();
 - o texto inserido deve ficar sobre a imagem;
 */
 
+/* Requisito 3
+- o container deve ter uma moldura padrão de 1px solid black;
+- o elemento da imagem, deve ter fundo branco;
+- a imagem deve ocupar 100% do container;
+*/
+
 function addImageToContainer() {
   const myInputImg = document.querySelector('#meme-insert');
   myInputImg.addEventListener('input', (event) => {
