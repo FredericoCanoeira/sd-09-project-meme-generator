@@ -17,6 +17,9 @@ const memeText = document.createElement('p');
 memeText.id = 'meme-text';
 getMemeImgContainer.appendChild(memeText);
 memeText.style.position = 'absolute';
+memeText.style.border = '0';
+memeText.style.padding = '0';
+memeText.style.margin = '10px';
 memeText.style.textAlign = 'center';
 memeText.style.top = '90%';
 
