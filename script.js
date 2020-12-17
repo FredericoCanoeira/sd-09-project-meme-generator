@@ -18,9 +18,6 @@ function insertTextImage() {
 function insertImage(event) {
   const img = document.querySelector('#meme-image');
   img.src = URL.createObjectURL(event.target.files[0]);
-  img.onload = function () {
-    URL.revokeObjectURL(img.src); // free memory
-  };
 }
 
 function fireBorder() {
@@ -44,8 +41,8 @@ function imageSelect() {
   for (let index = 0; index < imgs.length; index += 1) {
     imgs[index].addEventListener('click', function (event) {
       document.querySelector('#meme-insert').value = '';
-      img.removeAttribute('src');
       img.src = event.target.src;
+      console.log(img.src);
     });
   }
 }
