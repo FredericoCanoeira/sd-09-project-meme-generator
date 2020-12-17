@@ -39,33 +39,34 @@ body {
 .styles {
   display: flex;
   justify-content: center;
-  gap: 1rem;
   margin-bottom: 2rem;
 }
 
 .btn-fire {
   background-color: red;
-  border: 3px solid rgb(214, 0, 0);
+  border: 3px solid rgb(214 , 0 , 0);
   color: white;
   cursor: pointer;
   font-size: 1.6rem;
   font-weight: 600;
+  margin-right: 2rem;
   padding: 1.5rem 3rem;
 }
 
 .btn-water {
   background-color: blue;
-  border: 3px solid rgb(17, 0, 173);
+  border: 3px solid rgb(17 , 0 , 173);
   color: white;
   cursor: pointer;
   font-size: 1.6rem;
   font-weight: 600;
+  margin-right: 2rem;
   padding: 1.5rem 3rem;
 }
 
 .btn-earth {
   background-color: green;
-  border: 3px solid rgb(0, 85, 38);
+  border: 3px solid rgb(0 , 85 , 38);
   color: white;
   cursor: pointer;
   font-size: 1.6rem;
@@ -82,7 +83,8 @@ body {
 }
 
 .img-ready {
+  border: 1px solid black;
   height: 100px;
-  padding: 1rem;
+  margin: 0 1rem;
   width: 100px;
 }
