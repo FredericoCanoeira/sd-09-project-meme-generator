@@ -78,11 +78,11 @@ createButtons('fire', 'fire-button', 'Fire');
 createButtons('water', 'water-button', 'Water');
 createButtons('earth', 'earth-button', 'Earth');
 
-const buttonFire = document.querySelector('#fire-button');
+const buttonFire = document.querySelector('#fire');
 buttonFire.addEventListener('click', borderFire);
 
-const buttonWater = document.querySelector('#water-button');
+const buttonWater = document.querySelector('#water');
 buttonWater.addEventListener('click', borderWater);
 
-const buttonEarth = document.querySelector('#earth-button');
+const buttonEarth = document.querySelector('#earth');
 buttonEarth.addEventListener('click', borderEarth);
