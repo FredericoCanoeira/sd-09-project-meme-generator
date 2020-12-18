@@ -1,10 +1,10 @@
 // Create element img in HTML
 function createImg(event) {
-  const imgContainer = document.querySelector('#meme-image-container');
-  const img = document.createElement('img');
-  img.id = 'meme-image';
+  //const imgContainer = document.querySelector('#meme-image-container');
+  const img = document.querySelector('#meme-image');
+  //img.id = 'meme-image';
   img.src = URL.createObjectURL(event.target.files[0]);
-  imgContainer.appendChild(img);
+  //imgContainer.appendChild(img);
   if (img.onload) {
     URL.revokeObjectURL(img.src); // Free memory
   }
