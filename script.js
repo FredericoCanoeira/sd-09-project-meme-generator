@@ -29,6 +29,7 @@ memeText.style.top = '90%';
 getMemeImgContainer.style.position = 'relative';
 
 const getInputField = document.querySelector('#text-input');
+getInputField.maxLength = '60';
 getInputField.addEventListener('input', changeMemeText);
 
 function changeMemeText(event) {
