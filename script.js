@@ -3,7 +3,7 @@ function createInputText() {
   const inputInsert = document.createElement('input')
   inputInsert.id = 'text-input';
   inputInsert.placeholder = 'Escreva aqui';
-  inputInsert.maxLength = '50';
+  inputInsert.maxLength = '60';
   inputFather.appendChild(inputInsert);
 }
 createInputText();
