@@ -8,8 +8,6 @@ const btnFire = document.querySelector('#fire');
 const btnWater = document.querySelector('#water');
 const btnEarth = document.querySelector('#earth');
 
-const imagesReady = document.querySelectorAll('.img-ready');
-
 // Functions | Funções
 
 function insertTextImage() {
