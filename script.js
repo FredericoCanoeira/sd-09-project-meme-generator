@@ -23,7 +23,7 @@ function insertImage(event) {
   img.src = URL.createObjectURL(event.target.files[0]);
   img.onload = function () {
     URL.revokeObjectURL(img.src);
-  }
+  };
   for (let index = 0; index < 4; index += 1) {
     if (event.target) {
       imgs[index].style.border = '';
@@ -66,7 +66,6 @@ function addSelectedClass(event) {
     img.style.border = '';
     img.classList.remove('selected');
   });
-  //event.target.classList.add('selected');
   event.target.style.border = imgBorder;
   event.target.classList.add('selected');
 }
