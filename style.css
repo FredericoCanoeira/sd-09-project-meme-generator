@@ -1,0 +1,15 @@
+* {
+  margin: 2%;
+}
+
+.memeImageContainer {
+  border: 2px solid black;
+  width: 300px;
+  height: 300px;
+}
+
+.memeText {
+  border: 2px solid black;
+  margin-top: 90%;
+  height: 20px;
+}
