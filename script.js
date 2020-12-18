@@ -41,9 +41,7 @@ function getImage(idName) {
 function insertReadyMemeImage(event) {
   if (event.target.classList.contains('thumbnail')) {
     const idName = event.target.parentNode.id;
-  // const idName = event.target;
-  console.log(idName);
-  changeMemeImage(getImage(idName));
+    changeMemeImage(getImage(idName));
   }
 }
 
