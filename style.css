@@ -1,8 +1,9 @@
-.meme-container {
+.img-container {
+  background-color: white;
   background-size: cover;
-  height: 500px;
+  height: 100%;
   position: relative;
-  width: 500px;
+  width: 100%;
 }
 
 .text-container {
@@ -11,5 +12,8 @@
 }
 
 .meme-image-container {
+  border: 1px solid black;
+  height: 500px;
   position: relative;
+  width: 500px;
 }
