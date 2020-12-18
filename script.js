@@ -50,3 +50,42 @@ addImageToContainer();
 - Limite a qtde. max. de caracteres no elemento text-input (60);
 **FEITO NO DOCUMENTO INDEX.HTML**
 */
+
+/* Requisito 6 - Bonus
+- adicionar 3 botoes para trocar as bordas do meme;
+- as bordas devem estar contidas no container meme-image-container;
+- cada botao deve ter cor de fundo igual a cor da borda que será estilizada;
+- botao 1: id=fire deverá estilizar a borda com a cor vermelha, 3px e tipo dashed;
+- botao 2: id=water, borda azul, 5px, double;
+- botao 3: id=earth, borda verde, 6px, groove;
+*/
+
+function setEarthBorder() {
+  const earthButton = document.querySelector('#earth');
+  earthButton.addEventListener('click', () => {
+    const memeImageContainer = document.querySelector('#meme-image-container');
+    memeImageContainer.style.border = '6px groove green';
+  });
+}
+
+setEarthBorder();
+
+function setFireBorder() {
+  const fireButton = document.querySelector('#fire');
+  fireButton.addEventListener('click', () => {
+    const memeImageContainer = document.querySelector('#meme-image-container');
+    memeImageContainer.style.border = '3px dashed red';
+  });
+}
+
+setFireBorder();
+
+function setWaterBorder() {
+  const waterButton = document.querySelector('#water');
+  waterButton.addEventListener('click', () => {
+    const memeImageContainer = document.querySelector('#meme-image-container');
+    memeImageContainer.style.border = '5px double blue';
+  });
+}
+
+setWaterBorder();
