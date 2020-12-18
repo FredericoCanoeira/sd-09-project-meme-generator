@@ -1,11 +1,27 @@
 body {
   box-sizing: border-box;
+  font-family: Cabin, sans-serif;
   margin: 0;
   padding: 0;
 }
 
 :root {
   font-size: 62.5%;
+}
+
+.header {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-container {
+  font-size: 2rem;
+  margin: auto;
 }
 
 .memeImageContainer {
@@ -78,13 +94,14 @@ body {
 .ready {
   display: flex;
   justify-content: center;
-  margin: auto;
+  margin: 0 auto;
   width: 50rem;
 }
 
 .img-ready {
   border: 1px solid black;
+  cursor: pointer;
   height: 100px;
-  margin: 0 1rem;
+  margin: 1rem 1rem;
   width: 100px;
 }
