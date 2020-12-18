@@ -40,8 +40,10 @@ function getImage(idName) {
 
 function insertReadyMemeImage(event) {
   if (event.target.classList.contains('thumbnail')) {
-    const idName = event.target.id;
-    changeMemeImage(getImage(idName));
+    const idName = event.target.parentNode.id;
+  // const idName = event.target;
+  console.log(idName);
+  changeMemeImage(getImage(idName));
   }
 }
 
@@ -49,7 +51,7 @@ function setReadyMadeMemesImages() {
   const thumbsDivs = readyMadeMemes.children;
   for (let index = 0; index < thumbsDivs.length; index += 1) {
     const idName = thumbsDivs[index].id;
-    thumbsDivs[index].style.backgroundImage = `url('${getImage(idName)}')`;
+    thumbsDivs[index].firstElementChild.src = getImage(idName);
   }
 }
 

@@ -2,8 +2,11 @@
   background-size: cover;
 }
 
-.thumbnail {
+.ready-made {
   display: inline-block;
+}
+
+.thumbnail {
   height: 120px;
   width: 120px;
 }
