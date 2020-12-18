@@ -18,7 +18,7 @@ function insertMemeText() {
 }
 
 function changeMemeImage(imageURL) {
-  memeImage.style.backgroundImage = `url('${imageURL}')`;
+  memeImage.firstElementChild.src = imageURL;
 }
 
 function insertMemeImage(event) {

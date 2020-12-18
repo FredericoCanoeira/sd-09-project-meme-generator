@@ -1,5 +1,6 @@
-.fit-background {
-  background-size: cover;
+.fit-img {
+  height: 100%;
+  width: 100%;
 }
 
 .ready-made {
