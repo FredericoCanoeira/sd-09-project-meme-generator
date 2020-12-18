@@ -24,3 +24,11 @@ memeText.style.textAlign = 'center';
 memeText.style.top = '90%';
 
 getMemeImgContainer.style.position = 'relative';
+
+const getInputField = document.querySelector('#text-input');
+getInputField.addEventListener('input', changeMemeText);
+
+function changeMemeText(event) {
+  const getMemeText = document.querySelector('#meme-text');
+  getMemeText.innerText = event.target.value;
+}
