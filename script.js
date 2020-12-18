@@ -47,7 +47,7 @@ function createInputImage(origin) {
   imageInsert.src = URL.createObjectURL(origin.target.files[0]);
 }
 
-const buttonFile = document.querySelector('#meme-insert')
+const buttonFile = document.querySelector('#meme-insert');
 buttonFile.addEventListener('input', createInputImage);
 
 function borderFire() {
@@ -74,9 +74,9 @@ function createButtons(id, clss, name) {
   buttonFather.appendChild(button);
 }
 
-createButtons('fire-button', 'fire-button', 'Fire');
-createButtons('water-button', 'water-button', 'Water');
-createButtons('earth-button', 'earth-button', 'Earth');
+createButtons('fire', 'fire-button', 'Fire');
+createButtons('water', 'water-button', 'Water');
+createButtons('earth', 'earth-button', 'Earth');
 
 const buttonFire = document.querySelector('#fire-button');
 buttonFire.addEventListener('click', borderFire);
