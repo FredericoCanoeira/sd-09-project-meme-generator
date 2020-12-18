@@ -19,7 +19,6 @@ function insertMemeImage(event) {
 function changeBorder(event) {
   const eventClassName = event.target.id;
   memeContainer.className = `meme-image-container ${eventClassName}-border`;
-  console.log(eventClassName);
 }
 
 function setMemeInsertEvents() {
