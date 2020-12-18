@@ -1,7 +1,9 @@
+const memeContainer = document.getElementById('meme-image-container');
 const textInput = document.getElementById('text-input');
 const memeInsert = document.getElementById('meme-insert');
 const memeImage = document.getElementById('meme-image');
 const memeText = document.getElementById('meme-text');
+const borderSettings = document.getElementById('border-settings');
 
 function insertMemeText() {
   const text = textInput.value;
@@ -14,6 +16,12 @@ function insertMemeImage(event) {
   memeImage.style.backgroundImage = `url('${image}')`;
 }
 
+function changeBorder(event) {
+  const eventClassName = event.target.id;
+  memeContainer.className = `meme-image-container ${eventClassName}-border`;
+  console.log(eventClassName);
+}
+
 function setMemeInsertEvents() {
   memeInsert.addEventListener('change', insertMemeImage);
 }
@@ -22,7 +30,12 @@ function setTextInputEvents() {
   textInput.addEventListener('keyup', insertMemeText);
 }
 
+function setBorderSettingsEvents() {
+  borderSettings.addEventListener('click', changeBorder);
+}
+
 window.onload = function () {
   setMemeInsertEvents();
   setTextInputEvents();
+  setBorderSettingsEvents();
 };
