@@ -17,12 +17,12 @@ img {
 
 p {
   bottom: 25px;
-  text-shadow: 5px 5px 5px black;
   color: white;
   display: block;
   font-size: 30px;
   position: absolute;
   text-align: center;
+  text-shadow: 5px 5px 5px black;
   width: 100%;
 }
 
