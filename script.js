@@ -1,26 +1,10 @@
-// Create element img in HTML
-function createImg(imgLoaded, container) {
-  const img = document.createElement('img');
-  img.id = 'meme-image';
-  img.src = URL.createObjectURL(imgLoaded);
-  container.appendChild(img);
+// Change atribute src of img tag
+function loadImage(event) {
+  const img = document.querySelector('#meme-image');
+  img.src = URL.createObjectURL(event.target.files[0]);
   if (img.onload) {
     URL.revokeObjectURL(img.src); // Free memory
   }
-}
-
-// Delete element img in HTML
-function deleteImg(container) {
-  if (document.querySelector('#meme-image')) {
-    container.removeChild(document.querySelector('#meme-image'));
-  }
-}
-
-// Call the functions that create and delete img in HTML
-function loadImage(event) {
-  const imgContainer = document.querySelector('#meme-image-container');
-  deleteImg(imgContainer);
-  createImg(event.target.files[0], imgContainer)
 }
 
 // Create element paragraph(p) in HTML
