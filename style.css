@@ -1,4 +1,5 @@
 body {
+  background-color: papayawhip;
   height: 768px;
   text-align: center;
   width: 1366px;
@@ -16,17 +17,12 @@ input {
   width: 50%;
 }
 
-img {
-  background-color: white;
-  height: 100%;
-  width: 100%;
-}
-
 p {
-  bottom: 25px;
+  bottom: 1px;
   color: white;
   display: block;
   font-size: 30px;
+  font-family: 'Anton', sans-serif;
   position: absolute;
   text-align: center;
   text-shadow: 5px 5px 5px black;
@@ -57,4 +53,23 @@ section {
 
 .water {
   background-color: blue;
+}
+
+
+.meme-container {
+  margin: 65px 0;
+  text-align: left;
+}
+
+.meme-container img{
+  display: inline-block;
+  padding: 0 20px;
+  height: 90px;
+  width: 90px;
+}
+
+.meme-image {
+  background-color: white;
+  height: 100%;
+  width: 100%;
 }

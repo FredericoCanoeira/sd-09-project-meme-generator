@@ -89,3 +89,19 @@ function setWaterBorder() {
 }
 
 setWaterBorder();
+
+/* Requisito 7 - Bonus
+- adicionar 4 imagens pré prontas de memes famosos;
+- cada imagem deve ter um id=meme-(numero representante);
+- as imagens devem ter extesnsao .png e dever ser armazenadas numa pasta com nome images;
+*/
+
+function setMemeImageToContainer() {
+  const memeContainer = document.querySelector('.meme-container');
+  memeContainer.addEventListener('click', (event) => {
+    const memeImageContainer = document.querySelector('#meme-image');
+    memeImageContainer.src = event.target.src;
+  });
+}
+
+setMemeImageToContainer();
