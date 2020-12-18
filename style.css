@@ -1,0 +1,15 @@
+.meme-container {
+  background-size: cover;
+  height: 500px;
+  position: relative;
+  width: 500px;
+}
+
+.text-container {
+  bottom: 0;
+  position: absolute;
+}
+
+.meme-image-container {
+  position: relative;
+}
