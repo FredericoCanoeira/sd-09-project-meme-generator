@@ -3,7 +3,7 @@ const memeInsert = document.getElementById('meme-insert');
 const memeImage = document.getElementById('meme-image');
 const memeText = document.getElementById('meme-text');
 
-function insertMemeText(event) {
+function insertMemeText() {
   const text = textInput.value;
   memeText.innerText = text;
 }
@@ -25,4 +25,4 @@ function setTextInputEvents() {
 window.onload = function () {
   setMemeInsertEvents();
   setTextInputEvents();
-}
+};
