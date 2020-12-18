@@ -1,13 +1,26 @@
 // Create element img in HTML
-function createImg(event) {
-  //const imgContainer = document.querySelector('#meme-image-container');
-  const img = document.querySelector('#meme-image');
-  //img.id = 'meme-image';
-  img.src = URL.createObjectURL(event.target.files[0]);
-  //imgContainer.appendChild(img);
+function createImg(imgLoaded, container) {
+  const img = document.createElement('img');
+  img.id = 'meme-image';
+  img.src = URL.createObjectURL(imgLoaded);
+  container.appendChild(img);
   if (img.onload) {
     URL.revokeObjectURL(img.src); // Free memory
   }
+}
+
+// Delete element img in HTML
+function deleteImg(container) {
+  if (document.querySelector('#meme-image')) {
+    container.removeChild(document.querySelector('#meme-image'));
+  }
+}
+
+// Call the functions that create and delete img in HTML
+function loadImage(event) {
+  const imgContainer = document.querySelector('#meme-image-container');
+  deleteImg(imgContainer);
+  createImg(event.target.files[0], imgContainer)
 }
 
 // Create element paragraph(p) in HTML
@@ -60,7 +73,7 @@ window.onload = function () {
   const earthButton = document.querySelector('#earth');
   textForm.addEventListener('submit', preventSubmit);
   textInput.addEventListener('keyup', loadText);
-  memeInsert.addEventListener('input', createImg);
+  memeInsert.addEventListener('input', loadImage);
   fireButton.addEventListener('click', changeBorder);
   waterButton.addEventListener('click', changeBorder);
   earthButton.addEventListener('click', changeBorder);
