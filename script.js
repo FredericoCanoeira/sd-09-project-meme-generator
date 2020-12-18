@@ -14,7 +14,7 @@ function addTextToImg() {
 
 addTextToImg();
 
-/* Requisito 2 
+/* Requisito 2
 - dentro do container deve ter um elemento para receber a imagem com id = meme-image;
 - o input de imagem deve ter um id = meme-insert (fora do container);
 - a imagem deve ocupar todo o espaço do container;
@@ -36,3 +36,17 @@ function addImageToContainer() {
 }
 
 addImageToContainer();
+
+
+/* Requisito 4
+- o texto (meme-text) deve ter uma sombra preta 5px na horizontal;
+- 5 px na vertical e um raio de desfoque de 5px;
+- font-size: 30px;
+- color: white;
+**FEITO NO DOCUMENTO STYLE.CSS**
+*/
+
+/* Requisito 5
+- Limite a qtde. max. de caracteres no elemento text-input (60);
+**FEITO NO DOCUMENTO INDEX.HTML**
+*/
