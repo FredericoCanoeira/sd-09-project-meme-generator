@@ -1,5 +1,14 @@
-.img-container {
+.fit-background {
   background-size: cover;
+}
+
+.thumbnail {
+  display: inline-block;
+  height: 120px;
+  width: 120px;
+}
+
+.img-container {
   height: 100%;
   position: relative;
   width: 100%;
