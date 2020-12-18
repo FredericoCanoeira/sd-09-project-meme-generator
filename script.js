@@ -86,3 +86,30 @@ buttonWater.addEventListener('click', borderWater);
 
 const buttonEarth = document.querySelector('#earth');
 buttonEarth.addEventListener('click', borderEarth);
+
+function memeReady(id, memeX) {
+  const father = document.querySelector('.image-section');
+  const meme = document.createElement('img');
+  meme.src = memeX;
+  meme.id = id;
+  meme.className = 'meme-ready';
+  father.appendChild(meme);
+}
+
+function changeMeme(origin) {
+  const imageInsert = document.querySelector('#meme-image');
+  imageInsert.src = origin.target.src;
+}
+
+memeReady('meme-1', 'imgs/meme1.png');
+const meme01 = document.querySelector('#meme-1');
+meme01.addEventListener('click', changeMeme);
+memeReady('meme-2', 'imgs/meme2.png');
+const meme02 = document.querySelector('#meme-2');
+meme02.addEventListener('click', changeMeme);
+memeReady('meme-3', 'imgs/meme3.png');
+const meme03 = document.querySelector('#meme-3');
+meme03.addEventListener('click', changeMeme);
+memeReady('meme-4', 'imgs/meme4.png');
+const meme04 = document.querySelector('#meme-4');
+meme04.addEventListener('click', changeMeme);

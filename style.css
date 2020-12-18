@@ -1,7 +1,7 @@
 .container {
   background-color: white;
   border: 1px solid black;
-  height: 500px;
+  height: 300px;
   margin: auto;
   position: relative;
   width: 400px;
@@ -64,4 +64,14 @@ h1 {
   display: inline-block;
   font-size: 20px;
   margin: 3px;
+}
+
+.image-section {
+  text-align: center;
+}
+
+.meme-ready {
+  height: 60px;
+  margin: 4px;
+  width: 60px;
 }
