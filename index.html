@@ -11,10 +11,13 @@
     <h1>Meme Generator</h1>
   </header>
   <section>
-    <input id="text-input" type="text">
+    <p>Text: <input id="text-input" type="text"></p>
+    <label for="img">Select image: </label>
+    <input type="file" id="meme-insert" accept="image/*">
   </section>
   <section id="meme-image-container" class="meme-container">
-    <p id="meme-text"></p>
+    <p id="meme-text" class="meme-text"></p>
+    <div id="meme-image"></div>
   </section>
   <script src="script.js"></script>
 </body>
