@@ -1,4 +1,4 @@
-#meme-image-container {
+.meme-image-container {
   background-color: white;
   border: 1px solid black;
   height: 400px;
@@ -6,7 +6,7 @@
   width: 400px;
 }
 
-#meme-image {
+.meme-image {
   height: 100%;
   object-fit: cover;
   position: absolute;
@@ -14,11 +14,13 @@
   z-index: 1;
 }
 
-#meme-text {
+.meme-text {
   color: white;
   font-size: 30px;
   margin-top: 350px;
   position: absolute;
   text-shadow: 5px 5px 5px black;
+  width: 380px;
+  word-break: break-all;
   z-index: 2;
 }
