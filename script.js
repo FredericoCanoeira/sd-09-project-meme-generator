@@ -25,4 +25,4 @@ function memeImage() {
     });
   });
 }
-  memeImage();
+memeImage();
