@@ -1,5 +1,25 @@
-#meme-image-container {
-  width: 30vw;
-  height: 30vh;
-  border: 2px solid black;
+.meme-image-container {
+  position: relative;
+  width: 300.5px;
+  height: 300.5px;
+  border: 1px solid black;
+}
+
+.meme-image {
+  position: absolute;
+}
+
+.meme-image {
+  width: 300px;
+  height: 300px;
+}
+
+.meme-text {
+  color: white;
+  font-size: 1.5em;
+  text-shadow: 0.01em 0.01em 0.08em rgba(0, 0, 0, 0.7);
+  position: absolute;
+  margin: 200px 0 0 10px;
+  width: 280px;
+  word-wrap: break-word;
 }
