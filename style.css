@@ -14,7 +14,7 @@ body {
 .meme-image {
   object-fit: cover;
   height: 100%;
-  width: 300px;
+  width: 100%;
 }
 
 .meme-text {
