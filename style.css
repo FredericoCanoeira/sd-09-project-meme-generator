@@ -11,6 +11,7 @@ body {
 }
 
 .meme-image {
+  object-fit: cover;
   height: 250px;
   width: 300px;
 }

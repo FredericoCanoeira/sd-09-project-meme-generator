@@ -1,4 +1,5 @@
 const input = document.querySelector('#text-input');
+input.setAttribute('maxLength', 60);
 const memeContainer = document.querySelector('#meme-image-container');
 const memeText = document.querySelector('#meme-text');
 const memeImages = document.querySelector('#meme-image');
