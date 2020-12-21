@@ -3,7 +3,8 @@ body {
 }
 
 .meme-container {
-  background-color: aqua;
+  background-color: white;
+  border: 1px solid black;
   height: 250px;
   margin-top: 15px;
   max-width: 300px;
@@ -15,10 +16,12 @@ body {
 }
 
 .meme-text {
-  color: rgb(255, 255, 248);
+  color: white;
+  font-size: 30px;
   line-height: 25px;
   margin: 15px;
   position:absolute;
+  text-shadow: black 5px 5px 5px;
   top: 300px;
   width: 250px;
 }
