@@ -7,7 +7,7 @@ const memeImage = document.querySelector('#meme-image');
 const preMadeMeme = document.querySelector('.pre-made-meme');
 
 textInput.addEventListener('input', () => {
-  memeText.innerText = textInput.value.toUpperCase();
+  memeText.innerText = textInput.value;
 });
 textInput.addEventListener('keypress', (tecla) => {
   if (tecla.keyCode === 13) {
