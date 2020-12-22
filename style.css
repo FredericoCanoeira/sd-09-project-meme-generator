@@ -31,6 +31,14 @@ img {
   text-align: center;
 }
 
+.thumbnails-section img{
+  display: inline-block;
+  height: 120px;
+  border: 1px solid rgb(0, 0, 0);
+  margin: 10px;
+  width: 120px;
+}
+
 #meme-text {
   color: rgb(255, 255, 255);
   font-size: 30px;

@@ -1,8 +1,8 @@
 //Create img atribute in HTML
 function createImg(container, identifier , source) {
   const img = document.createElement('img');
-  img.src = source
   img.id = identifier;
+  img.src = source;
   container.appendChild(img);
 }
 
@@ -10,7 +10,7 @@ function loadThumbnails() {
   const container = document.querySelector('.thumbnails-section');
   for (let index = 1; index <= 4; index += 1) {
     let id = `meme-${index}`;
-    let source = `img/meme${index}.png`
+    let source = `imgs/meme${index}.png`
     createImg(container, id, source);
   }
 }
