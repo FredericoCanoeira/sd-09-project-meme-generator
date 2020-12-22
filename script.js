@@ -85,10 +85,10 @@ selectedActivate();
 
 function getReadyMeme() {
   imageMemes.addEventListener('click', function (event) {
-      let classActivate = event.target.src;
-      if (event.target.classList.contains('selected')) {
-        memeImages.src = classActivate;
-      }
+    const classActivate = event.target.src;
+    if (event.target.classList.contains('selected')) {
+      memeImages.src = classActivate;
+    }
   });
 }
 getReadyMeme();
