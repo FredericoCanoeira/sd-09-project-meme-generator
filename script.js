@@ -1,9 +1,10 @@
 const textInput = document.querySelector('#text-input');
 const memeText = document.querySelector('#meme-text');
 const memeInsert = document.querySelector('#meme-insert');
-const btnFire = document.querySelector('#fire');
-const btnWater = document.querySelector('#water');
-const btnEarth = document.querySelector('#earth');
+// const btnFire = document.querySelector('#fire');
+// const btnWater = document.querySelector('#water');
+// const btnEarth = document.querySelector('#earth');
+const changeBorder = document.querySelector('.change-border');
 const memeImageContainer = document.querySelector('#meme-image-container');
 const memeImage = document.querySelector('#meme-image');
 const preMadeMeme = document.querySelector('.pre-made-meme');
@@ -25,17 +26,17 @@ memeInsert.addEventListener('change', (event) => {
   };
 });
 
-btnFire.addEventListener('click', () => {
-  return (memeImageContainer.style.border !== '3px dashed red') ? memeImageContainer.style.border = '3px dashed red' : memeImageContainer.style.border = '1px solid black';
-});
-
-btnWater.addEventListener('click', () => {
-  return (memeImageContainer.style.border !== '5px double blue') ? memeImageContainer.style.border = '5px double blue' : memeImageContainer.style.border = '1px solid black';
-});
-
-btnEarth.addEventListener('click', () => {
-  return (memeImageContainer.style.border !== '6px groove green') ? memeImageContainer.style.border = '6px groove green' : memeImageContainer.style.border = '1px solid black';
-});
+changeBorder.addEventListener('click', (event) => {
+  const classes = ['fire', 'water', 'earth'];
+  const classesValue = ['3px dashed red', '5px double blue', '6px groove green'];
+  for (let index = 0; index < classes.length; index += 1) {
+    if (memeImageContainer.style.border === classesValue[index]) {
+      memeImageContainer.style.border = '1px solid black';
+    } else if (event.target.className === classes[index]) {
+      memeImageContainer.style.border = classesValue[index];
+    }
+  }
+})
 
 preMadeMeme.addEventListener('click', (event) => {
   for (let index = 1; index <= 4; index += 1) {
