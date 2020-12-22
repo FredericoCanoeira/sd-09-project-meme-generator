@@ -26,6 +26,18 @@ memeInsert.addEventListener('change', (event) => {
   };
 });
 
+// btnFire.addEventListener('click', function () {
+//   (memeImageContainer.style.border !== '3px dashed red') ? memeImageContainer.style.border = '3px dashed red' : memeImageContainer.style.border = '1px solid black';
+// });
+
+// btnWater.addEventListener('click', function () {
+//   (memeImageContainer.style.border !== '5px double blue') ? memeImageContainer.style.border = '5px double blue' : memeImageContainer.style.border = '1px solid black';
+// });
+
+// btnEarth.addEventListener('click', function () {
+//   (memeImageContainer.style.border !== '6px groove green') ? memeImageContainer.style.border = '6px groove green' : memeImageContainer.style.border = '1px solid black';
+// });
+
 changeBorder.addEventListener('click', (event) => {
   const classes = ['fire', 'water', 'earth'];
   const classesValue = ['3px dashed red', '5px double blue', '6px groove green'];
@@ -36,12 +48,12 @@ changeBorder.addEventListener('click', (event) => {
       memeImageContainer.style.border = classesValue[index];
     }
   }
-})
+});
 
 preMadeMeme.addEventListener('click', (event) => {
   for (let index = 1; index <= 4; index += 1) {
     if (event.target.id === `meme-${index}`) {
-      memeImage.src = `imgs/meme-${[index]}.png`;
+      memeImage.src = 'imgs/meme-'+[index]+'.png';
     }
   }
 });
