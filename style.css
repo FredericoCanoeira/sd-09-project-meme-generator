@@ -18,8 +18,8 @@
   background-color: white;
   border: 1px solid black;
   height: 500px;
-  width: 500px;
   position: relative;
+  width: 500px;
 }
 
 .meme-text {
@@ -28,10 +28,10 @@
   font-size: 30px;
   font-weight: 900;
   margin: 370px 0 0 10px;
-  text-shadow: 5px 5px 5px rgb(0 , 0 , 0);
+  position: absolute;
+  text-shadow: 5px 5px 5px black;
   width: 480px;
   word-wrap: break-word;
-  position: absolute;
 }
 
 .meme-image {
@@ -40,6 +40,6 @@
   width: 500px;
 }
 
-.meme-1, .meme-2, .meme-3, .meme-4{
+.meme-1 , .meme-2 , .meme-3 , .meme-4 {
   width: 150px;
 }

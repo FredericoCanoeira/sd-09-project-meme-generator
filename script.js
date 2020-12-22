@@ -39,7 +39,7 @@ btnEarth.addEventListener('click', () => {
 
 preMadeMeme.addEventListener('click', (event) => {
   for (let index = 1; index <= 4; index += 1) {
-    if (event.target.className === `meme-${index}`) {
+    if (event.target.id === `meme-${index}`) {
       memeImage.src = `imgs/meme-${[index]}.png`;
     }
   }
