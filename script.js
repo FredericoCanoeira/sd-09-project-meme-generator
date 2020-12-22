@@ -1,3 +1,20 @@
+//Create img atribute in HTML
+function createImg(container, identifier , source) {
+  const img = document.createElement('img');
+  img.src = source
+  img.id = identifier;
+  container.appendChild(img);
+}
+
+function loadThumbnails() {
+  const container = document.querySelector('.thumbnails-section');
+  for (let index = 1; index <= 4; index += 1) {
+    let id = `meme-${index}`;
+    let source = `img/meme${index}.png`
+    createImg(container, id, source);
+  }
+}
+
 // Change atribute src of img tag
 function loadImage(event) {
   const img = document.querySelector('#meme-image');
@@ -55,6 +72,9 @@ window.onload = function () {
   const fireButton = document.querySelector('#fire');
   const waterButton = document.querySelector('#water');
   const earthButton = document.querySelector('#earth');
+  const imgContainer = document.querySelector('#meme-image-container');
+  createImg(imgContainer,'meme-image');
+  loadThumbnails();
   textForm.addEventListener('submit', preventSubmit);
   textInput.addEventListener('keyup', loadText);
   memeInsert.addEventListener('input', loadImage);
