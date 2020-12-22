@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -14,10 +14,11 @@
 		<main>
 			<section class="input">
 				<span>Texto: </span><input id="text-input"><br>
-				<span>Foto: </span>
+				<span>Foto: </span><input id="meme-insert" type="file" accept="image/*" onchange="loadFile(event)">
 			</section>
-			<section id="meme-image-container">
+			<section class="meme-container" id="meme-image-container">
 				<span id="meme-text"></span>
+				<img id="meme-image">
 			</section>
 		</main>
 
