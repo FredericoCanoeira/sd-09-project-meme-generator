@@ -7,7 +7,13 @@ const memeImage = document.querySelector('#meme-image');
 const preMadeMeme = document.querySelector('.pre-made-meme');
 
 textInput.addEventListener('input', () => {
-  memeText.innerText = textInput.value;
+  memeText.innerText = textInput.value.toUpperCase();
+});
+textInput.addEventListener('keypress', (tecla) => {
+  if (tecla.keyCode === 13) {
+    textInput.value = '';
+    textInput.focus();
+  }
 });
 
 memeInsert.addEventListener('change', (event) => {
@@ -20,7 +26,6 @@ memeInsert.addEventListener('change', (event) => {
 changeBorder.addEventListener('click', (event) => {
   const classes = ['fire', 'water', 'earth'];
   const classesValue = ['3px dashed red', '5px double blue', '6px groove green'];
-
   for (let index = 0; index < classes.length; index += 1) {
     if (memeImageContainer.style.border === classesValue[index]) {
       memeImageContainer.style.border = '1px solid black';
