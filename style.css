@@ -4,3 +4,14 @@
   width: 300px;
   height: 200px;
 }
+
+#meme-image {
+  width: 300px;
+  height: 200px;
+  position: absolute;
+}
+
+#meme-text {
+  position: relative;
+  color: red;
+}
