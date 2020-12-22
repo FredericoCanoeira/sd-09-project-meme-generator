@@ -6,6 +6,9 @@ const memeText = document.querySelector('#meme-text');
 const memeImages = document.querySelector('#meme-image');
 const inputFile = document.querySelector('#meme-insert');
 const buttons = document.querySelector('#buttons');
+const getImage = document.querySelector('.meme-image').src;
+const selected = document.querySelectorAll('.meme');
+const imageMemes = document.querySelector('#ready-memes');
 
 function memePhrase() {
   input.addEventListener('input', function () {
@@ -23,12 +26,11 @@ function memeImage() {
 }
 memeImage();
 
-function backgroundImage() {
-  const getImage = document.querySelector('.meme-image').src;
-  const img = `url(${getImage})`;
+function backgroundImage(urlImage) {
+  const img = `url(${urlImage})`;
   memeContainer.style.backgroundImage = img;
 }
-backgroundImage();
+backgroundImage(getImage);
 
 function firetBorderButton() {
   const fire = document.createElement('button');
@@ -38,7 +40,7 @@ function firetBorderButton() {
   fire.style.color = 'white';
   buttons.appendChild(fire);
   fire.addEventListener('click', function () {
-    memeContainer.style.border = '3px dashed red'
+    memeContainer.style.border = '3px dashed red';
   });
 }
 firetBorderButton();
@@ -68,3 +70,25 @@ function earthBorderButton() {
   });
 }
 earthBorderButton();
+
+function selectedActivate() {
+  imageMemes.addEventListener('click', function (event) {
+    for (let index = 0; index < selected.length; index += 1) {
+      selected[index].classList.remove('selected');
+    }
+    if (event.target.classList.contains('meme')) {
+      event.target.classList.add('selected');
+    }
+  });
+}
+selectedActivate();
+
+function getReadyMeme() {
+  imageMemes.addEventListener('click', function (event) {
+      let classActivate = event.target.src;
+      if (event.target.classList.contains('selected')) {
+        memeImages.src = classActivate;
+      }
+  });
+}
+getReadyMeme();
