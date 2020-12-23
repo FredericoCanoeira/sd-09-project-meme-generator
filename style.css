@@ -1,17 +1,20 @@
 .style-container {
+  background-color: white;
   border: solid;
+  border-color: black;
+  border-width: 1px;
+  height: 200px;
   margin-top: 20px;
   width: 300px;
-  height: 200px;
 }
 
 .style-image {
-  width: 300px;
   height: 200px;
   position: absolute;
+  width: 300px;
 }
 
 .style-text {
-  position: relative;
   color: red;
+  position: relative;
 }
