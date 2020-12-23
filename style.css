@@ -29,14 +29,17 @@
 
 .btn-fire {
   background-color: red;
+  margin-left: 20px;
 }
 
 .btn-water {
   background-color: blue;
+  margin-left: 20px;
 }
 
 .btn-earth {
   background-color: green;
+  margin-left: 20px;
 }
 
 .fire {
@@ -67,4 +70,10 @@
   height: 200px;
   margin-top: 20px;
   width: 300px;
+}
+
+.img-meme {
+  margin-left: 20px;
+  height: 40px;
+  width: 40px;
 }
