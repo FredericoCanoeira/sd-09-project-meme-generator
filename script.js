@@ -10,6 +10,5 @@ input.addEventListener('input', showText);
 function uploadImage() {
   const memeImage = document.querySelector('#meme-image');
   memeImage.src = inputImage.value;
-  console.log(memeImage.src);
 }
 inputImage.addEventListener('input', uploadImage);

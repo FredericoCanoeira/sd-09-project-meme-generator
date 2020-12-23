@@ -3,9 +3,9 @@
 }
 
 .meme-image-container {
-  position: fixed;
-  border-style: 1px black solid;
   background-color: white;
+  border: 1px black solid;
+  position: fixed;
 }
 
 .meme-text {
