@@ -21,7 +21,7 @@ function backgroundImgMeme(urlImg) {
 
 function fireButton() {
   const fire = document.querySelector('#fire');
-  fire.addEventListener('click',() => (memeContainer.style.border = '3px dashed red'));
+  fire.addEventListener('click', () => (memeContainer.style.border = '3px dashed red'));
 }
 
 function waterButton() {
