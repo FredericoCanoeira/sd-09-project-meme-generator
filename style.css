@@ -1,0 +1,13 @@
+.meme-image {
+  position: absolute;
+}
+
+.meme-image-container {
+  position: fixed;
+  border-style: 1px black solid;
+  background-color: white;
+}
+
+.meme-text {
+  position: absolute;
+}
