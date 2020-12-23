@@ -14,4 +14,17 @@ window.onload = function () {
   text.addEventListener('keyup', showText);
   const btnInsertImage = document.querySelector('#meme-insert');
   btnInsertImage.addEventListener('click', insertImage);
+  const container = document.querySelector('#meme-image-container');
+  const btnFire = document.querySelector('#fire');
+  btnFire.addEventListener('click', function () {
+    container.className = 'fire';
+  });
+  const btnWater = document.querySelector('#water');
+  btnWater.addEventListener('click', function () {
+    container.className = 'water';
+  });
+  const btnEarth = document.querySelector('#earth');
+  btnEarth.addEventListener('click', function () {
+    container.className = 'earth';
+  });
 };

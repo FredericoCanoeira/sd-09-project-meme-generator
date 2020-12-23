@@ -20,3 +20,51 @@
   position: relative;
   text-shadow: 5px 5px 5px black;
 }
+
+.button-container{
+  margin-top: 20px;
+  text-align: center;
+  width: 300px;
+}
+
+.btn-fire {
+  background-color: red;
+}
+
+.btn-water {
+  background-color: blue;
+}
+
+.btn-earth {
+  background-color: green;
+}
+
+.fire {
+  background-color: white;
+  border: dashed;
+  border-color: red;
+  border-width: 3px;
+  height: 200px;
+  margin-top: 20px;
+  width: 300px;
+}
+
+.water {
+  background-color: white;
+  border: double;
+  border-color: blue;
+  border-width: 5px;
+  height: 200px;
+  margin-top: 20px;
+  width: 300px;
+}
+
+.earth {
+  background-color: white;
+  border: groove;
+  border-color: green;
+  border-width: 6px;
+  height: 200px;
+  margin-top: 20px;
+  width: 300px;
+}
