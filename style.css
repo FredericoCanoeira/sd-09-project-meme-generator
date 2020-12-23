@@ -1,17 +1,17 @@
-#meme-image-container {
+.style-container {
   border: solid;
   margin-top: 20px;
   width: 300px;
   height: 200px;
 }
 
-#meme-image {
+.style-image {
   width: 300px;
   height: 200px;
   position: absolute;
 }
 
-#meme-text {
+.style-text {
   position: relative;
   color: red;
 }
