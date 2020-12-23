@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>meme generator</title>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <main>
@@ -12,14 +13,13 @@
         <input type="file" id="meme-insert" />
       </header>
       <div id="meme-image-container" class="meme-image-container">
-        <img id="meme-image"> 
-          <p id="meme-text"></p>
-        </img>
+        <img id="meme-image" class="meme-image"> 
+        <p id="meme-text" class="meme-text"></p>
       </div>
       <div id="border-buttons">
-        <button id="fire">Fire</button>
-        <button id="water">Water</button>
-        <button id="earth">Earth</button>
+        <button id="fire" class="fire">Fire</button>
+        <button id="water" class="water">Water</button>
+        <button id="earth" class="earth">Earth</button>
       </div>
       <div id="meme-example">
         <img src="imgs/meme1.png" id="meme-1" />
@@ -28,6 +28,6 @@
         <img src="imgs/meme4.png" id="meme-4" />
       </div>
     </main>
-    <script src="/script.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
