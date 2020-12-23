@@ -5,7 +5,6 @@ const inputFile = document.querySelector('#meme-insert');
 const memeContainer = document.querySelector('#meme-image-container');
 const getImg = document.querySelector('.meme-image');
 const exampleMeme = document.querySelector('#meme-example');
-memeContainer.style.border = '1px solid black';
 inputText.setAttribute('maxLength', 60);
 
 function changeTextMeme() {
