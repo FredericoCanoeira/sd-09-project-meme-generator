@@ -6,21 +6,26 @@ function createImg(container, identifier , source) {
   container.appendChild(img);
 }
 
-function loadThumbnails() {
+// Change atribute src of img tag
+function loadImage(event) {
+  const img = document.querySelector('#meme-image');
+  if(event.target.id === 'meme-insert') {
+    img.src = URL.createObjectURL(event.target.files[0]);
+    if (img.onload) {
+      URL.revokeObjectURL(img.src); // Free memory
+    }
+  } else {
+    img.src = event.target.src;
+  }
+}
+
+// Create img thumbnails
+function createImgThumbnails() {
   const container = document.querySelector('.thumbnails-section');
   for (let index = 1; index <= 4; index += 1) {
     let id = `meme-${index}`;
     let source = `imgs/meme${index}.png`
     createImg(container, id, source);
-  }
-}
-
-// Change atribute src of img tag
-function loadImage(event) {
-  const img = document.querySelector('#meme-image');
-  img.src = URL.createObjectURL(event.target.files[0]);
-  if (img.onload) {
-    URL.revokeObjectURL(img.src); // Free memory
   }
 }
 
@@ -73,12 +78,14 @@ window.onload = function () {
   const waterButton = document.querySelector('#water');
   const earthButton = document.querySelector('#earth');
   const imgContainer = document.querySelector('#meme-image-container');
-  createImg(imgContainer,'meme-image');
-  loadThumbnails();
+  const thumbnails = document.querySelector('.thumbnails-section');
   textForm.addEventListener('submit', preventSubmit);
   textInput.addEventListener('keyup', loadText);
   memeInsert.addEventListener('input', loadImage);
   fireButton.addEventListener('click', changeBorder);
   waterButton.addEventListener('click', changeBorder);
   earthButton.addEventListener('click', changeBorder);
+  thumbnails.addEventListener('click', loadImage);
+  createImg(imgContainer,'meme-image', '');
+  createImgThumbnails();
 };
