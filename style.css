@@ -5,7 +5,9 @@
 .meme-image-container {
   background-color: white;
   border: 1px black solid;
+  height: 70%;
   position: fixed;
+  width: 50%;
 }
 
 .meme-text {
