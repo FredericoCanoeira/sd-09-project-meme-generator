@@ -1,5 +1,5 @@
-//Create img atribute in HTML
-function createImg(container, identifier , source) {
+// Create img atribute in HTML
+function createImg(container, identifier, source) {
   const img = document.createElement('img');
   img.id = identifier;
   img.src = source;
@@ -9,7 +9,7 @@ function createImg(container, identifier , source) {
 // Change atribute src of img tag
 function loadImage(event) {
   const img = document.querySelector('#meme-image');
-  if(event.target.id === 'meme-insert') {
+  if (event.target.id === 'meme-insert') {
     img.src = URL.createObjectURL(event.target.files[0]);
     if (img.onload) {
       URL.revokeObjectURL(img.src); // Free memory
@@ -23,8 +23,8 @@ function loadImage(event) {
 function createImgThumbnails() {
   const container = document.querySelector('.thumbnails-section');
   for (let index = 1; index <= 4; index += 1) {
-    let id = `meme-${index}`;
-    let source = `imgs/meme${index}.png`
+    const id = `meme-${index}`;
+    const source = `imgs/meme${index}.png`;
     createImg(container, id, source);
   }
 }
@@ -54,7 +54,7 @@ function loadText(event) {
 
 // Change border style of img container
 function changeBorder(event) {
-  const imgContainer = document.querySelector('.img-container')
+  const imgContainer = document.querySelector('.img-container');
   if (event.target.id === 'fire') {
     imgContainer.style.border = '3px dashed red';
   } else if (event.target.id === 'water') {
@@ -86,6 +86,6 @@ window.onload = function () {
   waterButton.addEventListener('click', changeBorder);
   earthButton.addEventListener('click', changeBorder);
   thumbnails.addEventListener('click', loadImage);
-  createImg(imgContainer,'meme-image', '');
+  createImg(imgContainer, 'meme-image', '');
   createImgThumbnails();
 };

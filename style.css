@@ -5,17 +5,17 @@ body {
 }
 
 img {
+  bottom: 0;
   height: 400px;
   left: 0;
-  bottom: 0;
-  top: 0;
   right: 0;
+  top: 0;
   width: 400px;
 }
 
 .img-container {
-  background-color: rgb(255, 255, 255);
-  border: 1px solid rgb(0, 0, 0);
+  background-color: white;
+  border: 1px solid black;
   height: 400px;
   margin: 5% 23%;
   position: relative;
@@ -31,37 +31,37 @@ img {
   text-align: center;
 }
 
-.thumbnails-section img{
+.thumbnails-section img {
+  border: 1px solid black;
   display: inline-block;
   height: 120px;
-  border: 1px solid rgb(0, 0, 0);
   margin: 10px;
   width: 120px;
 }
 
-#meme-text {
-  color: rgb(255, 255, 255);
+.text-container {
+  color: white;
   font-size: 30px;
   font-weight: 600;
   position: absolute;
-  text-shadow: rgb(0, 0, 0) 5px 5px 5px;
+  text-shadow: black 5px 5px 5px;
   word-wrap: break-word;
   height: 150px;
   width: 400px;
   bottom: 0;
 }
 
-#earth {
-  background-color: rgb(0, 128, 0);
-  color: rgb(255, 255, 255);
+.earth-button {
+  background-color: green;
+  color: white;
 }
 
-#water {
-  background-color: rgb(0, 0, 255);
-  color: rgb(255, 255, 255);
+.water-button {
+  background-color: blue;
+  color: white;
 }
 
-#fire {
-  background-color: rgb(255, 0, 0);
-  color: rgb(255, 255, 255);
+.fire-button {
+  background-color: red;
+  color: white;
 }
