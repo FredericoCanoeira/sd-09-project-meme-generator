@@ -31,3 +31,12 @@ body {
 .earth {
   background-color: green;
 }
+
+.meme{
+  height: 100px;
+  width: 100px;
+}
+
+.meme:hover{
+  box-shadow: 0px 4px 4px black;
+}

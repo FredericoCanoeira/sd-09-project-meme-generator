@@ -4,6 +4,7 @@ const memeImg = document.querySelector('#meme-image');
 const inputFile = document.querySelector('#meme-insert');
 const memeContainer = document.querySelector('#meme-image-container');
 const getImg = document.querySelector('.meme-image');
+const exampleMeme = document.querySelector('#meme-example')
 memeContainer.style.border = '1px solid black';
 inputText.setAttribute('maxLength', 60);
 
@@ -34,9 +35,14 @@ function earthButton() {
   earth.addEventListener('click', () => (memeContainer.style.border = '6px groove green'));
 }
 
+function selectedMeme(){
+  exampleMeme.addEventListener('click', (event) => (memeImg.src = event.target.src));
+}
+
 changeTextMeme();
 changeImgMeme();
 backgroundImgMeme(getImg);
 fireButton();
 waterButton();
 earthButton();
+selectedMeme();
