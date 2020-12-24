@@ -3,9 +3,7 @@ const memeText = document.querySelector('#meme-text');
 const memeImg = document.querySelector('#meme-image');
 const inputFile = document.querySelector('#meme-insert');
 const memeContainer = document.querySelector('#meme-image-container');
-const getImg = document.querySelector('.meme-image');
 const exampleMeme = document.querySelector('#meme-example');
-inputText.setAttribute('maxLength', 60);
 
 function changeTextMeme() {
   inputText.addEventListener('input', () => (memeText.innerHTML = inputText.value));
@@ -40,7 +38,7 @@ function selectedMeme() {
 
 changeTextMeme();
 changeImgMeme();
-backgroundImgMeme(getImg);
+backgroundImgMeme(memeImg);
 fireButton();
 waterButton();
 earthButton();
