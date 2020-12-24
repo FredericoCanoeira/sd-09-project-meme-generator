@@ -14,7 +14,7 @@ function loadImage(event) {
     if (img.onload) {
       URL.revokeObjectURL(img.src); // Free memory
     }
-  } else {
+  } else if (event.target.className !== 'thumbnails-section') {
     img.src = event.target.src;
   }
 }
