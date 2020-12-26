@@ -1,5 +1,7 @@
 body {
-  background-image: linear-gradient(to right , red , orange , yellow , green , blue , indigo , violet);
+  background-image: linear-gradient(
+    to right , red , orange , yellow , green , blue , indigo , violet
+  );
 }
 
 img {
@@ -15,9 +17,34 @@ main {
   width: 400px;
 }
 
-.container {
+.button {
+  border: none;
+  color: white;
+  margin: 0.3em;
   padding: 1em;
+  font-weight: 600;
+}
+
+.container {
+  padding-bottom: 0.5em;
+  padding-left: 3em;
   text-align: left;
+}
+
+.earth {
+  background-color: green;
+}
+
+.earth:hover {
+  background-color: lime;
+}
+
+.fire {
+  background-color: red;
+}
+
+.fire:hover {
+  background-color: orange;
 }
 
 .image-container {
@@ -43,4 +70,12 @@ main {
   font-family: cursive;
   font-weight: 800;
   text-shadow: 2px 2px 5px black;
+}
+
+.water {
+  background-color: blue;
+}
+
+.water:hover {
+  background-color: aqua;
 }
