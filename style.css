@@ -1,5 +1,5 @@
 body {
-  background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
+  background-image: linear-gradient(to right , red , orange , yellow , green , blue , indigo , violet);
 }
 
 img {
@@ -23,10 +23,10 @@ main {
 .image-container {
   background-color: white;
   border: 1px solid black;
+  height: 400px;
   margin: auto;
   position: relative;
   width: 400px;
-  height: 400px;
 }
 
 .shadow-text {
@@ -34,7 +34,7 @@ main {
   font-size: 30px;
   left: 20px;
   position: absolute;
-  text-shadow: 2px 2px 5px black;
+  text-shadow: 5px 5px 5px black;
   top: 300px;
 }
 

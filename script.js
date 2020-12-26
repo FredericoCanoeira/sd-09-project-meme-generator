@@ -1,8 +1,8 @@
 function generateMemeText() {
   const textInput = document.querySelector('#text-input');
-  textInput.addEventListener('keyup', function(event) {
+  textInput.addEventListener('keyup', function () {
     const memeText = document.querySelector('#meme-text');
-      memeText.innerText = textInput.value;
+    memeText.innerText = textInput.value;
   });
 }
 
