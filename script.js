@@ -16,7 +16,6 @@ function generateMemeImage() {
 
 function addFireBorder() {
   const memeContainer = document.querySelector('#meme-image-container');
-  let memeBorder = memeContainer.style.border;
   memeContainer.style.border = '3px dashed red';
 }
 
@@ -30,6 +29,16 @@ function addEarthBorder() {
   memeContainer.style.border = '6px groove green';
 }
 
+function useSampleImage() {
+  const galleryImage = document.querySelectorAll('.sample-image');
+  for (let index = 0; index < galleryImage.length; index += 1) {
+    galleryImage[index].addEventListener('click', function () {
+      const image = document.querySelector('#meme-image');
+      image.src = galleryImage[index].src;
+    });
+  }
+}
+
 window.onload = function () {
   const fireButton = document.querySelector('#fire');
   const waterButton = document.querySelector('#water');
@@ -41,4 +50,5 @@ window.onload = function () {
 
   generateMemeText();
   generateMemeImage();
+  useSampleImage()
 };

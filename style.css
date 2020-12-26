@@ -6,28 +6,28 @@ body {
 
 img {
   display: block;
-  height: 400px;
-  width: 400px;
+  height: 450px;
+  width: 600px;
 }
 
 main {
   font-weight: 600;
   margin: auto;
   text-align: center;
-  width: 400px;
+  width: 600px;
 }
 
 .button {
   border: none;
   color: white;
-  margin: 0.3em;
-  padding: 1em;
   font-weight: 600;
+  margin-left: 0.5em;
+  padding: 1em;
 }
 
 .container {
-  padding-bottom: 0.5em;
-  padding-left: 3em;
+  padding-bottom: 1em;
+  padding-left: 2em;
   text-align: left;
 }
 
@@ -50,10 +50,17 @@ main {
 .image-container {
   background-color: white;
   border: 1px solid black;
-  height: 400px;
+  height: 450px;
   margin: auto;
   position: relative;
-  width: 400px;
+  width: 600px;
+}
+
+.image-gallery img{
+  display: inline-block;
+  height: 90px;
+  padding: 0.5em;
+  width: 120px;
 }
 
 .shadow-text {
