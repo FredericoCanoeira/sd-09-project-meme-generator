@@ -1,0 +1,46 @@
+body {
+  background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
+}
+
+img {
+  display: block;
+  height: 400px;
+  width: 400px;
+}
+
+main {
+  font-weight: 600;
+  margin: auto;
+  text-align: center;
+  width: 400px;
+}
+
+.container {
+  padding: 1em;
+  text-align: left;
+}
+
+.image-container {
+  background-color: white;
+  border: 1px solid black;
+  margin: auto;
+  position: relative;
+  width: 400px;
+  height: 400px;
+}
+
+.shadow-text {
+  color: white;
+  font-size: 30px;
+  left: 20px;
+  position: absolute;
+  text-shadow: 2px 2px 5px black;
+  top: 300px;
+}
+
+.title {
+  color: antiquewhite;
+  font-family: cursive;
+  font-weight: 800;
+  text-shadow: 2px 2px 5px black;
+}
