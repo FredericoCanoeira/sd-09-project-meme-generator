@@ -50,5 +50,5 @@ window.onload = function () {
 
   generateMemeText();
   generateMemeImage();
-  useSampleImage()
+  useSampleImage();
 };

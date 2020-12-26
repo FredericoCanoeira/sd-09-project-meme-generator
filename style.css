@@ -56,7 +56,7 @@ main {
   width: 600px;
 }
 
-.image-gallery img{
+.image-gallery img {
   display: inline-block;
   height: 90px;
   padding: 0.5em;
