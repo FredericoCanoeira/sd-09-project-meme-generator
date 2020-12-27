@@ -28,6 +28,22 @@ function createStructure () {
   img.id = 'output';
   img.src = '';
   document.getElementById('meme-image').appendChild(img);
+
+  const buttonSection = document.createElement('section');
+  buttonSection.id = 'allButtons';
+  document.body.appendChild(buttonSection);
+
+  const buttonFire = document.createElement('button');
+  buttonFire.id = 'fire';
+  document.getElementById('allButtons').appendChild(buttonFire);
+
+  const buttonWater = document.createElement('button');
+  buttonWater.id = 'water';
+  document.getElementById('allButtons').appendChild(buttonWater);
+
+  const buttonEarth = document.createElement('button');
+  buttonEarth.id = 'earth';
+  document.getElementById('allButtons').appendChild(buttonEarth);
 }
 
 function inputText () {
