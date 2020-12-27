@@ -11,3 +11,10 @@
   width: 200px;
   height: 200px;
 }
+
+#meme-text {
+  position: absolute; 
+  width: 200px;
+  overflow-wrap: anywhere;
+  color: white;
+}

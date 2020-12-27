@@ -21,11 +21,7 @@ function createStructure () {
 
   const imageContainer = document.createElement('div');
   imageContainer.id = 'meme-insert';
-  apend.appendChild(imageContainer);
-
-  const appendImage = document.createElement('img');
-  appendImage.id = 'imgs';  
-  imageContainer.appendChild(appendImage);
+  apend.appendChild(imageContainer);  
 
   const img = document.createElement('img');
   img.id = 'output';
