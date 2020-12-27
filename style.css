@@ -18,3 +18,8 @@
   overflow-wrap: anywhere;
   color: white;
 }
+
+#text-input {
+  position: absolute;
+  bottom: 229px;
+}
