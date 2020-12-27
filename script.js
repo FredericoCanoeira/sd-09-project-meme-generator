@@ -10,14 +10,27 @@ function createStructure () {
   createInput.type = 'text';
   apend.appendChild(createInput);
 
-  const memeText = document.createElement('p');  
+  const memeText = document.createElement('p');
   memeText.id = 'meme-text';
   apend.appendChild(memeText);
 
-  const imageContainer = document.createElement('input');
-  imageContainer.id = 'meme-image';
-  imageContainer.type = 'file'
+  const inputImage = document.createElement('input');
+  inputImage.id = 'meme-image';
+  inputImage.type = 'file', accept="image/*";
+  apend.appendChild(inputImage);
+
+  const imageContainer = document.createElement('div');
+  imageContainer.id = 'meme-insert';
   apend.appendChild(imageContainer);
+
+  const appendImage = document.createElement('img');
+  appendImage.id = 'imgs';  
+  imageContainer.appendChild(appendImage);
+
+  const img = document.createElement('img');
+  img.id = 'output';
+  img.src = '';
+  document.getElementById('meme-insert').appendChild(img);  
 }
 
 function inputText () {
@@ -28,13 +41,26 @@ function inputText () {
   }
 }
 
+function loadFile(event) {  
+  let output = document.getElementById('output');
+  if(output !== '') {
+    output.src = URL.createObjectURL(event.target.files[0]);
+  } else {
+    output.onload = function() {
+      URL.revokeObjectURL(output.src);
+    }
+  }
+}
+
 function listeners () {
   const textContainer = document.getElementById('text-input');
-  textContainer.addEventListener('keyup', inputText);  
+  textContainer.addEventListener('keyup', inputText);
+  const teste = document.getElementById('meme-image');
+  teste.addEventListener('change', loadFile)
 }
 
 window.onload = function() {
   createStructure();
   listeners ();
-  inputText();
+  inputText();  
 }

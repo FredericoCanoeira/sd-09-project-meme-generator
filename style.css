@@ -1,8 +1,13 @@
 #meme-image-container {
-  margin: 0;  
+  left: 50%;
+  margin: 0;
+  margin-right: -50%;
   position: absolute;
   top: 30%;
-  left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, -50%) 
+  transform: translate(-50%, -50%);
+}
+
+#output {
+  width: 200px;
+  height: 200px;
 }
