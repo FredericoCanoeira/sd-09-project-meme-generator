@@ -11,7 +11,9 @@
 
 h1 {
   margin-top: 0%;
+  text-align: center;
 }
+
 #output {
   width: 500px;
   height: 400px;  
@@ -27,7 +29,10 @@ h1 {
 }
 
 #text-input {
-  position: initial;  
+  position: relative;
+  bottom: 23px;
+  left: 104px;
+  width: 283px;
 }
 
 body {
@@ -57,4 +62,9 @@ body {
   width: 500px;
   height: 400px;
   margin-top: 0px;
+}
+
+#meme-insert {
+  position: inherit;
+  left: 104px;
 }
