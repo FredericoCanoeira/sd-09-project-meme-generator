@@ -8,6 +8,7 @@ function createStructure () {
   const createInput = document.createElement('input');
   createInput.id = 'text-input';
   createInput.type = 'text';
+  createInput.maxLength = 60
   apend.appendChild(createInput);
 
   const memeText = document.createElement('p');
@@ -20,13 +21,13 @@ function createStructure () {
   apend.appendChild(inputImage);
 
   const imageContainer = document.createElement('div');
-  imageContainer.id = 'meme-image'; 
-  apend.appendChild(imageContainer);  
+  imageContainer.id = 'meme-image';
+  apend.appendChild(imageContainer);
 
   const img = document.createElement('img');
   img.id = 'output';
   img.src = '';
-  document.getElementById('meme-image').appendChild(img);  
+  document.getElementById('meme-image').appendChild(img);
 }
 
 function inputText () {
