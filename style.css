@@ -25,4 +25,7 @@
   margin-left: 20px;
   height: 50px;
   width: 400px;
+  position: absolute;
+  top: 100px;
+  
 }
