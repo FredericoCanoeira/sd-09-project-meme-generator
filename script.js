@@ -15,18 +15,18 @@ function createStructure () {
   apend.appendChild(memeText);
 
   const inputImage = document.createElement('input');
-  inputImage.id = 'meme-image';
+  inputImage.id = 'meme-insert';
   inputImage.type = 'file', accept="image/*";
   apend.appendChild(inputImage);
 
   const imageContainer = document.createElement('div');
-  imageContainer.id = 'meme-insert';
+  imageContainer.id = 'meme-image'; 
   apend.appendChild(imageContainer);  
 
   const img = document.createElement('img');
   img.id = 'output';
   img.src = '';
-  document.getElementById('meme-insert').appendChild(img);  
+  document.getElementById('meme-image').appendChild(img);  
 }
 
 function inputText () {
@@ -51,7 +51,7 @@ function loadFile(event) {
 function listeners () {
   const textContainer = document.getElementById('text-input');
   textContainer.addEventListener('keyup', inputText);
-  const teste = document.getElementById('meme-image');
+  const teste = document.getElementById('meme-insert');
   teste.addEventListener('change', loadFile)
 }
 
