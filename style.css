@@ -1,1 +1,27 @@
+#meme-insert {
+  margin-top: 6px;
+}
 
+#meme-image-container {
+  border: solid;
+  height: 500px;
+  width: 500px;
+  margin-top: 6px;
+  background-color: white;
+}
+
+#meme-image {
+  border: solid;
+  margin-top: 20px;
+  height: 450px;
+  width: 450px;
+  margin-left: 20px;
+}
+
+#meme-text {
+  border: solid;
+  margin-top: 350px;
+  margin-left: 20px;
+  height: 50px;
+  width: 400px;
+}
