@@ -1,4 +1,4 @@
-#meme-image-container {
+.image-container {
   border: 1px solid black;
   background-color: white;
   left: 50%;
@@ -67,4 +67,16 @@ body {
 #meme-insert {
   position: inherit;
   left: 104px;
+}
+
+.fire {  
+  border: 3px dashed red;
+}
+
+.water {  
+  border: 5px double blue;
+}
+
+.earth {  
+  border: 6px groove green;
 }

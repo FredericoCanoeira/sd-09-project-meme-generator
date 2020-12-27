@@ -35,14 +35,20 @@ function createStructure () {
 
   const buttonFire = document.createElement('button');
   buttonFire.id = 'fire';
+  buttonFire.className = 'fire';
+  buttonFire.style.backgroundColor = 'red';
   document.getElementById('allButtons').appendChild(buttonFire);
 
   const buttonWater = document.createElement('button');
   buttonWater.id = 'water';
+  buttonWater.className = 'water';
+  buttonWater.style.backgroundColor = 'blue';
   document.getElementById('allButtons').appendChild(buttonWater);
 
   const buttonEarth = document.createElement('button');
   buttonEarth.id = 'earth';
+  buttonEarth.className = 'earth';
+  buttonEarth.style.backgroundColor = 'green';
   document.getElementById('allButtons').appendChild(buttonEarth);
 }
 
@@ -65,11 +71,49 @@ function loadFile(event) {
   }
 }
 
+function buttonFire() {
+  const fire = document.getElementById('meme-image-container');  
+  if (fire.classList.value.includes('fire')) {
+    fire.classList.remove('fire');    
+  } else {
+    fire.classList.add('fire');
+    fire.classList.remove('water', 'earth');
+  }
+}
+
+function buttonWater() {
+  const water = document.getElementById('meme-image-container');  
+  if (water.classList.value.includes('water')) {
+    water.classList.remove('water');    
+  } else {
+    water.classList.add('water');
+    water.classList.remove('fire', 'earth');
+  }
+}
+
+function buttonEarth() {
+  const earth = document.getElementById('meme-image-container');  
+  if (earth.classList.value.includes('earth')) {
+    earth.classList.remove('earth');    
+  } else {
+    earth.classList.add('earth');
+    earth.classList.remove('fire', 'water');
+  }
+}
+
 function listeners () {
   const textContainer = document.getElementById('text-input');
   textContainer.addEventListener('keyup', inputText);
-  const teste = document.getElementById('meme-insert');
-  teste.addEventListener('change', loadFile)
+  const insertImage = document.getElementById('meme-insert');
+  insertImage.addEventListener('change', loadFile);
+  const eventButtonFire = document.getElementById('fire');
+  eventButtonFire.addEventListener('click', buttonFire);
+
+  const eventButtonWater = document.getElementById('water');
+  eventButtonWater.addEventListener('click', buttonWater);
+
+  const eventButtonEarth = document.getElementById('earth');
+  eventButtonEarth.addEventListener('click', buttonEarth);
 }
 
 window.onload = function() {
