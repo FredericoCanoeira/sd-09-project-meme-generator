@@ -32,10 +32,6 @@ main {
   margin: 0.5em;
 }
 
-.container h2 {
-  font-size: 1.2em;
-}
-
 .earth {
   background-color: green;
 }
@@ -77,6 +73,11 @@ main {
   text-shadow: 5px 5px 5px black;
   top: -100px;
 }
+
+.text{
+  font-size: 1.2em;
+}
+
 
 .title {
   font-weight: 800;
