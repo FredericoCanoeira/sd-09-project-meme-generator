@@ -16,9 +16,11 @@ body {
 
 .memeTxt {
   bottom: 120px;
-  left: 435px;
+  color: white;
   font-size: 30px;
-  position: relative;
-  word-wrap: break-word;
+  left: 435px;
   max-width: 500px;
+  position: relative;
+  text-shadow: 5px 5px 5px black;
+  word-wrap: break-word;
 }
