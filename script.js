@@ -18,13 +18,16 @@ function borderChange() {
   const container = document.querySelector('#meme-image-container');
   const buttons = document.querySelectorAll('button');
   buttons[0].addEventListener('click', function () {
-    container.style.border = "6px groove green"
+    container.style.border = '6px groove green';
+    container.style.backgroundColor = rgb(0, 128, 0);
   });
   buttons[1].addEventListener('click', function () {
     container.style.border = '3px dashed red';
+    container.style.backgroundColor = rgb(255, 0, 0);
   });
   buttons[2].addEventListener('click', function () {
     container.style.border = '5px double blue';
+    container.style.backgroundColor = rgb(0, 0, 255);
   })
 }
 
