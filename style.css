@@ -3,11 +3,14 @@ body {
 }
 
 .image-container {
-  background-color: yellow;
+  background-color: white;
+  border: 1px solid black;
+  display: inline-block;
+  height: 600px;
 }
 
 .main-container {
-  background-color: brown;
+  background-color: whitesmoke;
   height: 768px;
   text-align: center;
   width: 1366px;
@@ -22,8 +25,7 @@ body {
   bottom: 120px;
   color: white;
   font-size: 30px;
-  left: 435px;
-  max-width: 500px;
+  max-width: 600px;
   position: relative;
   text-shadow: 5px 5px 5px black;
   word-wrap: break-word;
