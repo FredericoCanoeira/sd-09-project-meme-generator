@@ -35,9 +35,8 @@ backgroundImage(getImage);
 function firetBorderButton() {
   const fire = document.createElement('button');
   fire.id = 'fire';
+  fire.className = 'fire button';
   fire.innerHTML = 'Fire';
-  fire.style.backgroundColor = 'red';
-  fire.style.color = 'white';
   buttons.appendChild(fire);
   fire.addEventListener('click', function () {
     memeContainer.style.border = '3px dashed red';
@@ -48,9 +47,8 @@ firetBorderButton();
 function waterBorderButton() {
   const water = document.createElement('button');
   water.id = 'water';
+  water.className = 'water button';
   water.innerHTML = 'Water';
-  water.style.backgroundColor = 'blue';
-  water.style.color = 'white';
   buttons.appendChild(water);
   water.addEventListener('click', function () {
     memeContainer.style.border = '5px double blue';
@@ -61,9 +59,8 @@ waterBorderButton();
 function earthBorderButton() {
   const earth = document.createElement('button');
   earth.id = 'earth';
+  earth.className = 'earth button';
   earth.innerHTML = 'Earth';
-  earth.style.backgroundColor = 'green';
-  earth.style.color = 'white';
   buttons.appendChild(earth);
   earth.addEventListener('click', function () {
     memeContainer.style.border = '6px groove green';
