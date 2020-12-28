@@ -15,12 +15,13 @@ body {
 }
 
 .memeTxt {
-  bottom: 120px;
+  top: 500px;
+  bottom: auto;
   color: white;
   font-size: 30px;
   left: 435px;
   max-width: 500px;
-  position: relative;
+  position: absolute;
   text-shadow: 5px 5px 5px black;
   word-wrap: break-word;
 }
