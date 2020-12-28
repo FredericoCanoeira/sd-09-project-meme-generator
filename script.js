@@ -122,45 +122,25 @@ function buttonEarth() {
   }
 }
 
-function setMeme1() {  
-  let loadMeme1 = document.getElementById('output');  
-  if (loadMeme1.classList.value.includes('meme-1')) {
-    loadMeme1.classList.remove('meme-1');
-  } else {
-    loadMeme1.classList.add('meme-1');
-    loadMeme1.classList.remove('meme-2', 'meme-3', 'meme-4');
-  }
+
+function setMeme1() {
+  let loadMeme1 = document.getElementById('output');
+  loadMeme1.src = new URL('http://127.0.0.1:5500/salt.jpeg');
 }
 
-
-function setMeme2() {  
-  let loadMeme2 = document.getElementById('output');
-  if (loadMeme2.classList.value.includes('meme-2')) {
-    loadMeme2.classList.remove('meme-2');
-  } else {
-    loadMeme2.classList.add('meme-2');
-    loadMeme2.classList.remove('meme-1', 'meme-3', 'meme-4');
-  }
+function setMeme2() {
+  let loadMeme1 = document.getElementById('output');
+  loadMeme1.src = new URL('http://127.0.0.1:5500/math.jpeg')
 }
 
-function setMeme3() {  
-  let loadMeme3 = document.getElementById('output');
-  if (loadMeme3.classList.value.includes('meme-3')) {
-    loadMeme3.classList.remove('meme-3');
-  } else {
-    loadMeme3.classList.add('meme-3');
-    loadMeme3.classList.remove('meme-1', 'meme-2', 'meme-4');
-  }
+function setMeme3() {
+  let loadMeme1 = document.getElementById('output');
+  loadMeme1.src = new URL('http://127.0.0.1:5500/smart.jpeg')
 }
 
-function setMeme4() {  
-  let loadMeme4 = document.getElementById('output');
-  if (loadMeme4.classList.value.includes('meme-4')) {
-    loadMeme4.classList.remove('meme-4');
-  } else {
-    loadMeme4.classList.add('meme-4');
-    loadMeme4.classList.remove('meme-2', 'meme-3', 'meme-1');
-  }
+function setMeme4() {
+  let loadMeme1 = document.getElementById('output');
+  loadMeme1.src = new URL('http://127.0.0.1:5500/jesus.jpeg')
 }
 
 function listeners() {
