@@ -30,7 +30,7 @@ function borderChange() {
     container.style.backgroundColor = 'rgb(0, 0, 255)';
   });
 }
-
+/*
 function uploadStandardImages() {
   const images = document.querySelector('.memes-images');
   const imageUp = document.querySelector('#meme-image');
@@ -47,8 +47,8 @@ function uploadStandardImages() {
     imageUp.src = images.children[3].src;
   });
 }
-
+*/
 uploadImage();
 writeText();
 borderChange();
-uploadStandardImages();
+//uploadStandardImages();
