@@ -22,6 +22,7 @@ function insertImage(event) {
   img.onload = function () {
     URL.revokeObjectURL(img.src);
   };
+
   for (let index = 0; index < 4; index += 1) {
     if (event.target) {
       imgs[index].style.border = '';
