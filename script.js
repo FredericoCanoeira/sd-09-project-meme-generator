@@ -125,29 +125,29 @@ function buttonEarth() {
 function setMeme1() {
   let loadMeme1 = document.getElementById('output');
   let loadMemeJokingCypress = document.getElementById('meme-image')
-  loadMeme1.src = new URL('http://127.0.0.1:5500/salt.jpeg');
-  loadMemeJokingCypress.setAttribute('src', 'http://127.0.0.1:5500/salt.jpeg');
+  loadMeme1.src = new URL('http://127.0.0.1:5500/salt.png');
+  loadMemeJokingCypress.setAttribute('src', 'http://127.0.0.1:5500/salt.png');
 }
 
 function setMeme2() {
   let loadMeme1 = document.getElementById('output');
   let loadMemeJokingCypress = document.getElementById('meme-image')
-  loadMeme1.src = new URL('http://127.0.0.1:5500/math.jpeg');
-  loadMemeJokingCypress.setAttribute('src', 'http://127.0.0.1:5500/math.jpeg');
+  loadMeme1.src = new URL('http://127.0.0.1:5500/math.png');
+  loadMemeJokingCypress.setAttribute('src', 'http://127.0.0.1:5500/math.png');
 }
 
 function setMeme3() {
   let loadMeme1 = document.getElementById('output');
   let loadMemeJokingCypress = document.getElementById('meme-image');
-  loadMeme1.src = new URL('http://127.0.0.1:5500/smart.jpeg');
-  loadMemeJokingCypress.setAttribute('src', 'http://127.0.0.1:5500/smart.jpeg');
+  loadMeme1.src = new URL('http://127.0.0.1:5500/smart.png');
+  loadMemeJokingCypress.setAttribute('src', 'http://127.0.0.1:5500/smart.png');
 }
 
 function setMeme4() {
   let loadMeme1 = document.getElementById('output');
   let loadMemeJokingCypress = document.getElementById('meme-image');
-  loadMeme1.src = new URL('http://127.0.0.1:5500/jesus.jpeg');
-  loadMemeJokingCypress.setAttribute('src', 'http://127.0.0.1:5500/jesus.jpeg');
+  loadMeme1.src = new URL('http://127.0.0.1:5500/jesus.png');
+  loadMemeJokingCypress.setAttribute('src', 'http://127.0.0.1:5500/jesus.png');
 }
 
 function listeners() {
