@@ -125,22 +125,30 @@ function buttonEarth() {
 
 function setMeme1() {
   let loadMeme1 = document.getElementById('output');
+  let loadMemeJokingCypress = document.getElementById('meme-image')
   loadMeme1.src = new URL('http://127.0.0.1:5500/salt.jpeg');
+  loadMemeJokingCypress.src = new URL('http://127.0.0.1:5500/salt.jpeg');
 }
 
 function setMeme2() {
   let loadMeme1 = document.getElementById('output');
+  let loadMemeJokingCypress = document.getElementById('meme-image')
   loadMeme1.src = new URL('http://127.0.0.1:5500/math.jpeg')
+  loadMemeJokingCypress.src = new URL('http://127.0.0.1:5500/math.jpeg')
 }
 
 function setMeme3() {
   let loadMeme1 = document.getElementById('output');
+  let loadMemeJokingCypress = document.getElementById('meme-image')
   loadMeme1.src = new URL('http://127.0.0.1:5500/smart.jpeg')
+  loadMemeJokingCypress.src = new URL('http://127.0.0.1:5500/smart.jpeg')
 }
 
 function setMeme4() {
   let loadMeme1 = document.getElementById('output');
+  let loadMemeJokingCypress = document.getElementById('meme-image')
   loadMeme1.src = new URL('http://127.0.0.1:5500/jesus.jpeg')
+  loadMemeJokingCypress.src = new URL('http://127.0.0.1:5500/jesus.jpeg')
 }
 
 function listeners() {
