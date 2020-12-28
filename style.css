@@ -8,19 +8,17 @@
   width: 500px;
   margin-top: 6px;
   background-color: white;
+  word-break: break-all;
 }
 
 #meme-image {
-  border: 1px solid;
-  margin-top: 20px;
-  height: 450px;
-  width: 450px;
-  margin-left: 20px;
-  
+  height: 100%;
+  width: 100%;
 }
 
 #meme-text {
-  margin-left: 20px;
+  margin-left: 40px;
+  width: 400px;
   position: absolute;
   top: 450px;
   color: white;
