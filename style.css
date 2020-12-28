@@ -1,6 +1,11 @@
 body {
   font-family: fantasy, sans-serif;
 }
+
+.image-container {
+  background-color: yellow;
+}
+
 .main-container {
   background-color: brown;
   height: 768px;
@@ -9,8 +14,8 @@ body {
 }
 
 .memeImg {
-  height: auto;
-  width: 600px;
+  display: inline-block;
+  height: 600px;
 }
 
 .memeTxt {
@@ -19,7 +24,7 @@ body {
   font-size: 30px;
   left: 435px;
   max-width: 500px;
-  position: absolute;
+  position: relative;
   text-shadow: 5px 5px 5px black;
   word-wrap: break-word;
 }
