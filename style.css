@@ -5,8 +5,8 @@
   margin: 0;
   margin-right: -50%;
   position: absolute;
-  top: 270%;
-  transform: translate(-50%, -50%);  
+  
+  transform: translate(-50%, -50%);
 }
 
 h1 {
@@ -16,12 +16,12 @@ h1 {
 
 #output {
   width: 500px;
-  height: 400px;  
+  height: 400px;
 }
 
 #meme-text {
   position: absolute;
-  width: 200px;
+  width: 500px;
   overflow-wrap: anywhere;
   color: white;
   font-size: 30px;
@@ -40,13 +40,14 @@ body {
   margin: 0;
   margin-right: -50%;
   position: absolute;
-  top: 30%;
-  transform: translate(-50%, -50%);  
+  top: 49%;
+  transform: translate(-50%, -50%);
 }
 
-#allButtons {
+#allBorderButtons {
   position: relative;
-  top: 413px;
+  top: 252px;
+  left: 45px;
 }
 
 #earth, #fire, #water {
@@ -55,7 +56,6 @@ body {
   width: 59px;
   margin-left: 10px;
   margin-right: 10px;
-
 }
 
 #meme-image {
@@ -69,14 +69,45 @@ body {
   left: 104px;
 }
 
-.fire {  
+.fire {
   border: 3px dashed red;
 }
 
-.water {  
+.water {
   border: 5px double blue;
 }
 
-.earth {  
+.earth {
   border: 6px groove green;
+}
+
+#allMemes {
+  position: relative;
+  top: 247px;
+  left: 6px;
+}
+
+#meme-1, #meme-2, #meme-3, #meme-4 {
+  padding: 0%;
+  height: 59px;
+  width: 59px;
+  margin-left: 10px;
+  margin-right: 10px;
+  background-size: 59px 59px;
+}
+
+.meme-1 {
+  background-image: url(salt.jpeg);  
+}
+
+.meme-2 {
+  background-image: url(math.jpeg);
+}
+
+.meme-3 {
+  background-image: url(smart.jpeg);
+}
+
+.meme-4 {
+  background-image: url(jesus.jpeg);
 }
