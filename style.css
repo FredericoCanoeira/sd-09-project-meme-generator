@@ -15,11 +15,11 @@ input {
 }
 
 p {
-  bottom: 120px;
+  bottom: 20px;
   color: white;
   display: block;
   font-size: 30px;
-  position: relative;
+  position: absolute;
   text-shadow: 5px 5px 5px black;
   width: 100%;
   word-wrap: break-word;
@@ -29,6 +29,7 @@ section {
   background-color: white;
   border: 1px solid black;
   height: 75%;
-  margin: 35px auto;
+  margin: 30px auto;
+  position: relative;
   width: 50%;
 }
