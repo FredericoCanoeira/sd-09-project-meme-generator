@@ -1,9 +1,24 @@
 body {
-  font-size: 18px;
+  font-family: fantasy, sans-serif;
 }
 
 .main-container {
   background-color: brown;
   height: 768px;
+  text-align: center;
   width: 1366px;
+}
+
+.memeImg {
+  height: auto;
+  width: 600px;
+}
+
+.memeTxt {
+  bottom: 120px;
+  left: 435px;
+  font-size: 30px;
+  position: relative;
+  word-wrap: break-word;
+  max-width: 500px;
 }

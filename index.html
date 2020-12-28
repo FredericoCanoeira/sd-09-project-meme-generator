@@ -3,14 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
     <title>Meme Generator</title>
 </head>
 <body>
     <div class="main-container">
         <input id="text-input" type="text" maxlength="60" name="inputName" placeholder="Digite sua frase aqui">  
-        <div id="meme-image-container">
-            <p id="meme-text" class="text-image"></p>
+        <input id="meme-insert" type="file">
+        <div id="meme-image-container" class="img">
+            <img id="meme-image" class="memeImg" src="" alt="">
+            <p id="meme-text" class="memeTxt"></p>
         </div>
     </div>
     <script src="script.js"></script>

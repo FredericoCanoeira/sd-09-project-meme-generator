@@ -6,4 +6,17 @@ function writeText() {
   });
 }
 
+function uploadImage () {
+  const imageInput = document.querySelector('#meme-insert');
+  const imageUp = document.querySelector('#meme-image');
+  imageInput.addEventListener('change', function (event) {    
+    imageUp.src = URL.createObjectURL(event.target.files[0]);
+  });
+}
+
+
+
+
+
+uploadImage()
 writeText()
