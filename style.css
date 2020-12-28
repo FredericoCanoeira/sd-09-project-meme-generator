@@ -1,7 +1,6 @@
 body {
   font-family: fantasy, sans-serif;
 }
-
 .main-container {
   background-color: brown;
   height: 768px;
@@ -15,8 +14,7 @@ body {
 }
 
 .memeTxt {
-  top: 500px;
-  bottom: auto;
+  bottom: 120px;
   color: white;
   font-size: 30px;
   left: 435px;
