@@ -1,7 +1,9 @@
 body {
   background-image: linear-gradient(
-    to right , red , orange , yellow , green , blue , indigo , violet
-  );
+    to right , red , orange , yellow , green , blue , indigo , violet);
+  color: white;
+  font-family: cursive;
+  text-shadow: 2px 2px 5px black;
 }
 
 img {
@@ -19,16 +21,19 @@ main {
 
 .button {
   border: none;
+  box-shadow: 2px 2px 5px black;
   color: white;
   font-weight: 600;
-  margin-left: 0.5em;
+  margin: 0.6em;
   padding: 1em;
 }
 
 .container {
-  padding-bottom: 1em;
-  padding-left: 2em;
-  text-align: left;
+  margin: 0.5em;
+}
+
+.container h2 {
+  font-size: 1.2em;
 }
 
 .earth {
@@ -57,26 +62,24 @@ main {
 }
 
 .image-gallery img {
+  border: 6px ridge brown;
+  box-shadow: 2px 2px 5px black;
   display: inline-block;
   height: 90px;
-  padding: 0.5em;
+  margin: 0.4em;
   width: 120px;
 }
 
 .shadow-text {
   color: white;
   font-size: 30px;
-  left: 20px;
-  position: absolute;
+  position: relative;
   text-shadow: 5px 5px 5px black;
-  top: 300px;
+  top: -100px;
 }
 
 .title {
-  color: antiquewhite;
-  font-family: cursive;
   font-weight: 800;
-  text-shadow: 2px 2px 5px black;
 }
 
 .water {
