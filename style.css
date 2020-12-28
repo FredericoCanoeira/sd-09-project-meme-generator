@@ -1,32 +1,34 @@
 body {
   font-family: fantasy, sans-serif;
-}
-
-.image-container {
-  background-color: white;
-  border: 1px solid black;
-  display: inline-block;
-  height: 600px;
-}
-
-.main-container {
-  background-color: whitesmoke;
   height: 768px;
   text-align: center;
   width: 1366px;
 }
 
-.memeImg {
-  display: inline-block;
-  height: 600px;
+img {
+  height: 100%;
+  width: 100%;
 }
 
-.memeTxt {
+input {
+  margin: 10px;
+}
+
+p {
   bottom: 120px;
   color: white;
+  display: block;
   font-size: 30px;
-  max-width: 600px;
   position: relative;
   text-shadow: 5px 5px 5px black;
+  width: 100%;
   word-wrap: break-word;
+}
+
+section {
+  background-color: white;
+  border: 1px solid black;
+  height: 75%;
+  margin: 35px auto;
+  width: 50%;
 }
