@@ -14,5 +14,20 @@ function uploadImage() {
   });
 }
 
+function borderChange() {
+  const container = document.querySelector('#meme-image-container');
+  const buttons = document.querySelectorAll('button');
+  buttons[0].addEventListener('click', function () {
+    container.style.border = "6px groove green"
+  });
+  buttons[1].addEventListener('click', function () {
+    container.style.border = '3px dashed red';
+  });
+  buttons[2].addEventListener('click', function () {
+    container.style.border = '5px double blue';
+  })
+}
+
 uploadImage();
 writeText();
+borderChange();

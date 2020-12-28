@@ -5,6 +5,12 @@ body {
   width: 1366px;
 }
 
+button {
+  height: 25px;
+  margin: 10px;
+  width: 55px;
+}
+
 img {
   height: 100%;
   width: 100%;
