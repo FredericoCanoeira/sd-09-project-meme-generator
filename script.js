@@ -7,7 +7,7 @@ const memeContainer = document.querySelector('#meme-image-container');
 const waterButton = document.querySelector('#water');
 const fireButton = document.querySelector('#fire');
 const earthButton = document.querySelector('#earth');
-const memeExemple = document.querySelectorAll('.meme-exemplo')
+const memeExample = document.querySelectorAll('.meme-exemplo')
 
 function addTextToMeme() {
   inputBox.addEventListener('input', function() {
@@ -46,11 +46,11 @@ function earthBorder() {
 earthBorder()
 
 function memePronto() {
-  let srcMemeExemple = '';
-  for (let index = 0; index < memeExemple.length; index += 1) {
-    memeExemple[index].addEventListener('click', function (event) {
-    srcMemeExemple = event.target.src;
-    memeImage.src = srcMemeExemple;
+  let srcMemeExample = '';
+  for (let index = 0; index < memeExample.length; index += 1) {
+    memeExample[index].addEventListener('click', function (event) {
+    srcMemeExample = event.target.src;
+    memeImage.src = srcMemeExample;
     });
   }
 }
