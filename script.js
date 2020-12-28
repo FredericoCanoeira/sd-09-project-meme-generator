@@ -49,7 +49,7 @@ function memePronto() {
   let srcMemeExemple = '';
   for (let index = 0; index < memeExemple.length; index += 1) {
     memeExemple[index].addEventListener('click', function (event) {
-    srcMemeExemple = event.target.src
+    srcMemeExemple = event.target.src;
     memeImage.src = srcMemeExemple;
     });
   }
