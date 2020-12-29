@@ -22,15 +22,15 @@
 }
 
 .button-earth {
-  background-color: rgb(0, 128, 0);
+  background-color: green;
 }
 
 .button-fire {
-  background-color: rgb(255, 0, 0);
+  background-color: red;
 }
 
 .button-water {
-  background-color: rgb(0, 0, 255);
+  background-color: blue;
 }
 
 .meme {
