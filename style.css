@@ -21,6 +21,18 @@
   word-break: break-all;
 }
 
+.button-earth {
+  background-color: rgb(0, 128, 0);
+}
+
+.button-fire {
+  background-color: rgb(255, 0, 0);
+}
+
+.button-water {
+  background-color: rgb(0, 0, 255);
+}
+
 .meme {
   height: 30vh;
   width: 15vw;
