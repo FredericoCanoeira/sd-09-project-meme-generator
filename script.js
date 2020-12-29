@@ -39,18 +39,26 @@ function createStructure () {
 
   const buttonFire = document.createElement('button');
   buttonFire.id = 'fire';
+  buttonFire.innerHTML = 'Set Fire';
   buttonFire.style.backgroundColor = 'red';
   document.getElementById('allBorderButtons').appendChild(buttonFire);
 
   const buttonWater = document.createElement('button');
   buttonWater.id = 'water';
+  buttonWater.innerHTML = 'Float in Water';
   buttonWater.style.backgroundColor = 'blue';
   document.getElementById('allBorderButtons').appendChild(buttonWater);
 
   const buttonEarth = document.createElement('button');
   buttonEarth.id = 'earth';
+  buttonEarth.innerHTML = 'Feel the Nature';
   buttonEarth.style.backgroundColor = 'green';
   document.getElementById('allBorderButtons').appendChild(buttonEarth);
+
+  const sectionText = document.createElement('p');
+  sectionText.className = 'elements';
+  sectionText.innerHTML = 'Choose your Element';
+  document.getElementById('allBorderButtons').appendChild(sectionText);
 
   const buttonMeme1 = document.createElement('button');
   buttonMeme1.id = 'meme-1';
@@ -123,31 +131,72 @@ function buttonEarth() {
 }
 
 function setMeme1() {
-  let loadMeme1 = document.getElementById('output');
-  let loadMemeJokingCypress = document.getElementById('meme-image')
+  let loadMeme1 = document.getElementById('output');  
   loadMeme1.src = new URL('http://127.0.0.1:5500/salt.png');
-  loadMemeJokingCypress.setAttribute('src', 'http://127.0.0.1:5500/salt.png');
 }
 
 function setMeme2() {
-  let loadMeme1 = document.getElementById('output');
-  let loadMemeJokingCypress = document.getElementById('meme-image')
+  let loadMeme1 = document.getElementById('output');  
   loadMeme1.src = new URL('http://127.0.0.1:5500/math.png');
-  loadMemeJokingCypress.setAttribute('src', 'http://127.0.0.1:5500/math.png');
 }
 
 function setMeme3() {
-  let loadMeme1 = document.getElementById('output');
-  let loadMemeJokingCypress = document.getElementById('meme-image');
+  let loadMeme1 = document.getElementById('output');  
   loadMeme1.src = new URL('http://127.0.0.1:5500/smart.png');
-  loadMemeJokingCypress.setAttribute('src', 'http://127.0.0.1:5500/smart.png');
 }
 
 function setMeme4() {
-  let loadMeme1 = document.getElementById('output');
-  let loadMemeJokingCypress = document.getElementById('meme-image');
+  let loadMeme1 = document.getElementById('output');  
   loadMeme1.src = new URL('http://127.0.0.1:5500/jesus.png');
-  loadMemeJokingCypress.setAttribute('src', 'http://127.0.0.1:5500/jesus.png');
+}
+
+function playFire() {
+  let fire = document.getElementById('playFireBG');
+  let water = document.getElementById('playWaterBG');
+  let earth = document.getElementById('playEarthBG');
+  if (fire.style.display === "block") {
+    fire.style.display = "none";
+    water.style.display = "none";
+    earth.style.display = "none";
+  } else {
+    fire.style.display = "block";
+    water.style.display = "none";
+    earth.style.display = "none";
+  }
+  fire.play();
+}
+
+function playWater() {
+  let fire = document.getElementById('playFireBG');
+  let water = document.getElementById('playWaterBG');
+  let earth = document.getElementById('playEarthBG');
+  if (water.style.display === "block") {
+    fire.style.display = "none";
+    water.style.display = "none";
+    earth.style.display = "none";
+  } else {
+    water.style.display = "block";
+    fire.style.display = "none";
+    earth.style.display = "none";
+  }
+  water.play();
+}
+
+function playEarth() {
+  let fire = document.getElementById('playFireBG');
+  let water = document.getElementById('playWaterBG');
+  let earth = document.getElementById('playEarthBG');
+  if (earth.style.display === "block") {
+    fire.style.display = "none";
+    water.style.display = "none";
+    earth.style.display = "none";
+    
+  } else {
+    earth.style.display = "block";
+    water.style.display = "none";
+    fire.style.display = "none";
+  }
+  earth.play();
 }
 
 function listeners() {
@@ -157,10 +206,13 @@ function listeners() {
   insertImage.addEventListener('change', loadFile);
   const eventButtonFire = document.getElementById('fire');
   eventButtonFire.addEventListener('click', buttonFire);
+  eventButtonFire.addEventListener('click', playFire)
   const eventButtonWater = document.getElementById('water');
   eventButtonWater.addEventListener('click', buttonWater);
+  eventButtonWater.addEventListener('click', playWater)
   const eventButtonEarth = document.getElementById('earth');
   eventButtonEarth.addEventListener('click', buttonEarth);
+  eventButtonEarth.addEventListener('click', playEarth)
   const firstButtonMeme = document.getElementById('meme-1');
   firstButtonMeme.addEventListener('click', setMeme1);
   const secondButtonMeme = document.getElementById('meme-2');
@@ -174,5 +226,5 @@ function listeners() {
 window.onload = function() {
   createStructure();
   listeners ();
-  inputText();  
+  inputText();
 };

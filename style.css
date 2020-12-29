@@ -5,13 +5,14 @@
   margin: 0;
   margin-right: -50%;
   position: absolute;
-  
+  z-index: 1;
   transform: translate(-50%, -50%);
 }
 
 h1 {
   margin-top: 0%;
   text-align: center;
+  font-family: 'Courgette', cursive;
 }
 
 #output {
@@ -45,8 +46,9 @@ body {
 }
 
 #allBorderButtons {
+  display: flex;
   position: relative;
-  top: 252px;
+  top: 267px;
   left: 45px;
 }
 
@@ -111,3 +113,50 @@ body {
 .meme-4 {
   background-image: url(jesus.png);
 }
+
+.video-container {
+  position: absolute;
+  top: -342px;
+  left: -518px;
+  width: 1350px;
+  height: 729px;
+  z-index: 0;
+  margin-left: 0%;
+  margin: 0%;
+}
+
+#fire {
+  font-family: 'Lobster', cursive;
+  font-size: large;
+  color: white;
+}
+#water {
+  font-family: 'Permanent Marker', cursive;
+  color: white;
+}
+
+#earth {
+  font-family: 'Redressed', cursive;
+  font-size: large;
+  color: white;
+}
+
+#playWaterBG {  
+  position: absolute;
+  top: 7%;
+}
+
+#playEarthBG {  
+  position: absolute;
+  top: 0%;
+}
+
+.elements {
+  position: absolute;
+  bottom: 41px;
+  left: 35px;
+  font-family: 'Courgette', cursive;
+  font-size: large;
+  text-shadow: 1px 1px white;
+}
+
