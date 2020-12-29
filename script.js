@@ -1,5 +1,9 @@
 const input = document.querySelector('#text-input');
 const inputImage = document.querySelector('#meme-insert');
+const memeContainer = document.querySelector('#meme-image-container');
+const fireButton = document.querySelector('#fire');
+const waterButton = document.querySelector('#water');
+const earthButton = document.querySelector('#earth');
 
 function showText() {
   const memeText = document.querySelector('#meme-text');
@@ -20,3 +24,18 @@ function uploadImage() {
   memeImage.style.backgroundImage = `url(${inputImage.value})`;
 }
 inputImage.addEventListener('input', uploadImage);
+
+function changeToFireStyle() {
+  memeContainer.style.border = 'dashed red 3px';
+}
+fireButton.addEventListener('click', changeToFireStyle);
+
+function changeToWaterStyle() {
+  memeContainer.style.border = 'double blue 5px';
+}
+waterButton.addEventListener('click', changeToWaterStyle);
+
+function changeToEarthStyle() {
+  memeContainer.style.border = 'groove green 6px';
+}
+earthButton.addEventListener('click', changeToEarthStyle);
