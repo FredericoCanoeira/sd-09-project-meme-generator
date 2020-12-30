@@ -17,11 +17,11 @@
   width: 100%;
 }
 
-.mainText {
-  text-shadow: 5px 5px 5px black;
-  color: white;
+#meme-text {
+  color: rgb(255, 255, 255);
   font-size: 30px;
   position: absolute;
+  text-shadow: rgb(0 , 0 , 0) 5px 5px 5px;
   top: 0;
 }
 
@@ -35,4 +35,16 @@
 
 .earth {
   border: groove green 6px;
+}
+
+#fire {
+  background-color: red;
+}
+
+#water {
+  background-color: blue;
+}
+
+#earth {
+  background-color: green;
 }

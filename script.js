@@ -2,6 +2,9 @@ const input = document.querySelector('.input');
 const memeText = document.querySelector('#meme-text');
 const insertImage = document.querySelector('#meme-insert');
 const meme = document.querySelector('#meme-image');
+const fire = document.querySelector('#fire');
+const water = document.querySelector('#water');
+const earth = document.querySelector('#earth');
 
 function setTextMeme() {
   memeText.innerText = input.value;
