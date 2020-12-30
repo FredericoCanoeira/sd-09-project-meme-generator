@@ -2,9 +2,14 @@
 .container {
   
   background-color: white ;
+  border: black solid 1px ;
+  position: relative;
+  max-width:500px;
+  max-height:410px;
+  width: auto;
+  height: auto;
   
-  
-     
+    
 }
 
 #meme-text {
@@ -13,16 +18,8 @@
   position: absolute;
   font-size: 30px;
   margin-left: 0px;
-  top: 400px;
+  top: 350px;
   left: 50px;
-  
-  
-  
-}
-img {
-  border: black solid 1px ;
-  position: relative;
-  
 }
 
 #fire {
