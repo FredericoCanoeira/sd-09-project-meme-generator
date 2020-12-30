@@ -18,9 +18,21 @@
 }
 
 .mainText {
-  box-shadow: 5px 5px 5px black;
+  text-shadow: 5px 5px 5px black;
   color: white;
   font-size: 30px;
   position: absolute;
   top: 0;
+}
+
+.fire {
+  border: 3px dashed red;
+}
+
+.water {
+  border: blue 5px double;
+}
+
+.earth {
+  border: groove green 6px;
 }
