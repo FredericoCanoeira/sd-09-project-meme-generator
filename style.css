@@ -11,9 +11,9 @@ body {
 }
 
 .image-container div {
+  bottom: 20px;
   font-size: 3em;
   padding: 0 10px;
   position: absolute;
-  bottom: 20px;
   width: 480px;
 }
