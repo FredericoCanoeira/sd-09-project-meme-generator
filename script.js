@@ -4,6 +4,6 @@
  botao.addEventListener('click', criarMeme);
  
  function criarMeme(event){
-    texto.innerHTML = message.value;    
+    texto.innerHTML = message.value.toUpperCase();    
 
  }
