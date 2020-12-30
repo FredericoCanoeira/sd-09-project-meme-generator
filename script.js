@@ -3,7 +3,13 @@ const memeContainer = document.getElementById('meme-image-container');
 
 function handleUpdateValue(event) {
   const text = document.getElementById('meme-text');
-  text.innerText = event.target.value;
+  const inputText = event.target.value;
+  console.log(inputText.length);
+  if (inputText.length < 60) {
+    text.innerText = event.target.value;
+  } else {
+    alert('Entrada máxima é de 60 caracteres.');
+  }
 }
 
 const generateInputText = function () {
