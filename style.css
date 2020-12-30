@@ -48,3 +48,14 @@
 #earth {
   background-color: green;
 }
+
+.imgContainer {
+  min-width: 400px;
+  display: flex;
+  flex-direction: row;
+}
+
+.preMeme {
+  max-width: 100px;
+  min-height: 100px;
+}
