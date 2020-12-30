@@ -29,6 +29,11 @@ function createStructure () {
   img.src = '';
   document.getElementById('meme-image').appendChild(img);
 
+  const memeImg = document.createElement('img');
+  memeImg.id = 'memeOutput';
+  memeImg.src = '';
+  document.getElementById('meme-image').appendChild(memeImg);
+
   const buttonMemesSection = document.createElement('section');
   buttonMemesSection.id = 'allMemes';
   document.body.appendChild(buttonMemesSection);
@@ -131,23 +136,39 @@ function buttonEarth() {
 }
 
 function setMeme1() {
-  let loadMeme1 = document.getElementById('output');  
-  loadMeme1.src = new URL('http://127.0.0.1:5500/salt.png');
+  let memes = document.getElementById('memeOutput');
+  if(memes.src === 'http://127.0.0.1:5500/salt.png') {
+    memes.src = '';
+  } else {
+    memes.src = 'http://127.0.0.1:5500/salt.png';
+  }
 }
 
 function setMeme2() {
-  let loadMeme1 = document.getElementById('output');  
-  loadMeme1.src = new URL('http://127.0.0.1:5500/math.png');
+  let memes = document.getElementById('memeOutput');
+  if(memes.src === 'http://127.0.0.1:5500/math.png') {
+    memes.src = '';
+  } else {
+    memes.src = 'http://127.0.0.1:5500/math.png';
+}
 }
 
 function setMeme3() {
-  let loadMeme1 = document.getElementById('output');  
-  loadMeme1.src = new URL('http://127.0.0.1:5500/smart.png');
+  let memes = document.getElementById('memeOutput');
+  if(memes.src === 'http://127.0.0.1:5500/smart.png') {
+    memes.src = '';
+  } else {
+    memes.src = 'http://127.0.0.1:5500/smart.png';
+}
 }
 
 function setMeme4() {
-  let loadMeme1 = document.getElementById('output');  
-  loadMeme1.src = new URL('http://127.0.0.1:5500/jesus.png');
+  let memes = document.getElementById('memeOutput');
+  if(memes.src === 'http://127.0.0.1:5500/jesus.png') {
+    memes.src = '';
+  } else {
+    memes.src = 'http://127.0.0.1:5500/jesus.png';  
+}
 }
 
 function playFire() {
@@ -204,7 +225,7 @@ function listeners() {
   textContainer.addEventListener('keyup', inputText);
   const insertImage = document.getElementById('meme-insert');
   insertImage.addEventListener('change', loadFile);
-  const eventButtonFire = document.getElementById('fire');
+  const eventButtonFire = document.getElementById('fire');  
   eventButtonFire.addEventListener('click', buttonFire);
   eventButtonFire.addEventListener('click', playFire)
   const eventButtonWater = document.getElementById('water');
@@ -213,6 +234,7 @@ function listeners() {
   const eventButtonEarth = document.getElementById('earth');
   eventButtonEarth.addEventListener('click', buttonEarth);
   eventButtonEarth.addEventListener('click', playEarth)
+  
   const firstButtonMeme = document.getElementById('meme-1');
   firstButtonMeme.addEventListener('click', setMeme1);
   const secondButtonMeme = document.getElementById('meme-2');

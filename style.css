@@ -64,6 +64,8 @@ body {
   width: 500px;
   height: 400px;
   margin-top: 0px;
+  display: flex;
+  position: static;
 }
 
 #meme-insert {
@@ -160,3 +162,8 @@ body {
   text-shadow: 1px 1px white;
 }
 
+#memeOutput {
+  position: absolute;
+  height: 400px;
+  width: 500px;
+}
