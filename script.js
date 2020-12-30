@@ -15,13 +15,13 @@ function changeMeme(event) {
 }
 
 function compareClass(event) {
-  if(event.target.id === 'fire'){
+  if (event.target.id === 'fire') {
     memeContainer.classList.add('fire');
   }
-  if(event.target.id === 'water'){
+  if (event.target.id === 'water') {
     memeContainer.classList.add('water');
   }
-  if(event.target.id === 'earth'){
+  if (event.target.id === 'earth') {
     memeContainer.classList.add('earth');
   }
 }
@@ -29,7 +29,7 @@ function compareClass(event) {
 function borderClick(event) {
   if (event.target.className !== 'buttons') {
     memeContainer.className = '';
-    memeContainer.classList.add('mainImage')
+    memeContainer.classList.add('mainImage');
     compareClass(event);
   }
 }

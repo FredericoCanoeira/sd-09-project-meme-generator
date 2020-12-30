@@ -17,11 +17,11 @@
   width: 100%;
 }
 
-#meme-text {
-  color: rgb(255, 255, 255);
+.memeText {
+  color: white;
   font-size: 30px;
   position: absolute;
-  text-shadow: rgb(0 , 0 , 0) 5px 5px 5px;
+  text-shadow: black 5px 5px 5px;
   top: 0;
 }
 
@@ -37,22 +37,22 @@
   border: groove green 6px;
 }
 
-#fire {
+.backfire {
   background-color: red;
 }
 
-#water {
+.backwater {
   background-color: blue;
 }
 
-#earth {
+.backearth {
   background-color: green;
 }
 
 .imgContainer {
-  min-width: 400px;
   display: flex;
   flex-direction: row;
+  min-width: 400px;
 }
 
 .preMeme {
