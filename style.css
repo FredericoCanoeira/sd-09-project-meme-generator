@@ -1,9 +1,17 @@
 #meme-image-container {
+  background-color: white;
   border: 1px solid black;
-  max-width: 600px;
   height: 600px;
+  max-width: 600px;
+  position: relative;
+}
+
+#meme-text {
+  position: absolute;
+  bottom: 40px;
 }
 
 #meme-image {
-  max-width: 100%;
+  width: 100%;
+  height: 100%;
 }

@@ -11,7 +11,6 @@ const generateInputText = function () {
   labelElement.for = 'text-input';
   labelElement.innerText = 'Texto:';
   const inputTextElement = document.createElement('input');
-  //inputTextElement.name = 'text-input';
   inputTextElement.id = 'text-input';
   inputTextElement.addEventListener('input', handleUpdateValue);
   inputContainer.appendChild(labelElement);
@@ -27,18 +26,17 @@ function handleFileSelected(event) {
 const generateInputFile = function () {
   const labelElement = document.createElement('label');
   labelElement.for = 'meme-insert';
-  labelElement.innerText = 'Foto:'
+  labelElement.innerText = 'Foto:';
   const inputFileElement = document.createElement('input');
   inputFileElement.type = 'file';
   inputFileElement.id = 'meme-insert';
   inputFileElement.addEventListener('change', handleFileSelected);
   inputContainer.appendChild(labelElement);
   inputContainer.appendChild(inputFileElement);
-}
+};
 
 const generateMemeImage = function () {
   const imgElement = document.createElement('img');
-  //imgElement.src = 'img/';
   imgElement.id = 'meme-image';
   memeContainer.appendChild(imgElement);
 };
