@@ -12,6 +12,11 @@ img {
   width: 600px;
 }
 
+input {
+  border-radius: 0.3em;
+  padding: 0.3em;
+}
+
 main {
   background-color: rgba(0, 0, 0, 0.7);
   border-radius: 1em;
@@ -24,11 +29,19 @@ main {
 
 .button {
   border: none;
+  border-radius: 2px;
   box-shadow: 2px 2px 5px grey;
   color: white;
   font-weight: 600;
   margin: 0.6em;
   padding: 1em;
+  transition: 0.5s;
+}
+
+.button:hover {
+  border-radius: 5px;
+  margin: 0.6em 1em;
+  padding: 1em 2em;
 }
 
 .container {
@@ -60,13 +73,23 @@ main {
   width: 600px;
 }
 
+.image-gallery {
+  height: 150px;
+}
+
 .image-gallery img {
   border: 6px ridge silver;
   box-shadow: 2px 2px 5px grey;
   display: inline-block;
   height: 90px;
   margin: 0.4em;
+  transition: 0.3s;
   width: 120px;
+}
+
+.image-gallery img:hover {
+  height: 120px;
+  width: 160px;
 }
 
 .shadow-text {
