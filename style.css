@@ -18,7 +18,7 @@ input {
 }
 
 main {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0 , 0 , 0 , 0.7);
   border-radius: 1em;
   font-weight: 600;
   margin: 2em auto;
