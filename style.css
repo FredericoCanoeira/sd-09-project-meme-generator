@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.head {
+  display: inline-block;
+}
+
+.mainImage {
+  position: relative;
+  width: 100vh;
+  height: 60vh;
+  margin: 50px auto;
+}
+
+.images {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.mainText {
+  position: absolute;
+  top: 0;
+  right: left;
+}
