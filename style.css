@@ -1,0 +1,5 @@
+#meme-image-container {
+  border: 1px solid black;
+  max-width: 600px;
+  height: 400px;
+}
