@@ -12,6 +12,8 @@
   width: 100vh;
   height: 60vh;
   margin: 50px auto;
+  border: black 1px solid;
+  background-color: white;
 }
 
 .images {
