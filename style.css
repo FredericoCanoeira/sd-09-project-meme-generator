@@ -1,0 +1,17 @@
+
+.container {
+  border: black solid 1px ;
+  position: relative;
+     
+}
+
+.textMeme {
+  box-shadow: 5px 5px 5px black;
+  color: green;
+  position: absolute;
+  font-size: 30px;
+  height: 100px;
+  margin-bottom: 350px ;
+ 
+  width: 200px;
+}
