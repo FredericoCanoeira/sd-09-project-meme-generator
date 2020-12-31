@@ -4,17 +4,18 @@ function insertText() {
   memeText.innerText = textInput.value;
 }
 
-function displayMeme() {
-  const memeInsert = document.querySelector('#meme-insert');
-  const memeImage = document.querySelector('#meme-image');
-  // Remove all Child from div if there's any child. Used code at https://developer.mozilla.org/en-US/docs/Web/API/Node/removeChild
+function removePreviousImage(memeImage) {
   while (memeImage.firstChild) {
     memeImage.removeChild(memeImage.firstChild);
   }
+}
+
+function displayMeme() {
+  const memeInsert = document.querySelector('#meme-insert');
+  const memeImage = document.querySelector('#meme-image');
+  removePreviousImage(memeImage);
   const img = document.createElement('img');
   img.src = URL.createObjectURL(memeInsert.files[0]);
-  img.style.width = '500px';
-  img.style.height = '500px';
   memeImage.appendChild(img);
 }
 
@@ -45,6 +46,36 @@ function changeBorder(evt) {
 // calcular a proporção da imagem
 // multiplicar o lado maior que tomará o tamanho de 500px pela proporção calculada
 
+function displayReadyMadeImg(evt) {
+  const imgSelectedId = evt.target.id;
+  const img = document.createElement('img');
+  const memeImage = document.querySelector('#meme-image');
+  switch (imgSelectedId) {
+    case 'meme-1':
+      removePreviousImage(memeImage);
+      img.src = 'imgs/meme1.png';
+      memeImage.appendChild(img);
+      break;
+    case 'meme-2':
+      removePreviousImage(memeImage);
+      img.src = 'imgs/meme2.png';
+      memeImage.appendChild(img);
+      break;
+    case 'meme-3':
+      removePreviousImage(memeImage);
+      img.src = 'imgs/meme3.png';
+      memeImage.appendChild(img);
+      break;
+    case 'meme-4':
+      removePreviousImage(memeImage);
+      img.src = 'imgs/meme4.png';
+      memeImage.appendChild(img);
+      break;
+      default:
+        //do nothing
+  }
+}
+
 window.onload = function () {
   const textInput = document.querySelector('#text-input');
   textInput.addEventListener('keyup', insertText);
@@ -52,6 +83,8 @@ window.onload = function () {
   memeInsert.addEventListener('change', displayMeme);
   const buttonContainer = document.querySelector('#button-container');
   buttonContainer.addEventListener('click', changeBorder);
+  const readyMadeImgContainer = document.querySelector('#ready-made-img-container');
+  readyMadeImgContainer.addEventListener('click', displayReadyMadeImg);
 };
 
 // limite máximo de caracteres 60: An element with position: absolute; is positioned relative t
