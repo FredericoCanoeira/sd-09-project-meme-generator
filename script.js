@@ -1,3 +1,4 @@
+//  function to create all html structure
 function createStructure () {
   const apend = document.getElementById('meme-image-container');
   
@@ -85,7 +86,7 @@ function createStructure () {
   buttonMeme4.className = 'meme-4';
   document.getElementById('allMemes').appendChild(buttonMeme4);
 }
-
+//  function to input text on meme container
 function inputText() {
   const textInputed = document.getElementById('text-input');
   let textContainer = document.getElementById('meme-text');
@@ -93,7 +94,7 @@ function inputText() {
     textContainer.innerText = textInputed.value;
   }
 }
-
+//  function to get file from input and set on choose element
 function loadFile(event) {
   let output = document.getElementById('output');
   let memeOutput = document.getElementById('memeOutput');
@@ -108,7 +109,7 @@ function loadFile(event) {
     }
   }
 }
-
+//  function to set or set off choosed border on element after pressed buttom
 function buttonFire() {
   const fire = document.getElementById('meme-image-container');
   if (fire.classList.value.includes('fire')) {
@@ -118,7 +119,7 @@ function buttonFire() {
     fire.classList.remove('water', 'earth');
   }
 }
-
+//  function to set or set off choosed border on element after pressed buttom
 function buttonWater() {
   const water = document.getElementById('meme-image-container');
   if (water.classList.value.includes('water')) {
@@ -128,7 +129,7 @@ function buttonWater() {
     water.classList.remove('fire', 'earth');
   }
 }
-
+//  function to set or set off choosed border on element after pressed buttom
 function buttonEarth() {
   const earth = document.getElementById('meme-image-container');
   if (earth.classList.value.includes('earth')) {
@@ -138,55 +139,67 @@ function buttonEarth() {
     earth.classList.remove('fire', 'water');
   }
 }
-
+// function to set or set off choosed meme on element after pressed on picture meme1
 function setMeme1() {
+  let output = document.getElementById('output');
   let memes = document.getElementById('memeOutput');
   let divSrc = document.getElementById('meme-image');
   if(memes.src === 'http://127.0.0.1:5500/imgs/meme1.png') {
     memes.setAttribute('src', '');
     divSrc.setAttribute('src', '');
+    output.setAttribute('src', '');
   } else {
     memes.setAttribute('src','http://127.0.0.1:5500/imgs/meme1.png');
     divSrc.setAttribute('src','http://127.0.0.1:5500/imgs/meme1.png');
+    output.setAttribute('src','http://127.0.0.1:5500/imgs/meme1.png');
   }
 }
-
+// function to set or set off choosed meme on element after pressed on picture meme2
 function setMeme2() {
+  let output = document.getElementById('output');
   let memes = document.getElementById('memeOutput');
   let divSrc = document.getElementById('meme-image');
   if(memes.src === 'http://127.0.0.1:5500/imgs/meme2.png') {
     memes.setAttribute('src', '');
     divSrc.setAttribute('src', '');
+    output.setAttribute('src', '');
   } else {
     memes.src = 'http://127.0.0.1:5500/imgs/meme2.png';
     divSrc.setAttribute('src','http://127.0.0.1:5500/imgs/meme2.png');
+    output.setAttribute('src','http://127.0.0.1:5500/imgs/meme2.png');
   }
 }
-
+// function to set or set off choosed meme on element after pressed on picture meme3
 function setMeme3() {
+  let output = document.getElementById('output');
   let memes = document.getElementById('memeOutput');
   let divSrc = document.getElementById('meme-image');
   if(memes.src === 'http://127.0.0.1:5500/imgs/meme3.png') {
     memes.setAttribute('src', '');
     divSrc.setAttribute('src', '');
+    output.setAttribute('src', '');
   } else {
     memes.src = 'http://127.0.0.1:5500/imgs/meme3.png';
     divSrc.setAttribute('src','http://127.0.0.1:5500/imgs/meme3.png');
+    output.setAttribute('src','http://127.0.0.1:5500/imgs/meme3.png');
   }
 }
-
+// function to set or set off choosed meme on element after pressed on picture meme4
 function setMeme4() {
+  let output = document.getElementById('output');
   let memes = document.getElementById('memeOutput');
   let divSrc = document.getElementById('meme-image');
   if(memes.src === 'http://127.0.0.1:5500/imgs/meme4.png') {
     memes.setAttribute('src', '');
     divSrc.setAttribute('src', '');
+    output.setAttribute('src', '');
   } else {
     memes.src = 'http://127.0.0.1:5500/imgs/meme4.png';
     divSrc.setAttribute('src','http://127.0.0.1:5500/imgs/meme4.png');
+    output.setAttribute('src','http://127.0.0.1:5500/imgs/meme4.png');
   }
 }
-
+// function to display or hide video background after press choosed element
 function playFire() {
   let fire = document.getElementById('playFireBG');
   let water = document.getElementById('playWaterBG');
@@ -202,7 +215,7 @@ function playFire() {
   }
   fire.play();
 }
-
+// function to display or hide video background after press choosed element
 function playWater() {
   let fire = document.getElementById('playFireBG');
   let water = document.getElementById('playWaterBG');
@@ -218,7 +231,7 @@ function playWater() {
   }
   water.play();
 }
-
+// function to display or hide video background after press choosed element
 function playEarth() {
   let fire = document.getElementById('playFireBG');
   let water = document.getElementById('playWaterBG');
@@ -235,7 +248,7 @@ function playEarth() {
   }
   earth.play();
 }
-
+//  function to encapsulate all listeners
 function listeners() {
   const textContainer = document.getElementById('text-input');
   textContainer.addEventListener('keyup', inputText);

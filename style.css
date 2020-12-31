@@ -1,6 +1,6 @@
 .image-container {
   border: 1px solid black;
-  background-color: white;
+  background-color: transparent;
   left: 50%;
   margin: 0;
   margin-right: -50%;
@@ -10,10 +10,18 @@
 }
 
 h1 {
+  background-color: white;
+  width: 253px;
+  height: 39px;
+  border-radius: 50%;
+  position: relative;
+  left: 25%;
+  opacity: 0.6;
   margin-top: 0%;
   text-align: center;
   font-family: 'Courgette', cursive;
-  text-shadow: 1px 1px white;
+  text-shadow: 1px 1px black;
+  color: green;
 }
 
 #output {
@@ -44,16 +52,17 @@ body {
   position: absolute;
   top: 49%;
   transform: translate(-50%, -50%);
-  background-image: url(147581.jpg);
+  background-image: url(meme.jpg);
   background-position: center;
   background-attachment: fixed;
-  background-size: cover;  
+  background-size: cover;
+  overflow: hidden;
 }
 
 #allBorderButtons {
   display: flex;
   position: relative;
-  top: 267px;
+  top: 285px;
   left: 45px;
 }
 
@@ -123,7 +132,7 @@ body {
 }
 
 .video-container {
-  position: absolute;
+  position: fixed;
   top: -342px;
   left: -518px;
   width: 1350px;
@@ -136,27 +145,37 @@ body {
 #fire {
   font-family: 'Lobster', cursive;
   font-size: large;
-  color: white;
+  color: black;
 }
 #water {
   font-family: 'Permanent Marker', cursive;
-  color: white;
+  color: black;
 }
 
 #earth {
   font-family: 'Redressed', cursive;
   font-size: large;
-  color: white;
+  color: black;
+}
+
+#playFireBG {
+  position: absolute;
+  width: 113%;
+  right: -7%;
 }
 
 #playWaterBG {  
-  position: absolute;
-  top: 7%;
+  position: absolute;  
+  top: 3%;
+  width: 113%;
+  left: -6%;
 }
 
 #playEarthBG {  
   position: absolute;
   top: 0%;
+  width: 120%;
+  left: -13%;
 }
 
 .elements {
@@ -165,11 +184,23 @@ body {
   left: 35px;
   font-family: 'Courgette', cursive;
   font-size: large;
-  text-shadow: 1px 1px white;
+  text-shadow: 1px 1px black;
+  color: purple;
 }
 
 #memeOutput {
   position: absolute;
   height: 400px;
   width: 500px;
+}
+
+p.elements {
+  font-size: 25px;
+  padding-left: 18px;
+  padding-right: 20px;
+  border-radius: 50%;
+  opacity: 0.6;
+  position: absolute;
+  left: 1%;
+  background-color:white;
 }
