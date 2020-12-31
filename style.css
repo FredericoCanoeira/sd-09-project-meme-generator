@@ -32,14 +32,9 @@ button {
 
 .meme-image {
   height: 500px;
-  position: absolute;
+  position: relative;
   width: 500px;
   z-index: -1;
-}
-
-.meme-image img {
-  height: 500px;
-  width: 500px;
 }
 
 .meme-text {

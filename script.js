@@ -4,43 +4,18 @@ function insertText() {
   memeText.innerText = textInput.value;
 }
 
-function removePreviousImage(memeImage) {
-  while (memeImage.firstChild) {
-    memeImage.removeChild(memeImage.firstChild);
-  }
-}
-
 function displayMeme() {
   const memeInsert = document.querySelector('#meme-insert');
   const memeImage = document.querySelector('#meme-image');
-  removePreviousImage(memeImage);
-  const img = document.createElement('img');
-  img.src = URL.createObjectURL(memeInsert.files[0]);
-  memeImage.appendChild(img);
+  memeImage.src = '';
+  memeImage.src = URL.createObjectURL(memeInsert.files[0]);
 }
 
 function changeBorder(evt) {
   const clickedButtonId = evt.target.id;
   const memeImageContainer = document.querySelector('#meme-image-container');
-  switch (clickedButtonId) {
-    case 'default-border':
-      memeImageContainer.classList.remove('fire', 'earth', 'water');
-      memeImageContainer.classList.add('default-border');
-      break;
-    case 'fire':
-      memeImageContainer.classList.remove('default-border', 'earth', 'water');
-      memeImageContainer.classList.add('fire');
-      break;
-    case 'earth':
-      memeImageContainer.classList.remove('default-border', 'fire', 'water');
-      memeImageContainer.classList.add('earth');
-      break;
-    case 'water':
-      memeImageContainer.classList.remove('default-border', 'fire', 'earth');
-      memeImageContainer.classList.add('water');
-      break;
-    default:
-      // do nothing;
+  if (clickedButtonId != 'button-container') {
+    memeImageContainer.className = `image-container ${clickedButtonId}`;
   }
 }
 // calcular a proporção da imagem
@@ -49,12 +24,10 @@ function changeBorder(evt) {
 function displayReadyMadeImg(evt) {
   const imgSelected = evt.target;
   const imgSelectedId = evt.target.id;
-  const img = document.createElement('img');
   const memeImage = document.querySelector('#meme-image');
   if (imgSelectedId !== 'ready-made-img-container') {
-    removePreviousImage(memeImage);
-    img.src = imgSelected.src;
-    memeImage.appendChild(img);
+    memeImage.src = '';
+    memeImage.src = imgSelected.src;
   }
 }
 
