@@ -10,7 +10,14 @@ body {
   width: 500px;
 }
 
-.image-container div {
+.meme-image {
+  height: 500px;
+  position: absolute;
+  width: 500px;
+  z-index: -1;
+}
+
+.meme-text {
   bottom: 20px;
   font-size: 3em;
   padding: 0 10px;
