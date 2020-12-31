@@ -17,7 +17,8 @@ function displayMeme() {
   img.style.height = '500px';
   memeImage.appendChild(img);
 }
-// calcular a proporção da imagem para depois multiplicar o lado maior que tomará o tamanho de 500px pela proporção calculada
+// calcular a proporção da imagem 
+// multiplicar o lado maior que tomará o tamanho de 500px pela proporção calculada
 
 window.onload = function () {
   const textInput = document.querySelector('#text-input');

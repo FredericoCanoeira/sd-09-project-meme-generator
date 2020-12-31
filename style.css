@@ -3,6 +3,7 @@ body {
 }
 
 .image-container {
+  background-color: white;
   border: 1px solid;
   height: 500px;
   margin: 1em auto;
@@ -11,7 +12,6 @@ body {
 }
 
 .meme-image {
-  background-color: white;
   height: 500px;
   position: absolute;
   width: 500px;
@@ -20,8 +20,10 @@ body {
 
 .meme-text {
   bottom: 20px;
-  font-size: 3em;
+  color: white;
+  font-size: 30px;
   padding: 0 10px;
   position: absolute;
+  text-shadow: 5px 5px 5px black;
   width: 480px;
 }
