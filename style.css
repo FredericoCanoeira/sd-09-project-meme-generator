@@ -1,9 +1,9 @@
 body {
-  background-color: rgb(117, 179, 231);
-  color: rgb(27, 36, 49);
+  background-color: rgb(117 , 179 , 231);
+  box-sizing: border-box;
+  color: rgb(27 , 36 , 49);
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 #container {
@@ -18,10 +18,9 @@ body {
 
 header {
   align-items: center;
-  background-color: rgb(255, 166, 43);
+  background-color: rgb(255 , 166 , 43);
   box-shadow: 0 8px 6px -6px black;
   display: flex;
-  align-items: center;
   justify-content: center;
 }
 
@@ -52,8 +51,8 @@ h1 {
   background-color: white;
   border: 1px solid black;
   height: 450px;
-  width: 450px;
   position: relative;
+  width: 450px;
 }
 
 #meme-text {
@@ -73,7 +72,7 @@ h1 {
 }
 
 .buttons-container {
-  margin-top: 20px;
+  margin: 20px 0;
 }
 
 .btn {
@@ -98,4 +97,13 @@ h1 {
 
 #earth {
   background-color: green;
+}
+
+.thumbnail {
+  border: 2px groove rgb(38 , 26 , 13);
+  border-radius: 4px;
+  height: 100px;
+  margin: 0 5px;
+  width: 100px;
+  /* border: 4px groove rgb(153 , 102 , 51); */
 }

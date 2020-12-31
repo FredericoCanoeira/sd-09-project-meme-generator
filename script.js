@@ -1,6 +1,7 @@
 const inputContainer = document.getElementById('input-container');
 const memeContainer = document.getElementById('meme-image-container');
 const buttonsContainer = document.querySelector('.buttons-container');
+const thumbnailsContainer = document.querySelector('.thumbnails-container');
 
 function handleUpdateValue(event) {
   const text = document.getElementById('meme-text');
@@ -53,17 +54,16 @@ const generateButton = function (id, value) {
   const button = document.createElement('button');
   button.id = id;
   button.className = 'btn';
-  button.innerText = value;
+  button.innerHTML = value;
   return button;
 };
 
 function handleChangeFireBorder() {
-  console.log(memeContainer);
   memeContainer.style.border = '3px dashed red';
 }
 
 const generateButtonFire = function () {
-  const buttonFire = generateButton('fire', 'Fire');
+  const buttonFire = generateButton('fire', 'Fire &#128293');
   buttonFire.addEventListener('click', handleChangeFireBorder);
   buttonsContainer.appendChild(buttonFire);
 };
@@ -73,7 +73,7 @@ function handleChangeWaterBorder() {
 }
 
 const generateButtonWater = function () {
-  const buttonWater = generateButton('water', 'Water');
+  const buttonWater = generateButton('water', 'Water &#128167');
   buttonWater.addEventListener('click', handleChangeWaterBorder);
   buttonsContainer.appendChild(buttonWater);
 };
@@ -83,9 +83,24 @@ function handleChangeEarthBorder() {
 }
 
 const generateButtonEarth = function () {
-  const buttonEarth = generateButton('earth', 'Earth');
+  const buttonEarth = generateButton('earth', 'Earth &#127793');
   buttonEarth.addEventListener('click', handleChangeEarthBorder);
   buttonsContainer.appendChild(buttonEarth);
+};
+
+const generateThumbnails = function () {
+  const images = ['meme1.png', 'meme2.png', 'meme3.png', 'meme4.png'];
+  /* for (let index; index < images.length; index += 1) {
+  } */
+  for (let index = 0; index < images.length; index++) {
+    const img = document.createElement('img');
+    img.id = `meme-${index + 1}`;
+    img.className = 'thumbnail';
+    img.src = `imgs/${images[index]}`;
+    thumbnailsContainer.appendChild(img);
+    
+    // console.log(index);
+  }
 };
 
 window.onload = function () {
@@ -96,8 +111,5 @@ window.onload = function () {
   generateButtonFire();
   generateButtonWater();
   generateButtonEarth();
+  generateThumbnails();
 };
-
-// fire -> &#128293;
-// water -> &#128167
-// earth -> &#129716;
