@@ -1,12 +1,12 @@
 .image-container {
   border: 1px solid black;
-  background-color: transparent;
+  background-color: white;
   left: 50%;
   margin: 0;
   margin-right: -50%;
   position: absolute;
   z-index: 1;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); 
 }
 
 h1 {
@@ -46,6 +46,8 @@ body {
   transform: translate(-50%, -50%);
   background-image: url(147581.jpg);
   background-position: center;
+  background-attachment: fixed;
+  background-size: cover;  
 }
 
 #allBorderButtons {

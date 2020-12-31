@@ -96,8 +96,10 @@ function inputText() {
 
 function loadFile(event) {
   let output = document.getElementById('output');
+  let memeOutput = document.getElementById('memeOutput');
   if(output !== '') {
     output.src = URL.createObjectURL(event.target.files[0]);
+    memeOutput.setAttribute('src', '');
   } else {
     output.onload = function() {
       URL.revokeObjectURL(output.src);
@@ -137,37 +139,49 @@ function buttonEarth() {
 
 function setMeme1() {
   let memes = document.getElementById('memeOutput');
+  let divSrc = document.getElementById('meme-image');
   if(memes.src === 'http://127.0.0.1:5500/meme1.png') {
-    memes.src = '';
+    memes.setAttribute('src', '');
+    divSrc.setAttribute('src', ''); 
   } else {
-    memes.src = 'http://127.0.0.1:5500/meme1.png';
+    memes.setAttribute('src','http://127.0.0.1:5500/meme1.png');
+    divSrc.setAttribute('src','http://127.0.0.1:5500/meme1.png');
   }
 }
 
 function setMeme2() {
   let memes = document.getElementById('memeOutput');
+  let divSrc = document.getElementById('meme-image');
   if(memes.src === 'http://127.0.0.1:5500/meme2.png') {
-    memes.src = '';
+    memes.setAttribute('src', '');
+    divSrc.setAttribute('src', ''); 
   } else {
     memes.src = 'http://127.0.0.1:5500/meme2.png';
+    divSrc.setAttribute('src','http://127.0.0.1:5500/meme2.png');
 }
 }
 
 function setMeme3() {
   let memes = document.getElementById('memeOutput');
+  let divSrc = document.getElementById('meme-image');
   if(memes.src === 'http://127.0.0.1:5500/meme3.png') {
-    memes.src = '';
+    memes.setAttribute('src', '');
+    divSrc.setAttribute('src', ''); 
   } else {
     memes.src = 'http://127.0.0.1:5500/meme3.png';
+    divSrc.setAttribute('src','http://127.0.0.1:5500/meme3.png');
 }
 }
 
 function setMeme4() {
   let memes = document.getElementById('memeOutput');
+  let divSrc = document.getElementById('meme-image');
   if(memes.src === 'http://127.0.0.1:5500/meme4.png') {
-    memes.src = '';
+    memes.setAttribute('src', '');
+    divSrc.setAttribute('src', ''); 
   } else {
-    memes.src = 'http://127.0.0.1:5500/meme4.png';  
+    memes.src = 'http://127.0.0.1:5500/meme4.png';
+    divSrc.setAttribute('src','http://127.0.0.1:5500/meme4.png');
 }
 }
 
