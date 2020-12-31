@@ -22,7 +22,7 @@ function displayMeme() {
 function changeBorder(evt) {
   const clickedButtonId = evt.target.id;
   const memeImageContainer = document.querySelector('#meme-image-container');
-  switch(clickedButtonId) {
+  switch (clickedButtonId) {
     case 'default-border':
       memeImageContainer.classList.remove('fire', 'earth', 'water');
       memeImageContainer.classList.add('default-border');
@@ -40,39 +40,21 @@ function changeBorder(evt) {
       memeImageContainer.classList.add('water');
       break;
     default:
-      //do nothing;
+      // do nothing;
   }
 }
 // calcular a proporção da imagem
 // multiplicar o lado maior que tomará o tamanho de 500px pela proporção calculada
 
 function displayReadyMadeImg(evt) {
+  const imgSelected = evt.target;
   const imgSelectedId = evt.target.id;
   const img = document.createElement('img');
   const memeImage = document.querySelector('#meme-image');
-  switch (imgSelectedId) {
-    case 'meme-1':
-      removePreviousImage(memeImage);
-      img.src = 'imgs/meme1.png';
-      memeImage.appendChild(img);
-      break;
-    case 'meme-2':
-      removePreviousImage(memeImage);
-      img.src = 'imgs/meme2.png';
-      memeImage.appendChild(img);
-      break;
-    case 'meme-3':
-      removePreviousImage(memeImage);
-      img.src = 'imgs/meme3.png';
-      memeImage.appendChild(img);
-      break;
-    case 'meme-4':
-      removePreviousImage(memeImage);
-      img.src = 'imgs/meme4.png';
-      memeImage.appendChild(img);
-      break;
-      default:
-        //do nothing
+  if (imgSelectedId !== 'ready-made-img-container') {
+    removePreviousImage(memeImage);
+    img.src = imgSelected.src;
+    memeImage.appendChild(img);
   }
 }
 
