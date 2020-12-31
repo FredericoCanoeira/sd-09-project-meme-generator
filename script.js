@@ -5,4 +5,4 @@ function changeText() {
 putText.innerText = getText.value;
 }
 
-getText.addEventListener('keypress', changeText);
+getText.addEventListener('input', changeText);
