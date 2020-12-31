@@ -14,7 +14,7 @@ function displayMeme() {
 function changeBorder(evt) {
   const clickedButtonId = evt.target.id;
   const memeImageContainer = document.querySelector('#meme-image-container');
-  if (clickedButtonId != 'button-container') {
+  if (clickedButtonId !== 'button-container') {
     memeImageContainer.className = `image-container ${clickedButtonId}`;
   }
 }
