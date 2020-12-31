@@ -137,37 +137,37 @@ function buttonEarth() {
 
 function setMeme1() {
   let memes = document.getElementById('memeOutput');
-  if(memes.src === 'http://127.0.0.1:5500/salt.png') {
+  if(memes.src === 'http://127.0.0.1:5500/meme1.png') {
     memes.src = '';
   } else {
-    memes.src = 'http://127.0.0.1:5500/salt.png';
+    memes.src = 'http://127.0.0.1:5500/meme1.png';
   }
 }
 
 function setMeme2() {
   let memes = document.getElementById('memeOutput');
-  if(memes.src === 'http://127.0.0.1:5500/math.png') {
+  if(memes.src === 'http://127.0.0.1:5500/meme2.png') {
     memes.src = '';
   } else {
-    memes.src = 'http://127.0.0.1:5500/math.png';
+    memes.src = 'http://127.0.0.1:5500/meme2.png';
 }
 }
 
 function setMeme3() {
   let memes = document.getElementById('memeOutput');
-  if(memes.src === 'http://127.0.0.1:5500/smart.png') {
+  if(memes.src === 'http://127.0.0.1:5500/meme3.png') {
     memes.src = '';
   } else {
-    memes.src = 'http://127.0.0.1:5500/smart.png';
+    memes.src = 'http://127.0.0.1:5500/meme3.png';
 }
 }
 
 function setMeme4() {
   let memes = document.getElementById('memeOutput');
-  if(memes.src === 'http://127.0.0.1:5500/jesus.png') {
+  if(memes.src === 'http://127.0.0.1:5500/meme4.png') {
     memes.src = '';
   } else {
-    memes.src = 'http://127.0.0.1:5500/jesus.png';  
+    memes.src = 'http://127.0.0.1:5500/meme4.png';  
 }
 }
 

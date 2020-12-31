@@ -1,6 +1,6 @@
 .image-container {
   border: 1px solid black;
-  background-color: white;
+  background-color: transparent;
   left: 50%;
   margin: 0;
   margin-right: -50%;
@@ -13,6 +13,7 @@ h1 {
   margin-top: 0%;
   text-align: center;
   font-family: 'Courgette', cursive;
+  text-shadow: 1px 1px white;
 }
 
 #output {
@@ -43,6 +44,8 @@ body {
   position: absolute;
   top: 49%;
   transform: translate(-50%, -50%);
+  background-image: url(147581.jpg);
+  background-position: center;
 }
 
 #allBorderButtons {
@@ -58,6 +61,7 @@ body {
   width: 59px;
   margin-left: 10px;
   margin-right: 10px;
+  border-radius: 50px;
 }
 
 #meme-image {
@@ -101,19 +105,19 @@ body {
 }
 
 .meme-1 {
-  background-image: url(salt.png);
+  background-image: url(meme1.png);
 }
 
 .meme-2 {
-  background-image: url(math.png);
+  background-image: url(meme2.png);
 }
 
 .meme-3 {
-  background-image: url(smart.png);
+  background-image: url(meme3.png);
 }
 
 .meme-4 {
-  background-image: url(jesus.png);
+  background-image: url(meme4.png);
 }
 
 .video-container {
