@@ -97,9 +97,11 @@ function inputText() {
 function loadFile(event) {
   let output = document.getElementById('output');
   let memeOutput = document.getElementById('memeOutput');
+  let divSrc = document.getElementById('meme-image');
   if(output !== '') {
     output.src = URL.createObjectURL(event.target.files[0]);
     memeOutput.setAttribute('src', '');
+    divSrc.setAttribute('src', '');
   } else {
     output.onload = function() {
       URL.revokeObjectURL(output.src);
@@ -140,49 +142,49 @@ function buttonEarth() {
 function setMeme1() {
   let memes = document.getElementById('memeOutput');
   let divSrc = document.getElementById('meme-image');
-  if(memes.src === 'http://127.0.0.1:5500/meme1.png') {
+  if(memes.src === 'http://127.0.0.1:5500/imgs/meme1.png') {
     memes.setAttribute('src', '');
-    divSrc.setAttribute('src', ''); 
+    divSrc.setAttribute('src', '');
   } else {
-    memes.setAttribute('src','http://127.0.0.1:5500/meme1.png');
-    divSrc.setAttribute('src','http://127.0.0.1:5500/meme1.png');
+    memes.setAttribute('src','http://127.0.0.1:5500/imgs/meme1.png');
+    divSrc.setAttribute('src','http://127.0.0.1:5500/imgs/meme1.png');
   }
 }
 
 function setMeme2() {
   let memes = document.getElementById('memeOutput');
   let divSrc = document.getElementById('meme-image');
-  if(memes.src === 'http://127.0.0.1:5500/meme2.png') {
+  if(memes.src === 'http://127.0.0.1:5500/imgs/meme2.png') {
     memes.setAttribute('src', '');
-    divSrc.setAttribute('src', ''); 
+    divSrc.setAttribute('src', '');
   } else {
-    memes.src = 'http://127.0.0.1:5500/meme2.png';
-    divSrc.setAttribute('src','http://127.0.0.1:5500/meme2.png');
-}
+    memes.src = 'http://127.0.0.1:5500/imgs/meme2.png';
+    divSrc.setAttribute('src','http://127.0.0.1:5500/imgs/meme2.png');
+  }
 }
 
 function setMeme3() {
   let memes = document.getElementById('memeOutput');
   let divSrc = document.getElementById('meme-image');
-  if(memes.src === 'http://127.0.0.1:5500/meme3.png') {
+  if(memes.src === 'http://127.0.0.1:5500/imgs/meme3.png') {
     memes.setAttribute('src', '');
-    divSrc.setAttribute('src', ''); 
+    divSrc.setAttribute('src', '');
   } else {
-    memes.src = 'http://127.0.0.1:5500/meme3.png';
-    divSrc.setAttribute('src','http://127.0.0.1:5500/meme3.png');
-}
+    memes.src = 'http://127.0.0.1:5500/imgs/meme3.png';
+    divSrc.setAttribute('src','http://127.0.0.1:5500/imgs/meme3.png');
+  }
 }
 
 function setMeme4() {
   let memes = document.getElementById('memeOutput');
   let divSrc = document.getElementById('meme-image');
-  if(memes.src === 'http://127.0.0.1:5500/meme4.png') {
+  if(memes.src === 'http://127.0.0.1:5500/imgs/meme4.png') {
     memes.setAttribute('src', '');
-    divSrc.setAttribute('src', ''); 
+    divSrc.setAttribute('src', '');
   } else {
-    memes.src = 'http://127.0.0.1:5500/meme4.png';
-    divSrc.setAttribute('src','http://127.0.0.1:5500/meme4.png');
-}
+    memes.src = 'http://127.0.0.1:5500/imgs/meme4.png';
+    divSrc.setAttribute('src','http://127.0.0.1:5500/imgs/meme4.png');
+  }
 }
 
 function playFire() {
@@ -239,7 +241,7 @@ function listeners() {
   textContainer.addEventListener('keyup', inputText);
   const insertImage = document.getElementById('meme-insert');
   insertImage.addEventListener('change', loadFile);
-  const eventButtonFire = document.getElementById('fire');  
+  const eventButtonFire = document.getElementById('fire');
   eventButtonFire.addEventListener('click', buttonFire);
   eventButtonFire.addEventListener('click', playFire)
   const eventButtonWater = document.getElementById('water');
@@ -247,8 +249,7 @@ function listeners() {
   eventButtonWater.addEventListener('click', playWater)
   const eventButtonEarth = document.getElementById('earth');
   eventButtonEarth.addEventListener('click', buttonEarth);
-  eventButtonEarth.addEventListener('click', playEarth)
-  
+  eventButtonEarth.addEventListener('click', playEarth);
   const firstButtonMeme = document.getElementById('meme-1');
   firstButtonMeme.addEventListener('click', setMeme1);
   const secondButtonMeme = document.getElementById('meme-2');
