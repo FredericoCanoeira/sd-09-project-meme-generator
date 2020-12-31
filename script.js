@@ -1,8 +1,8 @@
-let getText = document.querySelector('#input');
+let getText = document.querySelector('#text-input');
 let putText = document.querySelector('#meme-text')
 
 function changeText() {
-putText.innerText = getText.value;
+putText.innerHTML = getText.value;
 }
 
 getText.addEventListener('input', changeText);
