@@ -3,7 +3,7 @@ body {
   background-size: cover;
   color: white;
   font-family: cursive;
-  text-shadow: 2px 2px 5px grey;
+  text-shadow: 2px 2px 5px gray;
 }
 
 img {
@@ -30,7 +30,7 @@ main {
 .button {
   border: none;
   border-radius: 2px;
-  box-shadow: 2px 2px 5px grey;
+  box-shadow: 2px 2px 5px gray;
   color: white;
   font-weight: 600;
   margin: 0.6em;
@@ -79,7 +79,7 @@ main {
 
 .image-gallery img {
   border: 6px ridge silver;
-  box-shadow: 2px 2px 5px grey;
+  box-shadow: 2px 2px 5px gray;
   display: inline-block;
   height: 90px;
   margin: 0.4em;
