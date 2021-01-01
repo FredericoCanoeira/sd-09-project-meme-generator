@@ -88,18 +88,20 @@ const generateButtonEarth = function () {
   buttonsContainer.appendChild(buttonEarth);
 };
 
+function hadleThumbnailClick(event) {
+  const memeImg = document.getElementById('meme-image');
+  memeImg.src = event.target.src;
+}
+
 const generateThumbnails = function () {
   const images = ['meme1.png', 'meme2.png', 'meme3.png', 'meme4.png'];
-  /* for (let index; index < images.length; index += 1) {
-  } */
-  for (let index = 0; index < images.length; index++) {
+  for (let index = 0; index < images.length; index += 1) {
     const img = document.createElement('img');
     img.id = `meme-${index + 1}`;
     img.className = 'thumbnail';
     img.src = `imgs/${images[index]}`;
+    img.addEventListener('click', hadleThumbnailClick);
     thumbnailsContainer.appendChild(img);
-    
-    // console.log(index);
   }
 };
 
