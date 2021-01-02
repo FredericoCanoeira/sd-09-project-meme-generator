@@ -1,9 +1,21 @@
-const input = document.getElementById('text-input');
+const inputText = document.getElementById('text-input');
+const inputImg = document.getElementById('meme-insert');
 const memeText = document.getElementById('meme-text');
+const memeImg = document.getElementById('meme-image');
 
 function memeTextUpdate() {
-  const text = input.value;
+  const text = inputText.value;
   memeText.innerText = text;
 }
 
-input.addEventListener('keyup', memeTextUpdate);
+inputText.addEventListener('keyup', memeTextUpdate);
+
+function revoke() {
+  URL.revokeObjectURL(memeImg.src);
+}
+
+function memeImageUpdate() {
+  memeImg.src = URL.createObjectURL(inputImg.files[0]);
+}
+
+inputImg.addEventListener('change', memeImageUpdate);

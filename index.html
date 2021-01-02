@@ -8,9 +8,15 @@
   </head>
   <body>
     <main>
-      <input type="text" id="text-input" />
+      <div>
+        <label for="text-input">Texto: </label>
+        <input type="text" id="text-input" />
+        <label for="meme-insert">Imagem: </label>
+        <input type="file" id="meme-insert" accept=".png,.jpg" webkitrelative />
+      </div>
       <article id="meme-image-container">
-        <aside id="meme-text"></aside>
+        <img id="meme-image" class="meme-img" />
+        <aside id="meme-text" class="meme-txt"></aside>
       </article>
     </main>
     <script src="script.js"></script>
