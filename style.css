@@ -14,11 +14,10 @@ main {
 
 article {
   background-color: white;
-  border: 1px solid black;
   height: 500px;
   margin: auto;
   position: relative;
-  top: 8px;
+  top: 15px;
   width: fit-content;
 }
 
@@ -34,4 +33,52 @@ article {
   font-size: 30px;
   position: relative;
   text-shadow: black 5px 5px 5px;
+}
+
+.energy {
+  border-radius: 100%;
+  height: 50px;
+  overflow: clip;
+}
+
+button {
+  border: outset 2px silver;
+  border-radius: 100%;
+  height: 70px;
+  justify-content: center;
+  margin: 30px;
+  width: 70px;
+}
+
+button:hover, button:focus {
+  border: outset 4px gold;
+  outline: none;
+}
+
+.fire {
+  background-color: red;
+}
+
+.water {
+  background-color: blue;
+}
+
+.earth {
+  background-color: green;
+}
+
+.normal-border {
+  border: 1px solid black;
+}
+
+.fire-border {
+  border: 3px dashed red;
+}
+
+.water-border {
+  border: 5px double blue;
+}
+
+.earth-border {
+  border: 6px groove green;
 }
