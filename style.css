@@ -21,6 +21,8 @@ article {
 }
 
 .meme-img {
+  background-color: white;
+  border: 1px solid black;
   height: 500px;
   position: relative;
   top: 20px;

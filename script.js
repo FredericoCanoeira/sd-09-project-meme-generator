@@ -10,10 +10,6 @@ function memeTextUpdate() {
 
 inputText.addEventListener('keyup', memeTextUpdate);
 
-function revoke() {
-  URL.revokeObjectURL(memeImg.src);
-}
-
 function memeImageUpdate() {
   memeImg.src = URL.createObjectURL(inputImg.files[0]);
 }
