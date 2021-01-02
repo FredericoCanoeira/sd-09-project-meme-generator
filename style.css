@@ -13,23 +13,24 @@ main {
 }
 
 article {
-  height: fit-content;
-  margin: auto;
-  padding: 1em;
-  position: relative;
-  width: 80%;
-}
-
-.meme-img {
   background-color: white;
   border: 1px solid black;
   height: 500px;
+  margin: auto;
   position: relative;
-  top: 20px;
+  top: 8px;
+  width: fit-content;
+}
+
+.meme-img {
+  height: 500px;
+  position: relative;
   width: 600px;
 }
 
 .meme-txt {
-  bottom: 30px;
+  bottom: 50px;
+  color: white;
+  font-size: 30px;
   position: relative;
 }
