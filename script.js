@@ -6,6 +6,7 @@ const container = document.getElementById('meme-image-container');
 const fireBtn = document.getElementById('fire');
 const waterBtn = document.getElementById('water');
 const earthBtn = document.getElementById('earth');
+const showcase = document.getElementById('showcase');
 
 function memeTextUpdate() {
   const text = inputText.value;
@@ -33,3 +34,9 @@ function earthify() {
 fireBtn.addEventListener('click', firefy);
 waterBtn.addEventListener('click', waterify);
 earthBtn.addEventListener('click', earthify);
+
+function memeShowcase(event) {
+  memeImg.src = event.target.src;
+}
+
+showcase.addEventListener('click', memeShowcase);

@@ -41,7 +41,6 @@ article {
 .energy {
   border-radius: 100%;
   height: 50px;
-  overflow: clip;
 }
 
 button {
@@ -84,4 +83,10 @@ button:hover , button:focus {
 
 .earth-border {
   border: 6px groove green;
+}
+
+.samples {
+  height: 120px;
+  margin: 20px;
+  width: 100px;
 }
