@@ -33,4 +33,5 @@ article {
   color: white;
   font-size: 30px;
   position: relative;
+  text-shadow: black 5px 5px 5px;
 }
