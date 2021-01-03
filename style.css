@@ -16,10 +16,22 @@ img {
 }
 
 .meme-text {
-  bottom: 0;
   color: white;
   font-size: 30px;
   margin: 5px;
   position: absolute;
   text-shadow: 5px 5px 5px black;
+  top: 0;
+}
+
+.fire {
+  border: 3px dashed red;
+}
+
+.water {
+  border: 5px dashed blue;
+}
+
+.earth {
+  border: 6px groove green;
 }
