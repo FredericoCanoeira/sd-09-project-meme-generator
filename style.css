@@ -1,9 +1,6 @@
 body {
   background-image: url('imgs/background.jpeg');
   background-size: cover;
-  color: white;
-  font-family: cursive;
-  text-shadow: 2px 2px 5px gray;
 }
 
 img {
@@ -20,17 +17,21 @@ input {
 main {
   background-color: rgba(0 , 0 , 0 , 0.7);
   border-radius: 1em;
+  box-shadow: 3px 3px 5px black;
+  color: white;
+  font-family: cursive;
   font-weight: 600;
   margin: 2em auto;
   padding: 1em;
   text-align: center;
+  text-shadow: 2px 2px 5px black;
   width: 700px;
 }
 
 .button {
   border: none;
   border-radius: 2px;
-  box-shadow: 2px 2px 5px gray;
+  box-shadow: 2px 2px 5px black;
   color: white;
   font-weight: 600;
   margin: 0.6em;
@@ -41,7 +42,7 @@ main {
 .button:hover {
   border-radius: 5px;
   margin: 0.6em 1em;
-  padding: 1em 2em;
+  padding: 1em 1.5em;
 }
 
 .container {
@@ -79,7 +80,7 @@ main {
 
 .image-gallery img {
   border: 6px ridge silver;
-  box-shadow: 2px 2px 5px gray;
+  box-shadow: 2px 2px 5px black;
   display: inline-block;
   height: 90px;
   margin: 0.4em;
