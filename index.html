@@ -1,22 +1,33 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <title>Meme Generator</title>
 </head>
+
 <body>
   <header>
     <h1>Projeto Meme Generator</h1>
   </header>
   <main>
-    <label for="text-input">Texto:</label>
-    <input type="text" id="text-input" name="text-input">
+    <p>
+      <label>Texto:
+        <input type="text" id="text-input" name="text-input" maxlength="60">
+      </label>
+    </p>
+    <p>
+      <label>Imagem:
+        <input type="file" name="meme-insert" id="meme-insert">
+      </label>
+    </p>
 
-    <div id="meme-image-container">
-      <div id="meme-text"></div>
-    </div>
+    <section id="meme-image-container" class="meme-image-container">
+      <img id="meme-image">
+      <p id="meme-text" class="meme-text"></p>
+    </section>
   </main>
   <footer>
     <p>Feito com 💙 & ☕ por Nathália Veneziano © 12/2020</p>
@@ -24,4 +35,5 @@
 
   <script src="script.js"></script>
 </body>
+
 </html>
