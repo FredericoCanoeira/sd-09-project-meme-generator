@@ -2,36 +2,42 @@
   background-color: white;
   border: 1px solid black;
   box-sizing: border-box;
-  height: 500px;
-  margin: 0;
-  padding: 0;
+  display: flex;
+  height: auto;
   position: relative;
   width: 500px;
 }
 
 img {
+  display: block;
   height: auto;
-  margin: 5px;
-  max-width: calc(100% - 10px);
+  margin: 0;
+  max-width: 100%;
 }
 
 .meme-text {
   color: white;
   font-size: 30px;
-  margin: 5px;
   position: absolute;
   text-shadow: 5px 5px 5px black;
   top: 0;
 }
 
 .fire {
+  background-color: red;
   border: 3px dashed red;
 }
 
 .water {
+  background-color: blue;
   border: 5px dashed blue;
 }
 
 .earth {
+  background-color: green;
   border: 6px groove green;
+}
+
+.no-border {
+  border: none;
 }
