@@ -1,13 +1,13 @@
-let loadFile = function (event) {
-  let reader = new FileReader();
+const loadFile = function (event) {
+  const reader = new FileReader();
   reader.onload = function () {
-    let image = document.getElementById('meme-image');
+    const image = document.getElementById('meme-image');
     image.src = reader.result;
   };
   reader.readAsDataURL(event.target.files[0]);
-}
+};
 
-function getTextInput () {
+function getTextInput() {
   const input = document.getElementById('text-input');
   const output = document.getElementById('meme-text');
   input.addEventListener('change', function () {
@@ -17,4 +17,4 @@ function getTextInput () {
 
 window.onload = function () {
   getTextInput();
-}
+};
