@@ -16,7 +16,7 @@ function insertImageWidthHeight(file, fileURL) {
     const height = this.height;
     const width = this.width;
 
-    document.getElementById('meme-image-container').src = fileURL;
+    document.getElementById('meme-image').src = fileURL;
     document.getElementById('meme-image-container').style.width = `${width}px`;
     document.getElementById('meme-image-container').style.height = `${height}px`;
   };
