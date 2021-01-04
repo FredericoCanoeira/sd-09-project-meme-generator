@@ -16,7 +16,7 @@ function insertImageWidthHeight(file, fileURL) {
     const height = this.height;
     const width = this.width;
 
-    document.querySelector('#meme-image').src = fileURL;
+    document.getElementById('meme-image-container').style.backgroundImage = `url(${fileURL})`;
     document.getElementById('meme-image-container').style.width = `${width}px`;
     document.getElementById('meme-image-container').style.height = `${height}px`;
   };
@@ -82,11 +82,11 @@ document.querySelector('#meme-1').addEventListener('click', function () {
 });
 
 document.querySelector('#meme-2').addEventListener('click', function () {
-  insertImageWidthHeight('imgs/meme2.jpg', 'imgs/meme2.jpg');
+  insertImageWidthHeight('imgs/meme2.png', 'imgs/meme2.png');
 });
 
 document.querySelector('#meme-3').addEventListener('click', function () {
-  insertImageWidthHeight('imgs/meme3.jpg', 'imgs/meme3.jpg');
+  insertImageWidthHeight('imgs/meme3.png', 'imgs/meme3.png');
 });
 
 document.querySelector('#meme-4').addEventListener('click', function () {
