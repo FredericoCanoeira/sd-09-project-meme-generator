@@ -5,8 +5,35 @@ text.addEventListener('input', function () {
 });
 
 // Imagem
+function insertImageWidthHeight(file, fileURL) {
+  const image = new Image();
+
+  // Defina o retorno da string Base64 do FileReader como origem.
+  image.src = file;
+
+  // Obtém a altura e a largura do arquivo e altera o tamanho do container.
+  image.onload = function () {
+    const height = this.height;
+    const width = this.width;
+
+    document.querySelector('#meme-image').src = fileURL;
+    document.getElementById('meme-image-container').style.width = `${width}px`;
+    document.getElementById('meme-image-container').style.height = `${height}px`;
+  };
+}
+
 document.querySelector('#meme-insert').addEventListener('change', function (event) {
-  document.querySelector('#meme-image').src = URL.createObjectURL(event.target.files[0]);
+  // Check image width and height before upload with Javascript
+  // https://stackoverflow.com/questions/8903854/check-image-width-and-height-before-upload-with-javascript
+
+  const fileUpload = event.target;
+  const reader = new FileReader();
+
+  // Lê o conteúdo do arquivo de imagem.
+  reader.readAsDataURL(fileUpload.files[0]);
+  reader.onload = function (e) {
+    insertImageWidthHeight(e.target.result, URL.createObjectURL(event.target.files[0]));
+  };
 });
 
 // Bordas
@@ -47,4 +74,21 @@ document.querySelector('#water').addEventListener('click', function () {
 
 document.querySelector('#earth').addEventListener('click', function () {
   changeBorder('earth');
+});
+
+// Miniaturas
+document.querySelector('#meme-1').addEventListener('click', function () {
+  insertImageWidthHeight('imgs/meme1.png', 'imgs/meme1.png');
+});
+
+document.querySelector('#meme-2').addEventListener('click', function () {
+  insertImageWidthHeight('imgs/meme2.jpg', 'imgs/meme2.jpg');
+});
+
+document.querySelector('#meme-3').addEventListener('click', function () {
+  insertImageWidthHeight('imgs/meme3.jpg', 'imgs/meme3.jpg');
+});
+
+document.querySelector('#meme-4').addEventListener('click', function () {
+  insertImageWidthHeight('imgs/meme4.png', 'imgs/meme4.png');
 });

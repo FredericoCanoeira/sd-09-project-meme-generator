@@ -3,17 +3,18 @@
   border: 1px solid black;
   box-sizing: border-box;
   display: flex;
-  height: auto;
+  height: 500px;
   position: relative;
   width: 500px;
 }
 
 img {
-  display: block;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
   height: auto;
   margin: 0;
   max-width: 100%;
-  width: 100%;
 }
 
 .meme-text {
@@ -41,4 +42,29 @@ img {
 
 .no-border {
   border: none;
+}
+
+.meme {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: 1px solid black;
+  height: 150px;
+  width: 150px;
+}
+
+.meme-1 {
+  background-image: url('imgs/meme1.png');
+}
+
+.meme-2 {
+  background-image: url('imgs/meme2.jpg');
+}
+
+.meme-3 {
+  background-image: url('imgs/meme3.jpg');
+}
+
+.meme-4 {
+  background-image: url('imgs/meme4.png');
 }
