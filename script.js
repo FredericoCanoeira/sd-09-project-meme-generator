@@ -10,7 +10,8 @@ function inserirImagemMeme () {
   let memeInsert = document.querySelector ('#meme-insert');
   memeInsert.addEventListener('change', function () {
       let memeImage = document.querySelector ('#meme-image');
-      console.log(memeInsert.files[0]);
+      memeImage.src = URL.createObjectURL(memeInsert.files[0]);
+      memeImage.height = 60;
   })
 }
 
