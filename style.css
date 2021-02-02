@@ -2,8 +2,15 @@ body {
     font-family: 'Ubuntu', sans-serif;
 }
 
+header {
+    margin: -22px -8px 10px -8px;
+    padding: 10px 0px;
+    background-color: aquamarine;
+}
+
 #meme-image-container {
     position: relative;
+    
     margin-top: 40px;
     border: 1px solid black;
     background-color: white;
@@ -78,4 +85,8 @@ h1 {
 
 button {
     cursor: pointer;
+}
+
+#inputs {
+    display: inline;
 }
