@@ -1,3 +1,7 @@
+body {
+    font-family: 'Ubuntu', sans-serif;
+}
+
 #meme-image-container {
     position: relative;
     margin-top: 40px;
@@ -10,6 +14,9 @@
     padding: 0;
 }
 
+#meme-insert {
+    color: transparent;
+}
 #meme-text {
     position: absolute;
     top: 140px;
@@ -35,4 +42,37 @@
     height: 310px;
     max-width: 310px;
     max-height: 310px;
+}
+
+form {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.button-border {
+    border-radius: 8px;
+    color: white;
+}
+
+.meme-class {
+    width: 70px;
+    height: 70px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+#fire {
+    background-color: red;
+}
+
+#water {
+    background-color: blue;
+}
+
+#earth {
+    background-color: green;
 }

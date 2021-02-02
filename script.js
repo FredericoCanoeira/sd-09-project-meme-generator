@@ -11,10 +11,17 @@ function inserirImagemMeme () {
   memeInsert.addEventListener('change', function () {
       let memeImage = document.querySelector ('#meme-image');
       memeImage.src = URL.createObjectURL(memeInsert.files[0]);
-      memeImage.height = 200;
-      memeImage.width = 200;
+  })
+}
+
+function escolherMemeExistente () {
+  let memePreSelecionados = document.querySelector ('#memes-prontos');
+  memePreSelecionados.addEventListener ('click', function (event) {
+    let memeImage = document.querySelector('#meme-image');
+    memeImage.src = event.target.src;
   })
 }
 
 inserirTextoMeme ();
 inserirImagemMeme ();
+escolherMemeExistente ();
