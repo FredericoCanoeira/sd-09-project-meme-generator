@@ -22,6 +22,23 @@ function escolherMemeExistente () {
   })
 }
 
+function trocarBorda () {
+  let borderTypes = document.querySelector ('#border-types');
+  let memeContainer = document.querySelector ('#meme-image-container');
+  borderTypes.addEventListener ('click', function (event) {
+    if (event.target.id === 'fire') {
+      memeContainer.style.border = '3px dashed red'
+    }
+    if (event.target.id === 'water') {
+      memeContainer.style.border = '5px double blue';
+    }
+    if (event.target.id === 'earth') {
+    memeContainer.style.border = '6px groove green';
+    }
+  })
+}
+
 inserirTextoMeme ();
 inserirImagemMeme ();
 escolherMemeExistente ();
+trocarBorda ();

@@ -62,7 +62,6 @@ h1 {
     width: 70px;
     height: 70px;
     border: 1px solid black;
-    cursor: pointer;
 }
 
 #fire {
@@ -75,4 +74,8 @@ h1 {
 
 #earth {
     background-color: green;
+}
+
+button {
+    cursor: pointer;
 }
