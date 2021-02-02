@@ -12,12 +12,15 @@
 
 #meme-text {
     position: absolute;
-    top: 140px;
+    top: 20px;
     left: 0px;
     width: 200px;
     word-wrap: break-word;
     z-index: 2;
     text-align: center;
+    text-shadow: rgb(0, 0, 0) 5px 5px 5px;
+    font-size: 30px;
+    color: white;
 }
 
 #meme-image {
