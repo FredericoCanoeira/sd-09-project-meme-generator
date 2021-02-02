@@ -11,7 +11,6 @@ function inserirImagemMeme () {
   memeInsert.addEventListener('change', function () {
       let memeImage = document.querySelector ('#meme-image');
       memeImage.src = URL.createObjectURL(memeInsert.files[0]);
-      memeImage.height = 200;
   })
 }
 
