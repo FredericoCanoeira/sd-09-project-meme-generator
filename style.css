@@ -4,23 +4,25 @@
     border: 1px solid black;
     background-color: white;
     margin: 40px auto;
-    width: 200px;
-    height: 200px;
+    width: 310px;
+    height: 310px;
     z-index: 0;
     padding: 0;
 }
 
 #meme-text {
     position: absolute;
-    top: 20px;
+    top: 140px;
     left: 0px;
-    width: 200px;
+    width: 305px;
     word-wrap: break-word;
     z-index: 2;
     text-align: center;
     text-shadow: rgb(0, 0, 0) 5px 5px 5px;
     font-size: 30px;
     color: white;
+    max-height: 80px;
+    
 }
 
 #meme-image {
@@ -29,6 +31,8 @@
     left: 50%;
     transform: translate(-50%,-50%);  
     z-index: 1;
-    max-width: 200px;
-    max-height: 200px;
+    width: 310px;
+    height: 310px;
+    max-width: 310px;
+    max-height: 310px;
 }
