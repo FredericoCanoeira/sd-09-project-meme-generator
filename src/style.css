@@ -1,9 +1,9 @@
-#meme-image {
+#meme-image-container {
   background-color: white;
   border: 1px solid black;
 }
 
-#meme-text p {
+#meme-text {
   text-shadow: 5px 5px 5px black;
   font-size: 30px;
   color: white;
