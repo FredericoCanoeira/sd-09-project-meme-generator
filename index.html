@@ -1,48 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Meme Generator</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meme Generator</title>
 
-  <link rel="stylesheet" href="src/style.css">
-</head>
-<body>
-  <header>
-    <h1>MEME GENERATOR</h1>
-  </header>
-  
-  <main>
-    <section id="inputs-section">
-      <div>
-        <label for="text-input">Texto: </label>
-        <input type="text" id="text-input" maxlength="60">
-      </div>
+    <link rel="stylesheet" href="src/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>MEME GENERATOR</h1>
+    </header>
 
-      <div>
-        <label for="meme-insert">Foto: </label>
-        <input type="file" id="meme-insert">
-      </div>
-    </section>
+    <main>
+      <section id="inputs-section">
+        <div>
+          <label for="text-input">Texto: </label>
+          <input type="text" id="text-input" maxlength="60" />
+        </div>
 
-    <section id="meme-image-container">
-      <div id="meme-image"></div>
-      <p id="meme-text">
-        auau
-      </p>
-    </section>
+        <div>
+          <label for="meme-insert">Foto: </label>
+          <input type="file" id="meme-insert" />
+        </div>
+      </section>
 
-    <section id="custom-buttons">
-      <button>Fire</button>
-      <button>Water</button>
-      <button>Earth</button>
-    </section>
-  </main>
+      <section id="meme-image-container">
+        <div id="meme-image"></div>
+        <div>
+          <p id="meme-text"></p>
+        </div>
+      </section>
 
-  <footer>
+      <section id="custom-buttons">
+        <button>Fire</button>
+        <button>Water</button>
+        <button>Earth</button>
+      </section>
+    </main>
 
-  </footer>
-  <script src="src/script.js"></script>
-</body>
+    <footer></footer>
+    <script src="src/script.js"></script>
+  </body>
 </html>
