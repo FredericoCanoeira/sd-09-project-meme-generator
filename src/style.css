@@ -1,0 +1,10 @@
+#meme-image {
+  background-color: white;
+  border: 1px solid black;
+}
+
+#meme-text p {
+  text-shadow: 5px 5px 5px black;
+  font-size: 30px;
+  color: white;
+}
