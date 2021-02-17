@@ -1,5 +1,3 @@
-window.onload = windowLoad();
-
 function listenToTextInput() {
   const textInput = document.querySelector('#text-input');
   const memeText = document.querySelector('#meme-text');
@@ -38,12 +36,12 @@ function listenToMemeInsert() {
 }
 
 function listenToProntos() {
-  const prontos = document.querySelector('#prontos')
+  const prontos = document.querySelector('#prontos');
   const image = document.querySelector('#meme-image img');
 
   prontos.addEventListener('click', (event) => {
-    image.src = event.target.src
-  })
+    image.src = event.target.src;
+  });
 }
 
 function windowLoad() {
@@ -52,3 +50,5 @@ function windowLoad() {
   listenToMemeInsert();
   listenToProntos();
 }
+
+window.onload = windowLoad();
