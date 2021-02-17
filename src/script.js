@@ -9,7 +9,7 @@ function listenToTextInput() {
 
 function listenToCustomButtons() {
   const customButtonsNodeList = document.querySelectorAll(
-    '#custom-buttons button'
+    '#custom-buttons button',
   );
   const memeImageContainer = document.querySelector('#meme-image-container');
 
