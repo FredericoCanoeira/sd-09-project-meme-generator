@@ -1,6 +1,12 @@
 .meme-image-container {
+  align-items: center;
   background-color: white;
   border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  justify-content: center;
+  width: 400px;
 }
 
 .meme-text-container {
@@ -17,15 +23,6 @@
 
 section {
   margin: 10px 0;
-}
-
-.meme-image-container {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  height: 400px;
-  justify-content: center;
-  width: 400px;
 }
 
 .meme-image img , .meme-image {
