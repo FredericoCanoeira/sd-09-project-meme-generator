@@ -28,19 +28,31 @@ section {
   align-items: center;
 }
 
-img {
+#meme-image img, #meme-image {
   width: 400px;
-  max-height: 400px;
+  height: 400px;
 }
+
+/* #meme-image {
+  width: 400px;
+  height: 400px;
+  overflow: hidden;
+}
+
+#meme-image img {
+  height: 400px;
+  overflow: hidden;
+} */
 
 #prontos {
   display: flex;
   width: 400px;
   height: 70px;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
-#prontos div {
+#prontos img {
   width: 70px;
   border: 1px solid black;
+  height: inherit;
 }
