@@ -3,6 +3,12 @@
   border: 1px solid black;
 }
 
+#meme-text-container {
+  z-index: 1;
+  position: absolute;
+  top: 400px;
+}
+
 #meme-text {
   text-shadow: 5px 5px 5px black;
   font-size: 30px;
@@ -11,4 +17,30 @@
 
 section {
   margin: 10px 0;
+}
+
+#meme-image-container {
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  width: 400px;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  width: 400px;
+  max-height: 400px;
+}
+
+#prontos {
+  display: flex;
+  width: 400px;
+  height: 70px;
+  justify-content: space-around;
+}
+
+#prontos div {
+  width: 70px;
+  border: 1px solid black;
 }

@@ -14,19 +14,29 @@ function listenToCustomButtons() {
   const memeImageContainer = document.querySelector('#meme-image-container')
 
   customButtonsNodeList[0].addEventListener('click', () => {
-    memeImageContainer.style.border = '5px double red'
+    memeImageContainer.style.border = '1px double red'
   })
 
   customButtonsNodeList[1].addEventListener('click', () => {
-    memeImageContainer.style.border = '5px ridge blue'
+    memeImageContainer.style.border = '1px ridge blue'
   })
 
   customButtonsNodeList[2].addEventListener('click', () => {
-    memeImageContainer.style.border = '5px dashed green'
+    memeImageContainer.style.border = '1px dashed green'
+  })
+}
+
+function listenToMemeInsert() {
+  const memeInsert = document.querySelector('#meme-insert')
+  const image = document.querySelector('#meme-image img')
+
+  memeInsert.addEventListener('change', () => {
+    image.src = URL.createObjectURL(memeInsert.files[0])
   })
 }
 
 function windowLoad() {
   listenToTextInput()
   listenToCustomButtons()
+  listenToMemeInsert()
 }
