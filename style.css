@@ -1,16 +1,19 @@
 *{
   margin: 0;
-  padding: 0
+  padding: 0;
   box-sizing: border-box;
 }
 
-#meme-image-container {
+.meme-canvas {
   background-color: white;
   border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-#meme-text {
-  box-shadow: 5px 5px 5px black;
+.inserted-text {
+  text-shadow: 5px 5px 5px black;
   color: white;
   font-size: 30px;
   position: absolute;
