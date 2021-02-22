@@ -12,6 +12,7 @@
   justify-content: center;
   min-width: 30rem;
   min-height: 30rem;
+  position: relative;
 }
 
 .inserted-text {

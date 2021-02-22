@@ -3,10 +3,7 @@ const emptyText = document.querySelector('#meme-text');
 const textToAdd = document.querySelector('#text-input');
 
 function geneMemeText() {
-  const insertedText = document.createElement('p');
-  insertedText.innerText = textToAdd.value;
-  insertedText.className = "inserted-text";
-  emptyText.appendChild(insertedText);
+  document.querySelector('span').innerText = textToAdd.value;
 }
 
 function genMemeImage() {
